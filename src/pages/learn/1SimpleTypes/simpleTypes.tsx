@@ -2,6 +2,7 @@ import Container from "@/src/components/commons/Container";
 
 
 const SimpleTypes = () => {
+  // This is special types
   let option: any = 1;
   console.log('option', option + 1);
 
