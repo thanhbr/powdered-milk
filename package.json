@@ -1,18 +1,26 @@
 {
+  "author": "ThanhBr",
+  "license": "MIT",
   "name": "next-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 2007",
+    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\" --cache",
+    "format:docs": "prettier --write \"docs/**/*.{tsx,ts,md}\" --cache",
+    "dev": "npm i && next dev -p 2007",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.6",
+    "classnames": "^2.5.1",
+    "lint-staged": "^15.2.7",
+    "lodash": "^4.17.21",
     "next": "14.2.4",
+    "prettier": "^3.3.2",
     "react": "^18",
-    "react-dom": "^18",
-    "classnames": "^2.5.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

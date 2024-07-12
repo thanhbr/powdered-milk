@@ -1,9 +1,5 @@
 const Learning = () => {
-  return (
-    <div>
-      Learning
-    </div>
-  )
+  return <div>Learning</div>;
 };
 
 export default Learning;

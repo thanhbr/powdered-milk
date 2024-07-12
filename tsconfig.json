@@ -29,11 +29,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@test/*": ["./test/*"],
+      "@/internals/*": ["./src/internals/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
-    "src",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],

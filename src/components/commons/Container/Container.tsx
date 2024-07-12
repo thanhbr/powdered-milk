@@ -2,26 +2,20 @@ import styles from "./Container.module.scss";
 import classNames from "classnames";
 import React, { FunctionComponent } from "react";
 
-
 interface ContainerProps {
   className?: string;
-  children?: any,
+  children?: any;
 }
 
-const Container =  ( props:ContainerProps ) => {
-  const {
-    className,
-    children,
-    ...rest
-  } = props;
+const Container = (props: ContainerProps) => {
+  const { className, children, ...rest } = props;
 
   const propsContainer = {
     className: classNames(styles.root, className),
-    ...rest
-  }
+    ...rest,
+  };
 
-
-  return <div {...propsContainer}>{children}</div>
-}
+  return <div {...propsContainer}>{children}</div>;
+};
 
 export default Container;
