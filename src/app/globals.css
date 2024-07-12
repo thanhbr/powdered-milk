@@ -3,12 +3,6 @@
   --border-radius: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,9 +19,3 @@ body {
 
 }
 
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
