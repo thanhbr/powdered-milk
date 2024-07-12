@@ -1,11 +1,9 @@
-'use client'
+"use client";
 
 import Learning from "src/pages/learn/page";
 
 const Learn = () => {
-  return (
-    <Learning />
-  );
-}
+  return <Learning />;
+};
 
 export default Learn;

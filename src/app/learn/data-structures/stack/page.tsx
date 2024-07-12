@@ -1,7 +1,7 @@
-import StackPage from "@/src/pages/learn/dataStructures/stack";
+import StackPage from "@/pages/learn/dataStructures/stack";
 
 const StackContainer = () => {
-  return <StackPage />
-}
+  return <StackPage />;
+};
 
 export default StackContainer;

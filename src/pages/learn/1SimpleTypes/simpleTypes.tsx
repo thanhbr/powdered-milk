@@ -1,23 +1,15 @@
 import Container from "@/src/components/commons/Container";
 
-
 const SimpleTypes = () => {
   // This is special types
   let option: any = 1;
-  console.log('option', option + 1);
-
+  console.log("option", option + 1);
 
   let value: unknown = 1;
   // if(typeof value === "number") {
   //   console.log("value", value.toFixed());
   // }
   console.log(typeof value);
-
-
-
-
-
-
 
   return (
     <Container>

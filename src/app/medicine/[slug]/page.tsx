@@ -1,10 +1,5 @@
 const Slug = () => {
-
-    return (
-        <>
-            Slug
-        </>
-    )
-}
+  return <>Slug</>;
+};
 
 export default Slug;

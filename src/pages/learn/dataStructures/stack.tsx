@@ -18,15 +18,15 @@ const StackPage = () => {
     }
 
     public push(element: T): void {
-      if(this.isFull()) {
-        throw new Error ("Stack overflow");
+      if (this.isFull()) {
+        throw new Error("Stack overflow");
       }
       this.items.push(element);
     }
 
     public pop(): T | undefined {
-      if(this.isEmpty()) {
-        throw new Error ("Stack underflow");
+      if (this.isEmpty()) {
+        throw new Error("Stack underflow");
       }
       return this.items.pop();
     }
@@ -43,11 +43,7 @@ const StackPage = () => {
   const stack = new Stack(5);
   console.log(1, stack);
 
-  return (
-    <Fragment>
-      123
-    </Fragment>
-  )
-}
+  return <Fragment>123</Fragment>;
+};
 
 export default StackPage;

@@ -1,7 +1,7 @@
-import SimpleTypes from "src/pages/learn/1SimpleTypes/simpleTypes";
+import SimpleTypes from "@/pages/learn/1SimpleTypes/simpleTypes";
 
 const Page = () => {
-  return  <SimpleTypes />;
+  return <SimpleTypes />;
 };
 
 export default Page;
