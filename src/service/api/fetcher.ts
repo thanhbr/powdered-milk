@@ -11,10 +11,9 @@ const instance = axios.create(instanceConfig);
 
 const fetcher = async (
   { method = "", url = "", headers = {} } = {},
-  { data = {}, params = {}, pathParams = {}, context = {}, ...rest } = {},
+  { data = {}, params = {}, pathParams = {}, ...rest } = {},
 ) => {
   try {
-
       return await instance.request({
           method,
           url: generatePath(url, pathParams),
