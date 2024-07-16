@@ -14,16 +14,16 @@ const fetcher = async (
   { data = {}, params = {}, pathParams = {}, ...rest } = {},
 ) => {
   try {
-      return await instance.request({
-          method,
-          url: generatePath(url, pathParams),
-          headers,
-          data,
-          params,
-          ...rest,
-      });
+    return await instance.request({
+      method,
+      url: generatePath(url, pathParams),
+      headers,
+      data,
+      params,
+      ...rest,
+    });
   } catch (error) {
-      throw error;
+    throw error;
   }
 };
 

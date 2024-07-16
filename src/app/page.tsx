@@ -1,5 +1,3 @@
 export default function Home() {
-  return <main>
-    Powdered Milk
-  </main>;
+  return <main>Powdered Milk</main>;
 }
