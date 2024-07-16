@@ -5,7 +5,10 @@ import "./globals.css";
 const poppins = Poppins({ weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tiệm sữa mần xanh",
+  title: {
+    default: "Tiệm sữa mần xanh",
+    template: "%s | Tiệm sữa mần xanh"
+  },
   description: "Một ước mơ nhỏ từ gia đình",
 };
 
