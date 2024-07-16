@@ -1,7 +1,7 @@
 "use client";
 
 const ProductSection = (props) => {
-  return <div>dev</div>;
+  return <div>ProductSection</div>;
 };
 
 export default ProductSection;
