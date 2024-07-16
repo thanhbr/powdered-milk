@@ -7,7 +7,7 @@ const poppins = Poppins({ weight: "300", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     default: "Tiệm sữa mần xanh",
-    template: "%s | Tiệm sữa mần xanh"
+    template: "%s | Tiệm sữa mần xanh",
   },
   description: "Một ước mơ nhỏ từ gia đình",
 };

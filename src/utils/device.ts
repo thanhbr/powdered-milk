@@ -1,9 +1,7 @@
 export function testPlatform(re) {
   return typeof window !== "undefined" && window.navigator != null
-      ? re.test(
-          window.navigator["userAgentData"]?.platform || window.navigator.platform,
-      )
-      : false;
+    ? re.test(window.navigator["userAgentData"]?.platform || window.navigator.platform)
+    : false;
 }
 
 export function isIPhone() {
@@ -12,9 +10,9 @@ export function isIPhone() {
 
 export function isIPad() {
   return (
-      testPlatform(/^iPad/i) ||
-      // iPadOS 13 lies and says it's a Mac, but we can distinguish by detecting touch support.
-      (isMac() && navigator.maxTouchPoints > 1)
+    testPlatform(/^iPad/i) ||
+    // iPadOS 13 lies and says it's a Mac, but we can distinguish by detecting touch support.
+    (isMac() && navigator.maxTouchPoints > 1)
   );
 }
 
