@@ -17,22 +17,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headerStyle = {
+    backgroundColor: "lightblue",
+    padding: "1rem",
+  };
+
+  const footerStyle = {
+    position: "fixed",
+    bottom: "0",
+    backgroundColor: "ghostwhite",
+    padding: "1rem",
+    width: "100%",
+  } as React.CSSProperties;
+
   return (
     <html lang="en">
       <body className={poppins.className} suppressHydrationWarning={true}>
-        <header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
+        <header style={headerStyle}>
           <p>Header</p>
         </header>
         {children}
-        <footer
-          style={{
-            backgroundColor: "ghostwhite",
-            padding: "1rem",
-            position: "fixed",
-            bottom: 0,
-            width: "100%",
-          }}
-        >
+        <footer style={footerStyle}>
           <p>Footer</p>
         </footer>
       </body>
