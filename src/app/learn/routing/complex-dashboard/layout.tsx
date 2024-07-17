@@ -23,5 +23,7 @@ export default function DashboardLayout({
         <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
       </div>
     </>
-  ) : (login);
+  ) : (
+    login
+  );
 }
