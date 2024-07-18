@@ -8,7 +8,6 @@
 // fibonacci(7) = [0,1,1,2,3,5,8]
 
 
-
 function fibonacci(num) {
   const fib = [0, 1]
   for(let i = 2; i < num; i++) {
@@ -22,3 +21,21 @@ console.log(fibonacci(3)); // [0,1,1]
 console.log(fibonacci(7)); // [0,1,1,2,3,5,8]
 
 
+// Iterative Fibonacci: This function calculates the Fibonacci number
+// using an iterative approach, typically using a loop or memoization
+// to avoid repeated calculations.
+
+function fibonacciIterative(n) {
+  if (n < 2) {
+    return n;
+  } else {
+    let previous = 0;
+    let current = 1;
+    for (let i = 2; i <= n; i++) {
+      const next = previous + current;
+      previous = current;
+      current = next;
+    }
+    return current;
+  }
+}
