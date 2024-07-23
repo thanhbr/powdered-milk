@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
-const poppins = Poppins({ weight: "300", subsets: ["latin"] });
+const poppins = Roboto({ weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} bg-sky-50`} suppressHydrationWarning={true}>
         <header className="p-4">
-          <p>Header</p>
+          <Navbar />
         </header>
         {children}
         <footer className="fixed bottom-0 p-4 w-full">
