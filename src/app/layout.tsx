@@ -32,6 +32,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icons/logo.svg" type="image/png" sizes="32x32" />
+      </head>
       <body className={poppins.className} suppressHydrationWarning={true}>
         <header style={headerStyle}>
           <p>Header</p>
