@@ -17,30 +17,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headerStyle = {
-    backgroundColor: "lightblue",
-    padding: "1rem",
-  };
-
-  const footerStyle = {
-    position: "fixed",
-    bottom: "0",
-    backgroundColor: "ghostwhite",
-    padding: "1rem",
-    width: "100%",
-  } as React.CSSProperties;
-
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/icons/logo.svg" type="image/png" sizes="32x32" />
       </head>
-      <body className={poppins.className} suppressHydrationWarning={true}>
-        <header style={headerStyle}>
+      <body className={`${poppins.className} bg-sky-50`} suppressHydrationWarning={true}>
+        <header className="p-4">
           <p>Header</p>
         </header>
         {children}
-        <footer style={footerStyle}>
+        <footer className="fixed bottom-0 p-4 w-full">
           <p>Footer</p>
         </footer>
       </body>
