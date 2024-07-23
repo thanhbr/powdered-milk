@@ -3,14 +3,14 @@
 import useSWR from "swr";
 
 export interface FetcherType {
-    data: any[];
-    isLoading: boolean;
-    error: any;
+  data: any[];
+  isLoading: boolean;
+  error: any;
 }
 
 const fetcher = async (url: string) => {
-    const res = await fetch(url);
-    return res.json();
+  const res = await fetch(url);
+  return res.json();
 };
 
 interface UseSwrOptions {
