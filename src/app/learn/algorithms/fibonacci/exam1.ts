@@ -39,3 +39,28 @@ function fibonacciIterative(n) {
     return current;
   }
 }
+
+// Kiểm tra có phải số fibonacci không
+function isFibonacci(n) {
+  if (n == 0 || n == 1) {
+    return true;
+  }
+
+  let a = 0;
+  let b = 1;
+  let current;
+
+  while (current <= n) {
+    current = a + b;
+    if (current == n) {
+      return true;
+    }
+    a = b;
+    b = current;
+  }
+
+  return false;
+}
+
+console.log('[1] isFibonacci', isFibonacci(1));
+console.log('[20] isFibonacci', isFibonacci(20));
