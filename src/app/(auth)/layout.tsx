@@ -13,7 +13,10 @@ const navLink = [
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  const { data, isLoading} = useSwr(API.GET_PRODUCT);
+  const { data, isLoading} = useSwr({
+    url: API.GET_PRODUCT,
+    params: { min: 0, max: 10000000 }
+  });
   console.log('data', data)
   console.log('isLoading', isLoading)
 

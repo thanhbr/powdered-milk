@@ -1,6 +1,6 @@
 "use client";
 
-import useSWr, { preload } from "swr";
+import useSWR from "swr";
 
 export interface FetcherType {
     data: any[];
@@ -13,12 +13,23 @@ const fetcher = async (url: string) => {
     return res.json();
 };
 
-const useSwr = (url: string): FetcherType => {
-    preload(url, fetcher);
+interface UseSwrOptions {
+  url: string;
+  params?: Record<string, any>;
+}
 
-    const { data, error, isValidating: isLoading } = useSWr(url, fetcher);
+const useSwr = ({ url, params }: UseSwrOptions): FetcherType => {
+  const fullUrl = new URL(url);
 
-    return { data, error, isLoading };
+  if (params) {
+    Object.entries(params).forEach(([key, value]) => {
+      fullUrl.searchParams.append(key, value);
+    });
+  }
+
+  const { data, error, isValidating: isLoading } = useSWR(fullUrl.toString(), fetcher);
+
+  return { data, error, isLoading };
 };
 
 export default useSwr;
