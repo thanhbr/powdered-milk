@@ -4,7 +4,11 @@ import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const poppins = Roboto({ weight: "300", subsets: ["latin"] });
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +16,16 @@ export const metadata: Metadata = {
     template: "%s | Tiệm sữa mần xanh",
   },
   description: "Một ước mơ nhỏ từ gia đình",
+  icons: {
+    icon: {
+      url: "/icons/logo.svg",
+      type: "image/png",
+      sizes: "32x32"
+    }
+  },
+  alternates: {
+    canonical: "https://nextjs.org",
+  }
 };
 
 export default function RootLayout({
@@ -21,13 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/icons/logo.svg" type="image/png" sizes="32x32" />
-      </head>
-      <body className={`${poppins.className} bg-sky-50`} suppressHydrationWarning={true}>
-        <header className="p-4">
-          <Navbar />
-        </header>
+      <body className={`${roboto.className} bg-sky-50`} suppressHydrationWarning={true}>
+        <Navbar />
         {children}
         <Footer />
       </body>
