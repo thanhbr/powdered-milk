@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
       {
-          name: "medicine",
+          name: "next js",
           script: "npm start",
           env: {
               NODE_ENV: "production",
