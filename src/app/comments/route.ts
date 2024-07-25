@@ -1,7 +1,9 @@
+import { getProductFilter } from "@/service/api/product";
 import { comments } from "./data"
 
 export async function GET() {
-  return Response.json(comments)
+  const products = await getProductFilter();
+  return Response.json(products)
 }
 
 export async function POST(request: Request) {
