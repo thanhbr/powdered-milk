@@ -16,11 +16,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@tanstack/react-query": "^5.51.1",
-=======
     "@types/jest": "^29.5.12",
->>>>>>> origin/master
     "@types/lodash": "^4.17.6",
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
