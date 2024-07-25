@@ -8,7 +8,9 @@
 // fibonacci(7) = [0,1,1,2,3,5,8]
 
 
-function fibonacci(num) {
+export function fibonacci(num) {
+  if(num < 1) return [];
+  if(num === 1) return [0];
   const fib = [0, 1]
   for(let i = 2; i < num; i++) {
     fib[i] = fib[i-1] + fib[i-2]
@@ -16,9 +18,6 @@ function fibonacci(num) {
   return fib;
 }
 
-console.log(fibonacci(2)); // [0,1]
-console.log(fibonacci(3)); // [0,1,1]
-console.log(fibonacci(7)); // [0,1,1,2,3,5,8]
 
 
 // Iterative Fibonacci: This function calculates the Fibonacci number
@@ -61,6 +60,3 @@ function isFibonacci(n) {
 
   return false;
 }
-
-console.log('[1] isFibonacci', isFibonacci(1));
-console.log('[20] isFibonacci', isFibonacci(20));
