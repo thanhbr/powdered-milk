@@ -30,8 +30,8 @@
     ],
     "paths": {
       "@test/*": ["./test/*"],
-      // "@/components/*": ["./src/components/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/internals/*": ["./src/internals/*"],
     }
   },
   "include": [

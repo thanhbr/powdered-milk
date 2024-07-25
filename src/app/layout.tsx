@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import { Roboto } from "next/font/google";
+import "@/styles/globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
-const poppins = Poppins({ weight: "300", subsets: ["latin"] });
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -10,6 +16,16 @@ export const metadata: Metadata = {
     template: "%s | Tiệm sữa mần xanh",
   },
   description: "Một ước mơ nhỏ từ gia đình",
+  icons: {
+    icon: {
+      url: "/icons/logo.svg",
+      type: "image/png",
+      sizes: "32x32"
+    }
+  },
+  alternates: {
+    canonical: "https://nextjs.org",
+  }
 };
 
 export default function RootLayout({
@@ -19,22 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className} suppressHydrationWarning={true}>
-        <header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
-          <p>Header</p>
-        </header>
+      <body className={`${roboto.className} bg-sky-50`} suppressHydrationWarning={true}>
+        <Navbar />
         {children}
-        <footer
-          style={{
-            backgroundColor: "ghostwhite",
-            padding: "1rem",
-            position: "fixed",
-            bottom: 0,
-            width: "100%",
-          }}
-        >
-          <p>Footer</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
