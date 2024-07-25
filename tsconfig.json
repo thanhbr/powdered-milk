@@ -32,7 +32,6 @@
       "@test/*": ["./test/*"],
       "@/*": ["./src/*"],
       "@/internals/*": ["./src/internals/*"],
-      "@/components/*": ["components/*"],
     }
   },
   "include": [
