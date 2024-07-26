@@ -2,7 +2,7 @@
 // Cho một mảng và một phần tử cần tìm,
 // hãy viết hàm trả về một mảng chứa tất cả các chỉ số của phần tử đó trong mảng ban đầu.
 
-export function findAllIndices(
+export default function findAllIndices(
   arr: any[],
   target: any
 ): any[] {
