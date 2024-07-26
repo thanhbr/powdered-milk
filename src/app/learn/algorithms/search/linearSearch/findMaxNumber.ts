@@ -2,7 +2,7 @@
 // Cho một mảng các số nguyên, hãy viết hàm tìm và trả về số lớn nhất trong mảng.
 
 
-export function findMaxNumber(arr: number[]) {
+export default function findMaxNumber(arr: number[]) {
   if(arr.length === 0) return undefined;
   let max = arr[0];
   for(let i = 0; i < arr.length; i++) {

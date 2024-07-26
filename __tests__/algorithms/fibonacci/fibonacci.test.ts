@@ -1,4 +1,4 @@
-import { fibonacci } from './../../src/app/learn/algorithms/fibonacci/exam1';
+import { fibonacci } from '../../../src/app/learn/algorithms/fibonacci/exam1';
 
 describe("fibonacci", () => {
   it('should calculate Fibonacci sequence correctly', () => {

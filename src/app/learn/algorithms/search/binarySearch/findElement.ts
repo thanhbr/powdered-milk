@@ -1,10 +1,10 @@
-export function findElementByBinarySearch(
+export default function findElement(
   arr: number[],
   target: number
 ) {
   let low = 0;
   let high = arr.length - 1;
-  let mid;
+  let mid:number;
   while(high >= low) {
     mid = low + Math.floor((high - low) / 2);
 
