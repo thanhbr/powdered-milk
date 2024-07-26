@@ -1,6 +1,7 @@
 import { linearSearch } from "../../src/app/learn/algorithms/search/linearSearch/exam1"
 import { findMaxNumber } from './../../src/app/learn/algorithms/search/linearSearch/exam2';
 import { findAllIndices } from './../../src/app/learn/algorithms/search/linearSearch/exam3';
+import { findNumberSorted } from './../../src/app/learn/algorithms/search/linearSearch/exam4';
 
 
 describe('linearSearch', () => {
@@ -107,5 +108,50 @@ describe('Tìm tất cả các vị trí của một phần tử trong mảng', 
     const arr = [1, null, 3, undefined];
     expect(findAllIndices(arr, null)).toEqual([1]);
     expect(findAllIndices(arr, undefined)).toEqual([3]);
+  });
+});
+
+
+describe('Exam 4 - Linear search', () => {
+  it('should find all indices of a number', () => {
+    const arr = [1, 2, 3, 2, 4, 2];
+    const target = 2;
+    expect(findNumberSorted(arr, target)).toEqual([1, 3, 5]);
+  });
+
+  it('should return an empty array if the target is not found', () => {
+    const arr = [1, 2, 3, 4, 5];
+    const target = 6;
+    expect(findNumberSorted(arr, target)).toEqual([]);
+  });
+
+  it('should handle empty array', () => {
+    const arr = [];
+    const target = 1;
+    expect(findNumberSorted(arr, target)).toEqual([]);
+  });
+
+  it('should handle single element array', () => {
+    const arr = [42];
+    const target = 42;
+    expect(findNumberSorted(arr, target)).toEqual([0]);
+  });
+
+  it('should handle all elements are the same', () => {
+    const arr = [5, 5, 5];
+    const target = 5;
+    expect(findNumberSorted(arr, target)).toEqual([0, 1, 2]);
+  });
+
+  it('should handle negative numbers', () => {
+    const arr = [-1, 2, -3, 4, -5];
+    const target = -3;
+    expect(findNumberSorted(arr, target)).toEqual([2]);
+  });
+
+  it('should handle large arrays', () => {
+    const arr = Array.from({ length: 10000 }, (_, i) => i);
+    const target = 5000;
+    expect(findNumberSorted(arr, target)).toEqual([5000]);
   });
 });
