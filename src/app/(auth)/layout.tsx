@@ -1,5 +1,6 @@
 "use client";
-import { API, API_GRAPHQL_URL, HEADERS_API, NAV_LINK } from "@/constants";
+import { API, HEADERS_API, NAV_LINK } from "@/constants";
+import { FAKE_INTERESTED_PRODUCTS } from "@/constants/fakeData/interestedProducts";
 import useSwr from "@/hooks/useSwr";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,12 +20,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
     let results = await fetch(`https://api-ecommerce.kidsplaza.io/graphql`, {
       method: 'POST',
 
-      headers: {
-        "Content-Type": "application/json",
-        "X-Api-Key": "IdLDYTgb2tzJnAU8XR8a6CwnQFPeVx71TbIuBUv5",
-        "App-Cache-Id": "51dbf2026a9b3943984cb8589f6dacf03a562bce14c95484b98f043620cb8b16"
-      },
-
+      headers: HEADERS_API,
 
       body: JSON.stringify({
         operationName: "InterestedProducts",

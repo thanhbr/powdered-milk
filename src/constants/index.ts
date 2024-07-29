@@ -12,7 +12,7 @@ export const API = {
 
 export const HEADERS_API = {
   "Content-Type": "application/json",
-  "X-Api-Key": `${API_GRAPHQL_APP_ID}`,
+  "X-Api-Key": `${API_GRAPHQL_KEY}`,
   "App-Cache-Id": `${API_GRAPHQL_APP_ID}`
 }
 

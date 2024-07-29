@@ -1,5 +1,5 @@
 
-const FAKE_INTERESTED_PRODUCTS = `query InterestedProducts {
+export const FAKE_INTERESTED_PRODUCTS = `query InterestedProducts {
   interestedProducts {
       items {
           ... on ConfigurableProduct {
