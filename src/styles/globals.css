@@ -18,3 +18,24 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+@layer utilities {
+  /* TYPOGRAPHY */
+  /* .product-card {
+    @apply bg-sky-50;
+  } */
+
+  .shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000
+  }
+
+  .shadow-none,.shadow-product-card {
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+  }
+
+  .shadow-product-card {
+    --tw-shadow: 2px 2px 8px 0px #8f8f8f40;
+    --tw-shadow-colored: 2px 2px 8px 0px var(--tw-shadow-color)
+  }
+}
