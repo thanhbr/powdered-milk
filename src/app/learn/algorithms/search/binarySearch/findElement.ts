@@ -6,7 +6,7 @@ export default function findElement(
   let high = arr.length - 1;
   let mid:number;
   while(high >= low) {
-    mid = low + Math.floor((high - low) / 2);
+    mid = Math.floor((high + low) / 2);
 
     if(arr[mid] === target) return mid;
 

@@ -1,3 +1,4 @@
+// LOW TIME
 function search(numbers: number[], target: number): number {
   let left = 0;
   let right = numbers.length - 1;
