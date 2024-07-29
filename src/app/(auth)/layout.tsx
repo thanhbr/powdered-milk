@@ -1,5 +1,5 @@
 "use client";
-import { API, HEADERS_API, NAV_LINK } from "@/constants";
+import { API, API_GRAPHQL_URL, HEADERS_API, NAV_LINK } from "@/constants";
 import { FAKE_INTERESTED_PRODUCTS } from "@/constants/fakeData/interestedProducts";
 import useSwr from "@/hooks/useSwr";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
   console.log("GET_PRODUCT", data);
 
   async function getCharacters() {
-    let results = await fetch(`https://api-ecommerce.kidsplaza.io/graphql`, {
+    let results = await fetch(`${API_GRAPHQL_URL}`, {
       method: 'POST',
 
       headers: HEADERS_API,
