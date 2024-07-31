@@ -1,9 +1,7 @@
-// Complexities
-// Worst Case and Average case time complexity
-// If the array is in reverse order then this condition is the worst case and Its time complexity is O(n2).
-
-// Best case time complexity
-// If the array is already sorted then it is the best-case scenario and its time complexity is O(n)
+// Time Complexity of Insertion Sort
+// Best case: O(n) , If the array is already sorted then it is the best-case scenario.
+// Average case: O(n 2 ) , If the array is in reverse order then this condition is the worst case.
+// Worst case: O(n 2 ) , If the array is in reverse order then this condition is the worst case.
 
 // Auxiliary Space: O(1)
 
