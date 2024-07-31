@@ -11,4 +11,4 @@ export const comments = [
     id: 3,
     text: "beautiful",
   },
-]
+];
