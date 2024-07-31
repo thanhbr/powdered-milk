@@ -13,4 +13,4 @@ function search(numbers: number[], target: number): number {
   }
   // [-1,0,3,5,9,12] 9 = 4
   return -1;
-};
+}

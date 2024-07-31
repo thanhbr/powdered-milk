@@ -7,18 +7,15 @@
 // fibonacci(3) = [0,1,1]
 // fibonacci(7) = [0,1,1,2,3,5,8]
 
-
 export function fibonacci(num) {
-  if(num < 1) return [];
-  if(num === 1) return [0];
-  const fib = [0, 1]
-  for(let i = 2; i < num; i++) {
-    fib[i] = fib[i-1] + fib[i-2]
+  if (num < 1) return [];
+  if (num === 1) return [0];
+  const fib = [0, 1];
+  for (let i = 2; i < num; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
   }
   return fib;
 }
-
-
 
 // Iterative Fibonacci: This function calculates the Fibonacci number
 // using an iterative approach, typically using a loop or memoization
