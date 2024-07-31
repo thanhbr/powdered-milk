@@ -1,7 +1,3 @@
 export default function AlgorithmPage() {
-  return (
-    <div>
-      Algorithms
-    </div>
-  )
+  return <div>Algorithms</div>;
 }
