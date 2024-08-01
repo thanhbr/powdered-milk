@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { fontInter } from "@/utils/fonts";
+import { fontRoboto } from "@/utils/fonts";
 
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fontInter.className} suppressHydrationWarning={true}>
+      <body className={fontRoboto.className} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
