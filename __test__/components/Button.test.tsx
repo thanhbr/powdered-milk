@@ -19,10 +19,7 @@ describe("Button component", () => {
         variant="ghost"
         leadingIcon="left"
         trailingIcon="right"
-        mt="1"
-        mr="2"
-        mb="1"
-        ml="2"
+        className="mt-6 pl-2"
       >
         Title button
       </Button>
@@ -35,10 +32,7 @@ describe("Button component", () => {
     expect(el?.getAttribute("variant")).toBe("ghost");
     expect(el?.getAttribute("leadingIcon")).toBe("left");
     expect(el?.getAttribute("trailingIcon")).toBe("right");
-    expect(el?.getAttribute("mt")).toBe("1");
-    expect(el?.getAttribute("mr")).toBe("2");
-    expect(el?.getAttribute("mb")).toBe("1");
-    expect(el?.getAttribute("ml")).toBe("2");
+    expect(el?.getAttribute("class")).toMatch(/mt-6/)
   })
 
   it("should render content", () => {

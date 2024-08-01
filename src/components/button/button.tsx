@@ -1,19 +1,19 @@
 "use client";
 
 import { ReactNode, useEffect, useRef } from "react";
-import { Margins } from "../styling/styling";
 
 export type ButtonType = "default" | "button" | "submit";
 export type ButtonVariant = "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
 export type ButtonSize = "default" | "sm" | "lg" | "icon";
 
-interface WCProps extends Margins {
+interface WCProps {
   type?: ButtonType;
   variant?: ButtonVariant;
   size?: ButtonSize;
   disabled?: boolean;
   leadingIcon?: string;
   trailingIcon?: string;
+  class?: string;
   ref: React.RefObject<HTMLElement>;
 }
 
@@ -25,7 +25,7 @@ declare global {
   }
 }
 
-export interface ButtonProps extends Margins {
+export interface ButtonProps {
   type?: ButtonType;
   variant?: ButtonVariant;
   size?: ButtonSize;
@@ -35,6 +35,7 @@ export interface ButtonProps extends Margins {
   onClick?: () => void;
   id?: string;
   children?: ReactNode;
+  className?: string;
 }
 
 export function Button(props: ButtonProps): JSX.Element {
@@ -65,10 +66,7 @@ export function Button(props: ButtonProps): JSX.Element {
       leadingIcon={props.leadingIcon}
       trailingIcon={props.trailingIcon}
       data-id={props.id}
-      mt={props.mt}
-      mr={props.mr}
-      mb={props.mb}
-      ml={props.ml}
+      class={props.className}
     >
       {props.children}
     </na-button>
