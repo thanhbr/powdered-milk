@@ -1,7 +1,3 @@
 export default function Comments() {
-  return (
-    <>
-      Comment Page
-    </>
-  )
+  return <>Comment Page</>;
 }

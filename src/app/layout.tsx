@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     icon: {
       url: "/icons/logo.svg",
       type: "image/png",
-      sizes: "32x32"
-    }
+      sizes: "32x32",
+    },
   },
   alternates: {
     canonical: "https://nextjs.org",
-  }
+  },
 };
 
 export default function RootLayout({
