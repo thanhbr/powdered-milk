@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
 @layer utilities {
   /* TYPOGRAPHY */
@@ -38,4 +22,299 @@ body {
     --tw-shadow: 2px 2px 8px 0px #8f8f8f40;
     --tw-shadow-colored: 2px 2px 8px 0px var(--tw-shadow-color)
   }
+}
+
+
+body,
+input,
+textarea,
+button {
+  background: #fff;
+  font-family: var(--na-font-family-sans);
+  font-weight: 400;
+  font-size: var(--na-font-size-4);
+  color: var(--na-color-text-default);
+}
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  line-height: var(--na-line-height-3);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+hr {
+  border-width: 0;
+  border-top: 1px solid #ccc;
+  height: 0;
+  padding: 0;
+  margin: 2rem 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  padding-left: 1rem;
+}
+li > ul,
+li > ol {
+  padding-left: 0;
+  margin-top: 0;
+}
+dl {
+  margin-top: 0;
+}
+dd {
+  margin-left: 0.5rem;
+}
+a,
+a:visited {
+  color: var(--na-color-interactive-default);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--na-color-interactive-hover);
+}
+::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+::-ms-input-placeholder {
+  color: #999;
+}
+h1 {
+  font: var(--na-typography-heading-xl);
+}
+h2 {
+  font: var(--na-typography-heading-l);
+}
+h3 {
+  font: var(--na-typography-heading-m);
+}
+h4 {
+  font: var(--na-typography-heading-s);
+}
+h5,
+h6 {
+  font: var(--na-typography-heading-xs);
+}
+h3 + h1 {
+  margin-top: -1rem;
+}
+p {
+  margin-bottom: 1rem;
+  font-size: var(--na-font-size-4);
+}
+em {
+  font-size: var(--na-font-size-1);
+  line-height: var(--na-line-height-1);
+  color: var(--na-color-grey-scale-200);
+}
+small {
+  font-size: var(--na-font-size-1);
+  font-style: normal;
+  color: var(--na-color-grey-scale-200);
+}
+na-two-column-layout h1:first-of-type,
+na-two-column-layout h2:first-of-type,
+na-two-column-layout h3:first-of-type,
+na-three-column-layout h1:first-of-type,
+na-three-column-layout h2:first-of-type,
+na-three-column-layout h3:first-of-type,
+na-container h1:first-of-type,
+na-container h2:first-of-type,
+na-container h3:first-of-type {
+  margin-top: 0;
+}
+
+ol.na-ordered-list li,
+ul.na-unordered-list li {
+  padding: var(--na-space-xs);
+}
+ol.na-ordered-list ol,
+ol.na-ordered-list ul,
+ul.na-unordered-list ol,
+ul.na-unordered-list ul {
+  margin-left: var(--na-space-l);
+}
+ul.na-unordered-list li::marker {
+  color: var(--na-color-brand-default);
+}
+na-app-header a,
+na-app-header a:visited {
+  color: var(--na-color-text-default);
+}
+na-app-header a.current.inside-collapse-menu,
+na-app-header a.current.inside-collapse-menu:hover,
+na-app-header-menu a.current,
+na-app-header-menu a.current:hover {
+  color: var(--na-color-text-light);
+}
+na-app-header-menu a:first-of-type {
+  box-shadow: none;
+}
+na-table table {
+  border-collapse: collapse;
+}
+na-table.sticky thead {
+  position: sticky;
+  top: 0;
+}
+na-table td {
+  font: var(--na-typography-body-m);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--na-color-grey-scale-200);
+}
+na-table[variant="relaxed"] td {
+  padding: 1.25rem 1rem 1rem;
+}
+na-table thead th {
+  background-color: var(--na-color-grey-scale-white);
+  color: var(--na-color-text-secondary);
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--na-color-grey-scale-600);
+  vertical-align: bottom;
+}
+na-table th:has(na-table-sort-header) {
+  padding: 0;
+}
+.na-table-number-column {
+  font: var(--na-typography-number-m);
+  text-align: right;
+}
+.na-table-number-header {
+  text-align: right;
+}
+na-table tfoot td {
+  background-color: var(--na-color-grey-scale-100);
+}
+na-table tfoot tr:first-child td {
+  border-top: 2px solid var(--na-color-grey-scale-200);
+}
+na-table tfoot tr:last-child td {
+  border-bottom: none;
+}
+:root {
+  --na-color-brand-default: #0081a2;
+  --na-color-brand-dark: #005072;
+  --na-color-brand-light: #c8eefa;
+  --na-color-interactive-default: #0070c4;
+  --na-color-interactive-hover: #004f84;
+  --na-color-interactive-error: #ec040b;
+  --na-color-interactive-focus: #feba35;
+  --na-color-interactive-disabled: #80b7e1;
+  --na-color-text-default: #333333;
+  --na-color-text-secondary: #666666;
+  --na-color-text-light: #ffffff;
+  --na-color-text-disabled: #666666;
+  --na-color-info-default: #004a8f;
+  --na-color-info-light: #aac9e7;
+  --na-color-info-dark: #003b70;
+  --na-color-info-background: #eff8ff;
+  --na-color-warning-default: #f9ce2d;
+  --na-color-warning-light: #ffeab6;
+  --na-color-warning-dark: #bf8d23;
+  --na-color-warning-background: #fff6e5;
+  --na-color-emergency-default: #da291c;
+  --na-color-emergency-light: #fbd1ce;
+  --na-color-emergency-dark: #a91a10;
+  --na-color-emergency-background: #fff1f2;
+  --na-color-success-default: #006f4c;
+  --na-color-success-light: #cce4dc;
+  --na-color-success-dark: #00563a;
+  --na-color-success-background: #eef9f3;
+  --na-color-grey-scale-50: #f8f8f8;
+  --na-color-grey-scale-100: #f1f1f1;
+  --na-color-grey-scale-200: #dcdcdc;
+  --na-color-grey-scale-400: #adadad;
+  --na-color-grey-scale-500: #949494;
+  --na-color-grey-scale-600: #858585;
+  --na-color-grey-scale-700: #666666;
+  --na-color-grey-scale-black: #333333;
+  --na-color-grey-scale-white: #ffffff;
+  --na-font-weight-regular: 400;
+  --na-font-weight-medium: 500;
+  --na-font-weight-bold: 700;
+  --na-font-size-1: 0.75rem;
+  --na-font-size-2: 0.875rem;
+  --na-font-size-3: 1rem;
+  --na-font-size-4: 1.125rem;
+  --na-font-size-5: 1.25rem;
+  --na-font-size-6: 1.375rem;
+  --na-font-size-7: 1.5rem;
+  --na-font-size-8: 2rem;
+  --na-font-size-9: 2.25rem;
+  --na-font-size-10: 3rem;
+  --na-space-none: 0rem;
+  --na-space-3xs: 0.125rem;
+  --na-space-2xs: 0.25rem;
+  --na-space-xs: 0.5rem;
+  --na-space-s: 0.75rem;
+  --na-space-m: 1rem;
+  --na-space-l: 1.5rem;
+  --na-space-xl: 2rem;
+  --na-space-2xl: 3rem;
+  --na-space-3xl: 4rem;
+  --na-space-4xl: 8rem;
+  --na-border-radius-none: 0rem;
+  --na-border-radius-m: 0.25rem;
+  --na-opacity-background-modal: 50%;
+  --na-opacity-background-loading: 90%;
+  --na-line-height-1: 1.25rem;
+  --na-line-height-2: 1.5rem;
+  --na-line-height-3: 1.75rem;
+  --na-line-height-4: 2rem;
+  --na-line-height-5: 2.5rem;
+  --na-line-height-6: 2.75rem;
+  --na-line-height-7: 3.5rem;
+  --na-line-height-05: 1.125rem;
+  --na-font-family-sans: acumen-pro-semi-condensed, helvetica-neue, arial, sans-serif;
+  --na-font-family-number: roboto-mono, monospace;
+  --na-typography-heading-xs: 700 1rem/1.5rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-heading-s: 700 1.125rem/1.75rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-heading-m: 400 1.5rem/2rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-heading-l: 400 2.25rem/2.75rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-heading-xl: 700 3rem/3.5rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-body-xs: 400 0.875rem/1.25rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-body-s: 400 1rem/1.5rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-body-m: 400 1.125rem/1.75rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-body-l: 400 1.5rem/2rem acumen-pro-semi-condensed, helvetica-neue, arial,
+    sans-serif;
+  --na-typography-button-default: 400 1.125rem/1.25rem acumen-pro-semi-condensed, helvetica-neue,
+    arial, sans-serif;
+  --na-typography-number-m: 500 1.125rem/1.75rem roboto-mono, monospace;
+  --na-border-width-s: 1px;
+  --na-border-width-m: 2px;
+  --na-border-width-l: 3px;
+  --na-border-radius-m: 8px;
+  --na-letter-spacing-button: 0.0125rem;
+  --na-icon-size-s: 1rem;
+  --na-icon-size-m: 1.25rem;
+  --na-icon-size-l: 1.5rem;
+  --na-shadow-modal: 6px 6px 6px 0px rgba(0, 0, 0, 0.16);
 }
