@@ -1,9 +1,5 @@
-"use client"
+"use client";
 
 export default function MilkPage() {
-  return (
-    <div>
-      MilkPage
-    </div>
-  )
+  return <div>MilkPage</div>;
 }

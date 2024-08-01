@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
@@ -18,7 +17,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 
   async function getCharacters() {
     let results = await fetch(`${API_GRAPHQL_URL}`, {
-      method: 'POST',
+      method: "POST",
 
       headers: HEADERS_API,
 
@@ -26,15 +25,15 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         operationName: "InterestedProducts",
         query: FAKE_INTERESTED_PRODUCTS,
         variables: {},
-      })
-    })
+      }),
+    });
     let products = await results.json();
-    console.log("Interested Products", products.data)
+    console.log("Interested Products", products.data);
   }
 
   useEffect(() => {
-    getCharacters()
-  }, [])
+    getCharacters();
+  }, []);
 
   return (
     <div>

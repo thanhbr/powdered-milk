@@ -1,11 +1,11 @@
-import { Button } from "@/components/button/button";
+import { Button } from "@/components";
 
 export default function Home() {
   return (
     <main>
       NextJS
-      <div>
-        <Button>Click</Button>
+      <div className="ml-8">
+        <Button variant="destructive">Click</Button>
       </div>
     </main>
   );
