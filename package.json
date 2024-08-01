@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\" --cache",
+    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js,css}\" --cache",
     "format:docs": "prettier --write \"docs/**/*.{tsx,ts,md}\" --cache",
     "dev": "npm i && next dev -p 2007",
     "build": "next build",
