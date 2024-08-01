@@ -37,52 +37,40 @@ export interface ButtonProps extends Margins {
   children?: ReactNode;
 }
 
-export function Button({
-  disabled,
-  type,
-  size,
-  variant,
-  leadingIcon,
-  trailingIcon,
-  id,
-  onClick,
-  mt,
-  mr,
-  mb,
-  ml,
-  children,
-}: ButtonProps): JSX.Element {
+export function Button(props: ButtonProps): JSX.Element {
   const el = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!el.current) return;
-    if (!onClick) return;
+    if (!props.onClick) return;
     const current = el.current;
-    const listener = () => onClick();
+    const listener = () => {
+      if (props.onClick) props.onClick()
+    };
 
     current.addEventListener("_click", listener);
 
     return () => {
       current.removeEventListener("_click", listener);
     };
-  }, [el, onClick]);
+  }, [el, props.onClick]);
 
   return (
     <na-button
       ref={el}
-      disabled={disabled}
-      type={type}
-      size={size}
-      variant={variant}
-      leadingIcon={leadingIcon}
-      trailingIcon={trailingIcon}
-      data-id={id}
-      mt={mt}
-      mr={mr}
-      mb={mb}
-      ml={ml}
+      disabled={props.disabled}
+      type={props.type}
+      size={props.size}
+      variant={props.variant}
+      leadingIcon={props.leadingIcon}
+      trailingIcon={props.trailingIcon}
+      data-id={props.id}
+      mt={props.mt}
+      mr={props.mr}
+      mb={props.mb}
+      ml={props.ml}
     >
-      {children}
+      {props.children}
     </na-button>
   );
 }
