@@ -85,6 +85,7 @@ ul.na-unordered-list li::marker {
   color: var(--na-color-brand-default);
 }
 
+/* ========================= Button ======================================  */
 na-button {
   background: var(--na-color-blue-500);
   color: white;
@@ -101,6 +102,20 @@ na-button[variant="destructive"] {
 na-button[variant="destructive"]:hover {
   background: var(--na-color-rose-700);
 }
+/* ========================= End Button ======================================  */
+
+
+
+/* ========================= Checkbox ======================================  */
+na-checkbox {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+  border-radius: var(--na-border-radius-s);
+  cursor: pointer;
+}
+/* ========================= End Checkbox ======================================  */
 
 
 
@@ -267,6 +282,7 @@ na-table tfoot tr:last-child td {
   --na-border-width-s: 1px;
   --na-border-width-m: 2px;
   --na-border-width-l: 3px;
+  --na-border-radius-s: 4px;
   --na-border-radius-m: 8px;
   --na-letter-spacing-button: 0.0125rem;
   --na-icon-size-s: 1rem;

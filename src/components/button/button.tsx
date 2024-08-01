@@ -46,7 +46,7 @@ export function Button(props: ButtonProps): JSX.Element {
     if (!props.onClick) return;
     const current = el.current;
     const listener = () => {
-      if (props.onClick) props.onClick()
+      if (props.onClick) props.onClick();
     };
 
     current.addEventListener("_click", listener);
