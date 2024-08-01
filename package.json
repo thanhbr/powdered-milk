@@ -19,6 +19,7 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.6",
     "axios": "^1.7.2",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lint-staged": "^15.2.7",
     "lodash": "^4.17.21",
