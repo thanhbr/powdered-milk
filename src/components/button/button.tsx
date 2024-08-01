@@ -1,15 +1,16 @@
 "use client";
+
 import { ReactNode, useEffect, useRef } from "react";
 import { Margins } from "../styling/styling";
 
-export type ButtonType = "primary" | "submit" | "secondary" | "tertiary" | "start";
-export type ButtonSize = "compact" | "normal";
-export type ButtonVariant = "normal" | "destructive";
+export type ButtonType = "default" | "button" | "submit";
+export type ButtonVariant = "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
+export type ButtonSize = "default" | "sm" | "lg" | "icon";
 
 interface WCProps extends Margins {
   type?: ButtonType;
-  size?: ButtonSize;
   variant?: ButtonVariant;
+  size?: ButtonSize;
   disabled?: boolean;
   leadingIcon?: string;
   trailingIcon?: string;
@@ -25,46 +26,42 @@ declare global {
 }
 
 export interface ButtonProps extends Margins {
-  id?: string;
   type?: ButtonType;
-  size?: ButtonSize;
   variant?: ButtonVariant;
+  size?: ButtonSize;
   disabled?: boolean;
   leadingIcon?: string;
   trailingIcon?: string;
   onClick?: () => void;
+  id?: string;
   children?: ReactNode;
 }
 
 export function Button({
-  id,
-  disabled = false,
-  type = "primary",
+  disabled,
+  type,
   size,
   variant,
   leadingIcon,
   trailingIcon,
-  children,
+  id,
   onClick,
   mt,
   mr,
   mb,
   ml,
+  children,
 }: ButtonProps): JSX.Element {
   const el = useRef<HTMLElement>(null);
+
   useEffect(() => {
-    if (!el.current) {
-      return;
-    }
-    if (!onClick) {
-      return;
-    }
+    if (!el.current) return;
+    if (!onClick) return;
     const current = el.current;
-    const listener = () => {
-      onClick();
-    };
+    const listener = () => onClick();
 
     current.addEventListener("_click", listener);
+
     return () => {
       current.removeEventListener("_click", listener);
     };
@@ -72,14 +69,14 @@ export function Button({
 
   return (
     <na-button
-      data-id={id}
       ref={el}
+      disabled={disabled}
       type={type}
       size={size}
       variant={variant}
-      disabled={disabled}
       leadingIcon={leadingIcon}
       trailingIcon={trailingIcon}
+      data-id={id}
       mt={mt}
       mr={mr}
       mb={mb}

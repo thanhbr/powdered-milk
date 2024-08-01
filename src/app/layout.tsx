@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import "./globals.css";
+import "../styles/globals.css";
 import { fontRoboto } from "@/utils/fonts";
 
 export const metadata: Metadata = {
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     icon: {
       url: "/icons/logo.svg",
       type: "image/png",
-      sizes: "32x32"
-    }
+      sizes: "32x32",
+    },
   },
   alternates: {
     canonical: "https://nextjs.org",
-  }
+  },
 };
 
 export default function RootLayout({

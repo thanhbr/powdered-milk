@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import ProductCard from "@/components/card/page";
 import { API } from "@/constants";
 import useSwr from "@/hooks/useSwr";
@@ -10,7 +10,7 @@ export default function ProductLayout({ children }: { children: React.ReactNode 
   });
   console.log("GET_PRODUCT", data);
 
-  if(isLoading) return <div>Loading.......</div>
+  if (isLoading) return <div>Loading.......</div>;
 
   const products = data?.message;
 
@@ -19,10 +19,10 @@ export default function ProductLayout({ children }: { children: React.ReactNode 
       {children}
 
       <div className="mt-5 grid grid-cols-3 gap-5 lg:grid-cols-5">
-        {products.map(product => (
+        {products.map((product) => (
           <ProductCard key={product._id}></ProductCard>
         ))}
       </div>
     </>
-  )
+  );
 }
