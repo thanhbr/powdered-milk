@@ -19,12 +19,14 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.6",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "lint-staged": "^15.2.7",
     "lodash": "^4.17.21",
     "next": "14.2.4",
     "prettier": "^3.3.2",
     "react": "^18",
     "react-dom": "^18",
+    "tailwind-merge": "^2.4.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
