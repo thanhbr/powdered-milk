@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\" --cache",
+    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js,css}\" --cache",
     "format:docs": "prettier --write \"docs/**/*.{tsx,ts,md}\" --cache",
     "dev": "npm i && next dev -p 2007",
     "build": "next build",
@@ -19,7 +19,8 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.6",
     "axios": "^1.7.2",
-    "classnames": "^2.5.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "lint-staged": "^15.2.7",
     "lodash": "^4.17.21",
     "next": "14.2.4",
@@ -28,6 +29,7 @@
     "react": "^18",
     "react-dom": "^18",
     "swr": "^2.2.5",
+    "tailwind-merge": "^2.4.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
