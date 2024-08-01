@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
+import "./globals.css";
+import { fontRoboto } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className} suppressHydrationWarning={true}>
+      <body className={fontRoboto.className} suppressHydrationWarning={true}>
         <Navbar />
         {children}
         <Footer />
