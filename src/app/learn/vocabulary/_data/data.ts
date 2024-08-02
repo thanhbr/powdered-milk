@@ -30,4 +30,34 @@ export const VOCABULARY = [
   { id: id(), en: "satisfaction", vi: "sự hài lòng", type: "n" },
   { id: id(), en: "currently", vi: "hiện thời / hiện nay", type: "adv" },
   { id: id(), en: "fad", vi: "mốt nhất thời", type: "n" },
+  { id: id(), en: "what is cloud computing", vi: "Điện toán đám mây là gì", type: "" },
+  {
+    id: id(),
+    en: "cloud computing is the on-demand delivery of computer power, database storage, applications and other IT resources",
+    vi: "Điện toán đám mây là việc cung cấp sức mạnh tính toán, lưu trữ cơ sở dữ liệu, ứng dụng và các tài nguyên IT khác theo yêu",
+    type: "",
+  },
+  {
+    id: id(),
+    en: "through a cloud services platform with pay-as-you-go pricing",
+    vi: "",
+    type: "thông qua dịch vụ đám mây với mức giá theo nhu cầu sử dụng",
+  },
+  {
+    id: id(),
+    en: "you can provision exactly the right type and size of computing resources you need",
+    vi: "bạn có thể cung cấp chính xác loại và quy mô tài nguyên máy tính bạn cần",
+    type: "",
+  },
+  {
+    id: id(),
+    en: "simple way to access servers, storage, databases and a set of application services",
+    vi: "cách đơn giản truy cập vào máy chủ, bộ lưu trữ, cơ sở dữ liệu và tập hợp các dịch vụ ứng dụng.",
+    type: "",
+  },
+  {
+    id: id(),
+    en: "Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application.",
+    vi: "Amazon Wrb Services sỡ hữu và duy trì phần cứng các kết nối mạng cần thiết cho các ứng dụng này, trong khi bạn cung cấp và sử dụng những gì bạn cần thông qua ứng dụng web"
+  },
 ];
