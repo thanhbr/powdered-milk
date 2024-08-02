@@ -1,4 +1,3 @@
-
 export const FAKE_INTERESTED_PRODUCTS = `query InterestedProducts {
   interestedProducts {
       items {
@@ -351,4 +350,4 @@ fragment SimpleProductSpecialPrice on SimpleProduct {
   special_to_date
   __typename
 }
-`
+`;
