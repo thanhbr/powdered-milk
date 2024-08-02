@@ -3,7 +3,7 @@ import { ProductCard } from "@/components/card";
 import { API } from "@/constants";
 
 async function getData() {
-  const res = await fetch(API.GET_PRODUCT)
+  const res = await fetch(`${API.GET_PRODUCT}?url_keys_v2=sua-bot-cac-loai&get_brand_info=true&per_page=100`)
 
   return res.json()
 }
