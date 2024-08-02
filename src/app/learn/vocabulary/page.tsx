@@ -12,6 +12,8 @@ export default function Page() {
   const [showList, setShowList] = useState(false);
   const [vocabulary, setVocabulary] = useState<any>({});
   const [error, setError] = useState(false);
+  const [correct, setCorrect] = useState(false);
+  const [hide, setHide] = useState(true);
   const inputRef = useRef<any>(null);
 
   useEffect(() => setVocabulary(randomVocabulary), []);
@@ -23,21 +25,35 @@ export default function Page() {
       setVocabulary(randomVocabulary);
       setShowList(false);
       setError(false);
+      setCorrect(true);
+      setHide(true);
       inputRef.current.value = "";
+      setTimeout(() => setCorrect(false), 2000);
     } else {
       setError(true);
     }
   };
 
+  const handleRefresh = () => {
+    setVocabulary(randomVocabulary);
+    setShowList(false);
+    setError(false);
+    inputRef.current.value = "";
+  }
+
+  const handleHide = () => setHide(pre => !pre)
+
   const styleDiv = {
-    border: `1px solid ${error ? "red" : "black"}`,
+    border: `2px solid ${error ? "red" : correct ? "green" : "black"}`,
     width: "fit-content",
+    margin: "16px 0"
   };
 
   const styleInput = {
     border: "none",
     outline: "none",
     padding: 8,
+    width: "70vw"
   };
 
   return (
@@ -45,9 +61,16 @@ export default function Page() {
       <h2>Vocabulary</h2>
       <div style={{ padding: 32 }}>
         <form onSubmit={onFormSubmit}>
-          <div>{vocabulary.vi}</div>
+          <div>
+            <button type="button" onClick={handleRefresh}>refresh</button>
+            <span style={{margin: 8}}>{vocabulary.vi}</span>
+          </div>
           <div style={styleDiv}>
             <input ref={inputRef} placeholder="enter english" style={styleInput} />
+          </div>
+          <div style={{display: "flex", gap: 8}}>
+            <button type="button" onClick={handleHide}>{hide ? "Show" : "Hide"}</button>
+            {!hide && <p>{vocabulary.en}</p>}
           </div>
         </form>
         <div style={{ marginTop: 32 }}>
@@ -56,7 +79,7 @@ export default function Page() {
             {showList &&
               VOCABULARY.map((vocal) => (
                 <li key={vocal.id}>
-                  {vocal.en}({vocal.type}): {vocal.vi}
+                  <strong>{vocal.en}{vocal.type ? `(${vocal.type})` : ""}</strong>: {vocal.vi}
                 </li>
               ))}
           </ol>

@@ -40,8 +40,8 @@ export const VOCABULARY = [
   {
     id: id(),
     en: "through a cloud services platform with pay-as-you-go pricing",
-    vi: "",
-    type: "thông qua dịch vụ đám mây với mức giá theo nhu cầu sử dụng",
+    vi: "thông qua dịch vụ đám mây với mức giá theo nhu cầu sử dụng",
+    type: "",
   },
   {
     id: id(),
@@ -57,7 +57,7 @@ export const VOCABULARY = [
   },
   {
     id: id(),
-    en: "Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application.",
-    vi: "Amazon Wrb Services sỡ hữu và duy trì phần cứng các kết nối mạng cần thiết cho các ứng dụng này, trong khi bạn cung cấp và sử dụng những gì bạn cần thông qua ứng dụng web"
+    en: "Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application",
+    vi: "Amazon Web Services sỡ hữu và duy trì phần cứng các kết nối mạng cần thiết cho các ứng dụng này, trong khi bạn cung cấp và sử dụng những gì bạn cần thông qua ứng dụng web"
   },
 ];
