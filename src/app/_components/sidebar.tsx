@@ -6,7 +6,7 @@ import { SidebarRouters } from "./sidebarRouters";
 
 export function Sidebar(): JSX.Element {
   return (
-    <div className="h-full w-full flex justify-between overflow-y-auto bg-white">
+    <div className="h-full w-full flex justify-between overflow-y-auto bg-teal-600">
       <div className="p-2">
         <Link href="/" className="flex center gap-2">
           <Image
