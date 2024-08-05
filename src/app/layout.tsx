@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`${fontRoboto.className} bg-container-md`} suppressHydrationWarning={true}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
