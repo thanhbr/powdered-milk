@@ -39,6 +39,7 @@ const config = {
       'container': {
         'md': "hsl(225deg 66.67% 97.65%)",
       },
+      'white': "#fff",
       'sky': {
         50: '#f0f9ff',
         100: '#e0f2fe',
