@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Navbar from "@/app/_components/navbar";
 import Footer from "@/app/_components/footer";
-import { fontRoboto } from "@/utils/fonts";
+import { fontNunito } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontRoboto.className} bg-container-md`} suppressHydrationWarning={true}>
+      <body className={`${fontNunito.className} bg-container-md`} suppressHydrationWarning={true}>
         <Navbar />
         {children}
         {/* <Footer /> */}
