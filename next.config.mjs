@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/images/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.bibomart.net',
+        port: '',
+        pathname: '/file/uploads/**',
+      },
     ],
   },
 };
