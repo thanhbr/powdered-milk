@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   const headerList = headers();
 
-  cookies().set("resultsPerPage", 20);
+  cookies().set("resultsPerPage", "20");
   const theme = request.cookies.get("theme");
 
   console.log("headerList", headerList);
