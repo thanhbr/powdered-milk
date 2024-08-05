@@ -12,7 +12,7 @@ export default async function CategoryPage() {
   const categories = data.message;
 
   return (
-    <div className="flex flex-col gap-4 bg-white p-2 rounded-md">
+    <div className="flex flex-col gap-4 bg-white p-2 rounded-md shadow-xl">
       <div className="flex gap-4 items-center">
         <AlignCenterIcon />
         <h1 className="text-2xl font-bold">

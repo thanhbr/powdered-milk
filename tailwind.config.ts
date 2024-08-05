@@ -41,6 +41,7 @@ const config = {
         'md': "hsl(225deg 66.67% 97.65%)",
       },
       'white': "#fff",
+      'red': "#dc2626",
       'sky': {
         50: '#f0f9ff',
         100: '#e0f2fe',
