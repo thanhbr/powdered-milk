@@ -6,8 +6,8 @@ import { fontNunito } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tiệm sữa mần xanh",
-    template: "%s | Tiệm sữa mần xanh",
+    default: "bebé store",
+    template: "%s | bebé store",
   },
   description: "Một ước mơ nhỏ từ gia đình",
   icons: {

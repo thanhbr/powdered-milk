@@ -30,19 +30,19 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
                 alt={props.name}
                 height={0}
                 width={600}
-                className="h-auto"
+                className="w-auto h-auto"
               />
-              <h3 title={props.name} className="text-sm">
+              <p title={props.name} className="text-md">
                 {props.name}
-              </h3>
+              </p>
             </Link>
             <div className="flex flex-col">
               <div className="flex gap-2 items-center justify-center">
-                <p className="text-xl">
+                <p className="text-2xl font-bold text-teal-500">
                   {formatVND(props.price.import)}
                 </p>
                 {(props.price.import < props.price.raw)
-                  && (<p className="text-sm line-through">
+                  && (<p className="text-sm font-bold text-red line-through">
                     {formatVND(props.price.discount)}
                   </p>
                   )}

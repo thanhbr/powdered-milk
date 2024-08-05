@@ -26,12 +26,12 @@ export function SidebarItem({ icon: Icon, label, href }: SidebarItemProps): JSX.
       type="button"
       className={cn(
         "flex flex-col items-end gap-x-2 text-slate-500 text-sm font-[500] px-4 transition-all hover:text-slate-600 hover:bg-slate-300/20",
-        isActive && "text-sky-700 bg-sky-200/20 hover:bg-sky-200/20 hover:text-sky-700",
+        isActive && "text-white bg-teal-200/20 hover:bg-teal-200/20 hover:text-teal-500 rounded-md",
       )}
     >
       <div className="flex items-center gap-x-2 py-4">
-        <Icon size="28" className={cn("text-slate-500 text-sky-700", isActive && "text-sky-700")} />
-        <p className="text-xl font-bold">{label}</p>
+        <Icon size="28" className={cn("text-slate-500 text-white")} />
+        <p className="text-xl text-white font-bold">{label}</p>
       </div>
     </button>
   );
