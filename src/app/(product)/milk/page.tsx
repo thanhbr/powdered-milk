@@ -13,7 +13,7 @@ export default async function MilkPage() {
 
   return (
     <Suspense fallback="null">
-      <div>
+      <div className="container">
         <p className="text-sky-600 font-bold text-2xl">Sữa cho bé</p>
         <div className="mt-5 grid grid-cols-3 gap-4 lg:grid-cols-5">
           {data?.message?.map((product) => <ProductCard key={product._id} {...product} />)}

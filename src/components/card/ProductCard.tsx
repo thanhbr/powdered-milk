@@ -8,8 +8,9 @@ interface ProductCardProps {
   name: string;
   thumbnail?: string | undefined;
   price: {
-    discount?: number;
-    raw?: number;
+    discount: number;
+    raw: number;
+    import: number;
   };
   children?: ReactNode;
 }
@@ -38,15 +39,13 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
             <div className="flex flex-col">
               <div className="flex gap-2 items-center justify-center">
                 <p className="text-xl">
-                  {typeof props.price.raw === "number"
-                    ? formatVND(props.price.raw)
-                    : props.price.raw}
+                  {formatVND(props.price.import)}
                 </p>
-                <p className="text-sm line-through">
-                  {typeof props.price.discount === "number"
-                    ? formatVND(props.price.discount)
-                    : props.price.discount}
-                </p>
+                {(props.price.import < props.price.raw)
+                  && (<p className="text-sm line-through">
+                    {formatVND(props.price.discount)}
+                  </p>
+                  )}
               </div>
             </div>
           </header>
