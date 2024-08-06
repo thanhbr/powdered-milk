@@ -12,6 +12,7 @@ interface ProductCardProps {
     raw: number;
     import: number;
   };
+  linksp: string;
   children?: ReactNode;
 }
 
@@ -25,7 +26,7 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
         <div className="relative">
           <header>
             <div className="min-h-[300px]">
-              <Link href="/">
+              <Link href={props.linksp}>
                 <Image
                   src={typeof props.thumbnail === "string" ? props.thumbnail : ""}
                   alt={props.name}
