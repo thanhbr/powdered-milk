@@ -30,7 +30,7 @@
     ],
     "paths": {
       "@test/*": ["./test/*"],
-      "@/internals/*": ["./src/internals/*"],
+      // "@/components/*": ["./src/components/*"],
       "@/*": ["./src/*"]
     }
   },
