@@ -3,7 +3,6 @@ import BannerPage from "./@banner/page";
 import CategoryPage from "./@category/page";
 import ProductListPage from "./@productList/page";
 
-
 export default async function Home() {
   return (
     <main className="container">
@@ -12,7 +11,7 @@ export default async function Home() {
         <BannerPage />
       </div>
       <div>
-        {PRODUCT_LIST.map(item => (
+        {PRODUCT_LIST.map((item) => (
           <ProductListPage key={item.id} {...item} />
         ))}
       </div>
