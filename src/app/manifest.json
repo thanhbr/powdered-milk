@@ -1,0 +1,24 @@
+{
+  "name": "Tiệm sữa mần xanh",
+  "short_name": "Tiệm sữa mần xanh",
+  "description": "Một ước mơ nhỏ từ gia đình",
+  "theme_color": "#013189",
+  "background_color": "#004740",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icons/logo.svg",
+      "sizes": "119x147",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/logo-name.svg",
+      "sizes": "415x202",
+      "type": "image/svg+xml"
+    }
+  ],
+  "splash_pages": null
+}
