@@ -23,8 +23,14 @@ export async function generateMetadata(
   }
 }
 
-async function getData({ slug }) {
+async function getProductDetail(slug) {
   const res = await fetch(`${API.GET_PRODUCT_DETAIL}/${slug}`)
+
+  return res.json()
+}
+
+async function getRelatedProduct() {
+  const res = await fetch(`${API.GET_RELATED_PRODUCT}`)
 
   return res.json()
 }
@@ -32,7 +38,10 @@ async function getData({ slug }) {
 
 export default async function Page({ params }: Props) {
 
-  const product = await getData({ slug: params.slug });
+  const productData = getProductDetail(params.slug);
+  const relatedProductData = getRelatedProduct();
+
+  const [ product, relatedProduct ] = await Promise.all([productData, relatedProductData])
 
   return (
     <div className="container">
@@ -40,6 +49,9 @@ export default async function Page({ params }: Props) {
         <p className="text-3xl font-bold">
           {product.message.name}
         </p>
+      </div>
+      <div>
+        {JSON.stringify(relatedProduct)}
       </div>
       <div>
         {product.message.attribute.images.map(image => (

@@ -9,6 +9,7 @@ export const API = {
   GET_PRODUCT: `${API_URL}/product/filter/all`, // params: { min: 0, max: 10000000, per_page: 100, url_key_v2: "sua-cho-be", get_brand_info: true }
   GET_PRODUCT_DETAIL: `${API_URL}/product`,
   GET_MENU_CATEGORY: `${API_URL}/menu/category/v2`,
+  GET_RELATED_PRODUCT: `${API_BASE_URL}/products_biboshop/Products/Api_BiboOffice_list_tuongtu_func?page_index=0&page_size=100&mahang=100023`,
 };
 
 export const HEADERS_API = {
