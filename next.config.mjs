@@ -11,6 +11,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'mediacdn1.bibomart.net',
+        port: '',
+        pathname: '/getfile/UploadFileTK/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'media.bibomart.net',
         port: '',
         pathname: '/file/uploads/**',

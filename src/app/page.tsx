@@ -1,6 +1,7 @@
+import { PRODUCT_LIST } from "@/constants/productTree";
 import BannerPage from "./@banner/page";
 import CategoryPage from "./@category/page";
-import MilkForBabyPage from "./@milkForBaby/page";
+import ProductListPage from "./@productList/page";
 
 
 export default async function Home() {
@@ -11,7 +12,9 @@ export default async function Home() {
         <BannerPage />
       </div>
       <div>
-        <MilkForBabyPage />
+        {PRODUCT_LIST.map(item => (
+          <ProductListPage key={item.id} {...item} />
+        ))}
       </div>
     </main>
   );
