@@ -71,3 +71,15 @@ body, h1, h2, h3, h4, h5, h6, p, span {
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #134e4a;
+  background-clip: padding-box;
+  border-radius: 20px
+}
