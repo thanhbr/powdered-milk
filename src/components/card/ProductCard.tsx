@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 interface ProductCardProps {
   _id: string;
   name: string;
-  thumbnail?: string | undefined;
+  thumbnail?: string;
   price: {
     discount: number;
     raw: number;
@@ -24,18 +24,20 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
         </div>
         <div className="relative">
           <header>
-            <Link href="/milk">
-              <Image
-                src={typeof props.thumbnail === "string" ? props.thumbnail : ""}
-                alt={props.name}
-                height={0}
-                width={600}
-                className="w-auto h-auto"
-              />
-              <p title={props.name} className="text-md">
-                {props.name}
-              </p>
-            </Link>
+            <div className="min-h-[300px]">
+              <Link href="/">
+                <Image
+                  src={typeof props.thumbnail === "string" ? props.thumbnail : ""}
+                  alt={props.name}
+                  height={0}
+                  width={600}
+                  className="w-auto h-auto"
+                />
+                <p title={props.name} className="text-md">
+                  {props.name}
+                </p>
+              </Link>
+            </div>
             <div className="flex flex-col">
               <div className="flex gap-2 items-center justify-center">
                 <p className="text-2xl font-bold text-teal-500">
