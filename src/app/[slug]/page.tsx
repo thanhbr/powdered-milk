@@ -61,6 +61,7 @@ export default async function Page({ params }: Props) {
               height={0}
               width={78}
               className="w-auto h-auto"
+              priority
             />
           </div>
         ))}

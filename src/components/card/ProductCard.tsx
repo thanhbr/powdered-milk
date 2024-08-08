@@ -33,6 +33,7 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
                   height={0}
                   width={600}
                   className="w-auto h-auto"
+                  priority
                 />
                 <p title={props.name} className="text-md">
                   {props.name}

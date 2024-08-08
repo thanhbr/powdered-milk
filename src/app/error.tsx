@@ -30,6 +30,7 @@ export default function Error({
           width={400}
           height={400}
           className="w-auto h-auto"
+          priority
         />
       </div>
       <div className="text-center">

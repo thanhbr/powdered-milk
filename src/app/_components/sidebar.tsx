@@ -15,6 +15,7 @@ export function Sidebar(): JSX.Element {
             width={30}
             height={40}
             className="w-auto h-auto"
+            priority
           />
           <Image
             src="/icons/logo-name.svg"
@@ -22,6 +23,7 @@ export function Sidebar(): JSX.Element {
             width={120}
             height={35}
             className="w-auto h-auto"
+            priority
           />
         </Link>
       </div>
