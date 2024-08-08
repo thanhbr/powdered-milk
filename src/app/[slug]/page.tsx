@@ -1,6 +1,7 @@
 import { API } from "@/constants";
 import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
+import NotFound from "../not-found";
 
 type Props = {
   params: { slug: string };
@@ -9,18 +10,22 @@ type Props = {
 export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata,
-): Promise<Metadata> {
-  const product = await fetch(`${API.GET_PRODUCT_DETAIL}/${params.slug}`).then((res) => res.json());
+) {
+  try {
+    const product = await fetch(`${API.GET_PRODUCT_DETAIL}/${params.slug}`).then((res) => res.json());
 
-  const previousImages = (await parent).openGraph?.images || [];
+    const previousImages = (await parent).openGraph?.images || [];
 
-  return {
-    title: product.message.name,
-    keywords: product.message.attribute.meta_keyword,
-    openGraph: {
-      images: [...previousImages],
-    },
-  };
+    return {
+      title: product.message.name,
+      keywords: product.message.attribute.meta_keyword,
+      openGraph: {
+        images: [...previousImages],
+      },
+    };
+  } catch (error) {
+    <NotFound/>
+  }
 }
 
 async function getProductDetail(slug) {

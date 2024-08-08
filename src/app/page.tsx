@@ -1,7 +1,7 @@
 import { PRODUCT_LIST } from "@/constants/productTree";
-import BannerPage from "./@banner/page";
-import CategoryPage from "./@category/page";
-import ProductListPage from "./@productList/page";
+import BannerPage from "./_components/banner";
+import CategoryPage from "./_components/category";
+import ProductListPage from "./_components/productList";
 
 export default async function Home() {
   return (
