@@ -1,16 +1,18 @@
-import { Skeleton } from "@/components/ui/skeleton";
+import Image from "next/image";
 
 export default function Loading() {
   return (
-    <div>
-      <p>Loading</p>
-      <div className="flex flex-col space-y-3">
-        <Skeleton className="h-[125px] w-[250px] rounded-xl bg-teal-100" />
-        <div className="space-y-2">
-          <Skeleton className="h-4 w-[250px] bg-teal-100" />
-          <Skeleton className="h-4 w-[200px] bg-teal-100" />
-        </div>
+    <div className="container">
+      <div className="text-center m-auto flex justify-center mt-40">
+        <Image
+          src={"/icons/Infinity@200px-200px.gif"}
+          alt="loading..."
+          width={200}
+          height={200}
+          className="w-auto h-auto rounded-[50%]"
+          priority
+        />
       </div>
     </div>
-  )
+  );
 }

@@ -26,6 +26,18 @@
   }
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: Nunito, system-ui, sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -143,11 +155,11 @@ li > ol {
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;
-  background-color: transparent
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #134e4a;
   background-clip: padding-box;
-  border-radius: 20px
+  border-radius: 20px;
 }

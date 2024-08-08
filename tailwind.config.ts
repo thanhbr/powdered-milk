@@ -42,6 +42,7 @@ const config = {
       },
       'white': "#fff",
       'red': "#dc2626",
+      'skeleton': "#c9c9c9",
       'sky': {
         50: '#f0f9ff',
         100: '#e0f2fe',
