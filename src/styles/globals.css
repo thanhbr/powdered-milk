@@ -100,6 +100,10 @@ span {
   body {
     @apply bg-background text-foreground;
   }
+
+  .product-card-wrapper:hover {
+    @apply ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300;
+  }
 }
 
 body, h1, h2, h3, h4, h5, h6, p, span {
