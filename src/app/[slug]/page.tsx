@@ -7,12 +7,11 @@ type Props = {
   params: { slug: string };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata,
-) {
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata) {
   try {
-    const product = await fetch(`${API.GET_PRODUCT_DETAIL}/${params.slug}`).then((res) => res.json());
+    const product = await fetch(`${API.GET_PRODUCT_DETAIL}/${params.slug}`).then((res) =>
+      res.json(),
+    );
 
     const previousImages = (await parent).openGraph?.images || [];
 
@@ -24,7 +23,7 @@ export async function generateMetadata(
       },
     };
   } catch (error) {
-    <NotFound/>
+    <NotFound />;
   }
 }
 
