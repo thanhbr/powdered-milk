@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   /* TYPOGRAPHY */
   /* .product-card {
@@ -106,7 +105,15 @@ span {
   }
 }
 
-body, h1, h2, h3, h4, h5, h6, p, span {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
   font-family: Nunito, system-ui, sans-serif;
 }
 

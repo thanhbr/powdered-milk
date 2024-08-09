@@ -104,8 +104,6 @@ na-button[variant="destructive"]:hover {
 }
 /* ========================= End Button ======================================  */
 
-
-
 /* ========================= Checkbox ======================================  */
 na-checkbox {
   display: block;
@@ -116,8 +114,6 @@ na-checkbox {
   cursor: pointer;
 }
 /* ========================= End Checkbox ======================================  */
-
-
 
 na-app-header a,
 na-app-header a:visited {
