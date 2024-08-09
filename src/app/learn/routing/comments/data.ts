@@ -7,8 +7,4 @@ export const comments = [
     id: 2,
     text: "wonderful",
   },
-  {
-    id: 3,
-    text: "beautiful",
-  },
 ];
