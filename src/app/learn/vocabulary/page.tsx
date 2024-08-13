@@ -21,7 +21,7 @@ export default function Page() {
   const onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const inputValue = inputRef.current.value;
-    if (inputValue === vocabulary.en) {
+    if (inputValue.toLowerCase() === vocabulary.en.toLowerCase()) {
       setVocabulary(randomVocabulary);
       setShowList(false);
       setError(false);
@@ -62,8 +62,12 @@ export default function Page() {
       <div style={{ padding: 32 }}>
         <form onSubmit={onFormSubmit}>
           <div>
-            <button type="button" onClick={handleRefresh}>
-              refresh
+            <button
+              className="p-2 border rounded-md border-sky-400 text-sky-400"
+              type="button"
+              onClick={handleRefresh}
+            >
+              Refresh
             </button>
             <span style={{ margin: 8 }}>{vocabulary.vi}</span>
           </div>
@@ -71,14 +75,23 @@ export default function Page() {
             <input ref={inputRef} placeholder="enter english" style={styleInput} />
           </div>
           <div style={{ display: "flex", gap: 8 }}>
-            <button type="button" onClick={handleHide}>
+            <button
+              className="p-2 border rounded-md border-sky-400 text-sky-400"
+              type="button"
+              onClick={handleHide}
+            >
               {hide ? "Show" : "Hide"}
             </button>
             {!hide && <p>{vocabulary.en}</p>}
           </div>
         </form>
         <div style={{ marginTop: 32 }}>
-          <button onClick={() => setShowList((pre) => !pre)}>Show list</button>
+          <button
+            className="p-2 border rounded-md border-sky-400 text-sky-400"
+            onClick={() => setShowList((pre) => !pre)}
+          >
+            Show list
+          </button>
           <ol>
             {showList &&
               VOCABULARY.map((vocal) => (
