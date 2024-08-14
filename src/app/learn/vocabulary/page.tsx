@@ -21,7 +21,7 @@ export default function Page() {
   const onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const inputValue = inputRef.current.value;
-    if (inputValue === vocabulary.en) {
+    if (inputValue.toLowerCase() === vocabulary.en.toLowerCase()) {
       setVocabulary(randomVocabulary);
       setShowList(false);
       setError(false);
@@ -39,21 +39,21 @@ export default function Page() {
     setShowList(false);
     setError(false);
     inputRef.current.value = "";
-  }
+  };
 
-  const handleHide = () => setHide(pre => !pre)
+  const handleHide = () => setHide((pre) => !pre);
 
   const styleDiv = {
     border: `2px solid ${error ? "red" : correct ? "green" : "black"}`,
     width: "fit-content",
-    margin: "16px 0"
+    margin: "16px 0",
   };
 
   const styleInput = {
     border: "none",
     outline: "none",
     padding: 8,
-    width: "70vw"
+    width: "70vw",
   };
 
   return (
@@ -62,24 +62,45 @@ export default function Page() {
       <div style={{ padding: 32 }}>
         <form onSubmit={onFormSubmit}>
           <div>
-            <button type="button" onClick={handleRefresh}>refresh</button>
-            <span style={{margin: 8}}>{vocabulary.vi}</span>
+            <button
+              className="p-2 border rounded-md border-sky-400 text-sky-400"
+              type="button"
+              onClick={handleRefresh}
+            >
+              Refresh
+            </button>
+            <span style={{ margin: 8 }}>{vocabulary.vi}</span>
           </div>
           <div style={styleDiv}>
             <input ref={inputRef} placeholder="enter english" style={styleInput} />
           </div>
-          <div style={{display: "flex", gap: 8}}>
-            <button type="button" onClick={handleHide}>{hide ? "Show" : "Hide"}</button>
+          <div style={{ display: "flex", gap: 8 }}>
+            <button
+              className="p-2 border rounded-md border-sky-400 text-sky-400"
+              type="button"
+              onClick={handleHide}
+            >
+              {hide ? "Show" : "Hide"}
+            </button>
             {!hide && <p>{vocabulary.en}</p>}
           </div>
         </form>
         <div style={{ marginTop: 32 }}>
-          <button onClick={() => setShowList((pre) => !pre)}>Show list</button>
+          <button
+            className="p-2 border rounded-md border-sky-400 text-sky-400"
+            onClick={() => setShowList((pre) => !pre)}
+          >
+            Show list
+          </button>
           <ol>
             {showList &&
               VOCABULARY.map((vocal) => (
                 <li key={vocal.id}>
-                  <strong>{vocal.en}{vocal.type ? `(${vocal.type})` : ""}</strong>: {vocal.vi}
+                  <strong>
+                    {vocal.en}
+                    {vocal.type ? `(${vocal.type})` : ""}
+                  </strong>
+                  : {vocal.vi}
                 </li>
               ))}
           </ol>
