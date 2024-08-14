@@ -56,6 +56,7 @@ export default function Page() {
     width: "70vw",
   };
 
+
   return (
     <>
       <h2>Vocabulary</h2>
