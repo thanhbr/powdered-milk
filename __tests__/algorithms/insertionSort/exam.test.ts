@@ -39,7 +39,5 @@ describe('insertionSort', () => {
     const endTime = performance.now();
     const elapsedTime = endTime - startTime;
     console.log(`Time taken for large array: ${elapsedTime} milliseconds`);
-
-    // Bạn có thể thêm một assertion để kiểm tra xem mảng đã được sắp xếp đúng hay không
   });
 });
