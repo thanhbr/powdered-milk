@@ -19,7 +19,6 @@ export default function findLargestSmallerThanOrEqualTo(arr: number[], target: n
   return arr[right] <= target ? right : -1;
 }
 
-
 // // 14/08/2024
 // export default function findLargestSmallerThanOrEqualTo(arr: number[], target: number) {
 //   let left = 0;

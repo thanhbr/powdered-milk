@@ -32,12 +32,12 @@
 //   return [];
 // };
 
-
 export default function twoSum(nums: number[], target: number): number[] {
-  let i: number, hash = {};
-  for(i = 0; i < nums.length; i++) {
+  let i: number,
+    hash = {};
+  for (i = 0; i < nums.length; i++) {
     let num = nums[i];
-    if(hash[target - num] !== undefined) {
+    if (hash[target - num] !== undefined) {
       return [hash[target - num], i];
     }
     hash[num] = i;

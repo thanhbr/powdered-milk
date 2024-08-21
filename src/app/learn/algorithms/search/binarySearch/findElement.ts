@@ -14,8 +14,6 @@ export default function findElement(arr: number[], target: number) {
   return -1;
 }
 
-
-
 // // 14/08/2024
 // export default function findElement(arr: number[], target: number) {
 //   let low = 0;
