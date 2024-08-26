@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontNunito.className} bg-container-md`} suppressHydrationWarning={true}>
+      <body className={`${fontNunito.className} bg-white`} suppressHydrationWarning={true}>
         <Navbar />
         {children}
         {/* <Footer /> */}
