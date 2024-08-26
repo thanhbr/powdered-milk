@@ -5,15 +5,17 @@ import ProductListPage from "./_components/productList";
 
 export default async function Home() {
   return (
-    <main className="container">
-      <div className="mt-4 grid grid-cols-4 gap-4">
-        <CategoryPage />
-        <BannerPage />
-      </div>
-      <div>
-        {PRODUCT_LIST.map((item) => (
-          <ProductListPage key={item.id} {...item} />
-        ))}
+    <main>
+      <div className="container">
+        <div className="mt-4 grid grid-cols-4 gap-4">
+          <CategoryPage />
+          <BannerPage />
+        </div>
+        <div>
+          {PRODUCT_LIST.map((item) => (
+            <ProductListPage key={item.id} {...item} />
+          ))}
+        </div>
       </div>
     </main>
   );

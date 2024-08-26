@@ -25,7 +25,7 @@ export default function Error({
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={"/images/404.png"}
+          src="/images/404.png"
           alt="404 page"
           width={400}
           height={400}
