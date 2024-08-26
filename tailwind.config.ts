@@ -62,9 +62,18 @@ const config = {
       white: '#fff',
       gray: '#6c757d',
       'gray-dark': '#343a40',
+      transparent: 'transparent',
     },
     extend: {
+      backgroundImage: {
+        'theme-mobile': "url('/images/theme-mobile.png')",
+        'search-icon': "url('/icons/search.svg')",
+      },
+      backgroundPosition: {
+        'right-top-8': 'right 8px top 8px',
+      },
       colors: {
+        'box-shadow': '1px 0 3px rgb(155 155 155 / 40%)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -98,6 +107,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
       },
       borderRadius: {
         lg: "var(--radius)",

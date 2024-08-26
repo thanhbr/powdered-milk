@@ -79,6 +79,18 @@ span {
     @apply bg-background text-foreground;
   }
 
+  #header {
+    @apply sticky top-0 z-[998] px-4 py-2;
+  }
+
+  .fixed-top {
+    @apply fixed top-0 left-0 right-0 z-[1030];
+  }
+
+  .fixed-bottom {
+    @apply fixed bottom-0 left-0 right-0 z-[1030];
+  }
+
   .product-card-wrapper:hover {
     @apply ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300;
   }
