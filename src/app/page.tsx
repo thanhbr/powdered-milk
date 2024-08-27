@@ -7,10 +7,11 @@ export default async function Home() {
   return (
     <main>
       <div className="container">
-        <div className="mt-4 grid grid-cols-4 gap-4">
+        {/* coming soon */}
+        {/* <div className="mt-4 grid grid-cols-4 gap-4">
           <CategoryPage />
           <BannerPage />
-        </div>
+        </div> */}
         <div>
           {PRODUCT_LIST.map((item) => (
             <ProductListPage key={item.id} {...item} />
