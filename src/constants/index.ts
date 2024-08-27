@@ -23,3 +23,11 @@ export const NAV_LINK = [
   { name: "Login", href: "/login" },
   { name: "Forgot password", href: "/forgot-password" },
 ];
+
+export const MOBILE_FOOTER_LINK = [
+  { id: 1, label: "Trang chủ", href: "/", icon: "/icons/footer-home-active.png" },
+  { id: 2, label: "Tìm kiếm", href: "/search", icon: "/icons/footer-search.png" },
+  { id: 3, label: "Danh mục", href: "/category", icon: "/icons/footer-category.png" },
+  { id: 4, label: "Giỏ hàng", href: "/cart", icon: "/icons/footer-cart.png" },
+  { id: 5, label: "Tài khoản", href: "/user", icon: "/icons/footer-user.png" },
+];

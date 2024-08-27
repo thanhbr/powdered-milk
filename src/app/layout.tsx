@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`${fontNunito.className} bg-white`} suppressHydrationWarning={true}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
