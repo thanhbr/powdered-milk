@@ -21,6 +21,12 @@ const nextConfig = {
         port: '',
         pathname: '/file/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn1.concung.com',
+        port: '',
+        pathname: '/img/adds/2024/08/**',
+      },
     ],
   },
 };
