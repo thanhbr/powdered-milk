@@ -1,11 +1,23 @@
-const MobileFooterItems = [
-  { id: 1, name: "Trang chủ", href: "/"},
-  { id: 2, name: "Tìm kiếm", href: "/search"},
-  { id: 3, name: "Khuyến mãi", href: "/promotion"},
-  { id: 4, name: "Giỏ hàng", href: "/order"},
-  { id: 5, name: "Tài khoản", href: "/account"},
-]
+import Image from "next/image";
+import { MOBILE_FOOTER_LINK } from "./../../../constants/index";
 
 export default function MobileFooter() {
-  return <footer></footer>;
+  return (
+    <footer className="fixed z-[1000] bottom-0 w-[100%] shadow-sm">
+      <div className="bg-white flex justify-between text-center center text-[10px]">
+        {MOBILE_FOOTER_LINK.map((item) => (
+          <a key={item.id} href={item.href} className="py-2 min-w-[20%]">
+            <Image
+              src={item.icon}
+              alt={item.label}
+              width={24}
+              height={24}
+              className="mx-auto mb-[2px] bg-no-repeat"
+            />
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </footer>
+  );
 }
