@@ -25,13 +25,37 @@ export const NAV_LINK = [
 ];
 
 export const MOBILE_SLIDES = [
-  { id: 1, label: "1", src: "https://cdn1.concung.com/img/adds/2024/08/20237-mobi-10-1724394390.webp"},
-  { id: 2, label: "2", src: "https://cdn1.concung.com/img/adds/2024/08/20369-yokogold-muatuutruongkv-mobile816x308-concung-1724721374.webp"},
-  { id: 3, label: "3", src: "https://cdn1.concung.com/img/adds/2024/08/20242-mobi-11-1724394902.webp"},
-  { id: 4, label: "4", src: "https://cdn1.concung.com/img/adds/2024/08/20238-816x308-app-1724394493.webp"},
-  { id: 5, label: "5", src: "https://cdn1.concung.com/img/adds/2024/08/20199-mobi-cate-takato-1-1724321753.webp"},
-  { id: 6, label: "6", src: "https://cdn1.concung.com/img/adds/2024/08/20196-yokogold-muatuutruong-kv-816x308-homepage-1-1724321000.webp"},
-]
+  {
+    id: 1,
+    label: "1",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20237-mobi-10-1724394390.webp",
+  },
+  {
+    id: 2,
+    label: "2",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20369-yokogold-muatuutruongkv-mobile816x308-concung-1724721374.webp",
+  },
+  {
+    id: 3,
+    label: "3",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20242-mobi-11-1724394902.webp",
+  },
+  {
+    id: 4,
+    label: "4",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20238-816x308-app-1724394493.webp",
+  },
+  {
+    id: 5,
+    label: "5",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20199-mobi-cate-takato-1-1724321753.webp",
+  },
+  {
+    id: 6,
+    label: "6",
+    src: "https://cdn1.concung.com/img/adds/2024/08/20196-yokogold-muatuutruong-kv-816x308-homepage-1-1724321000.webp",
+  },
+];
 
 export const MOBILE_FOOTER_LINK = [
   { id: 1, label: "Trang chủ", href: "/", icon: "/icons/footer-home-active.png" },
