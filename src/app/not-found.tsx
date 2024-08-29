@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NotFound() {
+export default function NotFound( ) {
   return (
     <div className="mt-8 flex flex-col gap-4">
       <div className="text-center">
