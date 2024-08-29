@@ -42,9 +42,7 @@ async function getRelatedProduct() {
 
 export default async function Page({ params }: Props) {
   const { slug } = params;
-  // Check if the slug ends with ".html"
-  if (!slug.endsWith(".html")) {
-    // If not, throw a notFound error to trigger the 404 page
+  if (!/^.*\.html$/.test(slug) || ['gio-hang.html', 'khuyen-mai.html'].includes(slug)) {
     notFound();
   }
 
