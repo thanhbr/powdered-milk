@@ -42,7 +42,9 @@ export default function ProductCard(props: ProductCardProps): JSX.Element {
             </div>
             <div className="flex flex-col">
               <div className="flex gap-2 items-center justify-center">
-                <p className="text-xl md:text-2xl font-bold text-teal-500">{formatVND(props.price.import)}</p>
+                <p className="text-xl md:text-2xl font-bold text-teal-500">
+                  {formatVND(props.price.import)}
+                </p>
                 {props.price.import < props.price.raw && (
                   <p className="text-sm font-bold text-red line-through">
                     {formatVND(props.price.discount)}

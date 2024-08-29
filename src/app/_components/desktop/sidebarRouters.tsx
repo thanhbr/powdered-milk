@@ -1,5 +1,3 @@
-"use client";
-
 import { BellRing, ShoppingBasket } from "lucide-react";
 import { SidebarItem } from "./sidebarItem";
 

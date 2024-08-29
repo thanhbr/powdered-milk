@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/utils/cn";
 import { LucideIcon } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
