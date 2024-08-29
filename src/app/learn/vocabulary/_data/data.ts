@@ -57,7 +57,7 @@ export const VOCABULARY = [
   { en: "milk", vi: "sữa", type: "n" },
   { en: "yes", vi: "có", type: "pron" },
   { en: "no", vi: "không", type: "pron" },
-  { en: "for", vi: "cho", type: "conj" },
+  { en: "for", vi: "cho bạn", type: "conj" },
   { en: "look", vi: "xem", type: "v" },
   { en: "like", vi: "thích", type: "v" },
   { en: "sugar", vi: "đường", type: "n" },
@@ -249,7 +249,7 @@ export const VOCABULARY = [
     type: "phrase",
   },
   { en: "This is my book.", vi: "Đây là cuốn sách của tôi.", type: "phrase" },
-  { en: "Is that your car?", vi: "Đây là chiếc xe của bạn không?", type: "phrase" },
+  { en: "Is this your car?", vi: "Đây là chiếc xe của bạn không?", type: "phrase" },
   {
     en: "His house is bigger than hers.",
     vi: "Nhà của anh ấy lớn hơn nhà của cô ấy.",
@@ -314,7 +314,7 @@ export const VOCABULARY = [
     type: "phrase",
   },
   {
-    en: "We have been friends since [thời gian].",
+    en: "We have been friends since [time].",
     vi: "Chúng tôi đã là bạn từ [thời gian].",
     type: "phrase",
   },
