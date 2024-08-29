@@ -42,7 +42,7 @@ async function getRelatedProduct() {
 
 export default async function Page({ params }: Props) {
   const { slug } = params;
-  if (!/^.*\.html$/.test(slug) || ['gio-hang.html', 'khuyen-mai.html'].includes(slug)) {
+  if (!/^.*\.html$/.test(slug) || ["gio-hang.html", "khuyen-mai.html"].includes(slug)) {
     notFound();
   }
 
