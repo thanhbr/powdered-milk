@@ -1,4 +1,5 @@
 "use client";
+import { v4 as id } from "uuid";
 import { useEffect, useRef, useState } from "react";
 import { VOCABULARY } from "./_data/data";
 
@@ -18,10 +19,14 @@ export default function Page() {
 
   useEffect(() => setVocabulary(randomVocabulary), []);
 
+  const formatValue = (value: string) => {
+    return value.replace(/,|\.|\[|\]|\?|\!/g, "").toLowerCase();
+  };
+
   const onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const inputValue = inputRef.current.value;
-    if (inputValue.toLowerCase() === vocabulary.en.toLowerCase()) {
+    if (formatValue(inputValue) === formatValue(vocabulary.en)) {
       setVocabulary(randomVocabulary);
       setShowList(false);
       setError(false);
@@ -96,7 +101,7 @@ export default function Page() {
           <ol>
             {showList &&
               VOCABULARY.map((vocal) => (
-                <li key={vocal.id}>
+                <li key={id()}>
                   <strong>
                     {vocal.en}
                     {vocal.type ? `(${vocal.type})` : ""}
