@@ -156,8 +156,8 @@ export const VOCABULARY = [
     type: "phrase",
   },
   { en: "How much is this?", vi: "Cái này giá bao nhiêu?", type: "phrase" },
-  { en: "I'll take it.", vi: "Tôi sẽ lấy nó.", type: "phrase" },
-  { en: "I'm just looking.", vi: "Tôi chỉ xem qua thôi.", type: "phrase" },
+  { en: "I will take it.", vi: "Tôi sẽ lấy nó.", type: "phrase" },
+  { en: "I am just looking.", vi: "Tôi chỉ xem qua thôi.", type: "phrase" },
   {
     en: "Excuse me, do you sell [product]?",
     vi: "Xin lỗi, bạn có bán [sản phẩm] không?",
@@ -202,7 +202,7 @@ export const VOCABULARY = [
   { en: "ours", vi: "của chúng tôi (nhiều)", type: "pron" },
   { en: "theirs", vi: "của họ (nhiều)", type: "pron" },
   {
-    en: "That's mine/yours/his/hers/ours/theirs.",
+    en: "That is mine/yours/his/hers/ours/theirs.",
     vi: "Đó là của tôi/bạn/anh ấy/cô ấy/chúng tôi/họ.",
     type: "phrase",
   },
@@ -227,9 +227,9 @@ export const VOCABULARY = [
   { en: "assignment", vi: "bài tập", type: "n" },
   { en: "research", vi: "nghiên cứu", type: "n" },
   { en: "degree", vi: "bằng cấp", type: "n" },
-  { en: "What's your major?", vi: "Chuyên ngành của bạn là gì?", type: "phrase" },
+  { en: "What is your major?", vi: "Chuyên ngành của bạn là gì?", type: "phrase" },
   {
-    en: "I'm a freshman/sophomore/junior/senior.",
+    en: "I am a freshman/sophomore/junior/senior.",
     vi: "Tôi là sinh viên năm nhất/năm hai/năm ba/năm cuối.",
     type: "phrase",
   },
@@ -244,7 +244,7 @@ export const VOCABULARY = [
     type: "phrase",
   },
   {
-    en: "I'm really struggling with this class.",
+    en: "I am really struggling with this class.",
     vi: "Tôi thực sự đang gặp khó khăn với lớp học này.",
     type: "phrase",
   },
@@ -277,14 +277,14 @@ export const VOCABULARY = [
   { en: "transparent", vi: "trong suốt", type: "adj" },
   { en: "opaque", vi: "mờ đục", type: "adj" },
   {
-    en: "It's made of [chất liệu].",
+    en: "It is made of [material].",
     vi: "Nó được làm bằng [chất liệu].",
     type: "phrase",
   },
-  { en: "It's a bit heavy/light.", vi: "Nó hơi nặng/nhẹ.", type: "phrase" },
-  { en: "It's very old/new.", vi: "Nó rất cũ/mới.", type: "phrase" },
+  { en: "It is a bit heavy/light.", vi: "Nó hơi nặng/nhẹ.", type: "phrase" },
+  { en: "It is very old/new.", vi: "Nó rất cũ/mới.", type: "phrase" },
   {
-    en: "What's this called in English?",
+    en: "What is this called in English?",
     vi: "Cái này tiếng Anh gọi là gì?",
     type: "phrase",
   },
@@ -314,7 +314,7 @@ export const VOCABULARY = [
     type: "phrase",
   },
   {
-    en: "We've been friends since [thời gian].",
+    en: "We have been friends since [thời gian].",
     vi: "Chúng tôi đã là bạn từ [thời gian].",
     type: "phrase",
   },
@@ -357,7 +357,7 @@ export const VOCABULARY = [
     vi: "Cho tôi xem thực đơn được không?",
     type: "phrase",
   },
-  { en: "I'll have the [food].", vi: "Tôi muốn gọi món [món ăn].", type: "phrase" },
+  { en: "I will have the [food].", vi: "Tôi muốn gọi món [món ăn].", type: "phrase" },
   {
     en: "Could I get another [beverage], please?",
     vi: "Cho tôi thêm một [đồ uống] nữa được không?",
@@ -374,10 +374,10 @@ export const VOCABULARY = [
   { en: "study", vi: "học tập", type: "v" },
   { en: "hobbies", vi: "sở thích", type: "n" },
   { en: "Hi, my name is [name].", vi: "Xin chào, tôi tên là [tên].", type: "phrase" },
-  { en: "I'm [age] years old.", vi: "Tôi [tuổi] tuổi.", type: "phrase" },
-  { en: "I'm from", vi: "Tôi đến từ", type: "phrase" },
+  { en: "I am [age] years old.", vi: "Tôi [tuổi] tuổi.", type: "phrase" },
+  { en: "I am from", vi: "Tôi đến từ", type: "phrase" },
   {
-    en: "I'm a [profession/position].",
+    en: "I am a [profession/position].",
     vi: "Tôi là một [nghề nghiệp/chức vụ].",
     type: "phrase",
   },
@@ -399,14 +399,14 @@ export const VOCABULARY = [
     type: "phrase",
   },
   {
-    en: "I'm not a big fan of [food/activity].",
+    en: "I am not a big fan of [food/activity].",
     vi: "Tôi không phải là người thích [món ăn/hoạt động].",
     type: "phrase",
   },
 
   // Gọi món nhà hàng (nói hiện tại đơn)
   { en: "I want", vi: "Tôi muốn", type: "phrase" },
-  { en: "I'd like", vi: "Tôi muốn", type: "phrase" },
+  { en: "I would like", vi: "Tôi muốn", type: "phrase" },
   { en: "Can I have", vi: "Cho tôi", type: "phrase" },
   { en: "please", vi: "làm ơn", type: "adv" },
   {
@@ -414,7 +414,7 @@ export const VOCABULARY = [
     vi: "Anh ấy/Cô ấy muốn món [món ăn].",
     type: "phrase",
   },
-  { en: "We'd like to order, please.", vi: "Chúng tôi muốn gọi món.", type: "phrase" },
+  { en: "We would like to order, please.", vi: "Chúng tôi muốn gọi món.", type: "phrase" },
   { en: "Do you have any [food]?", vi: "Bạn có [món ăn] nào không?", type: "phrase" },
 
   // Đặt câu hỏi
@@ -424,7 +424,7 @@ export const VOCABULARY = [
   { en: "Why", vi: "Tại sao", type: "question" },
   { en: "How", vi: "Như thế nào", type: "question" },
   { en: "Who", vi: "Ai", type: "question" },
-  { en: "What's your name?", vi: "Tên bạn là gì?", type: "phrase" },
+  { en: "What is your name?", vi: "Tên bạn là gì?", type: "phrase" },
   { en: "Where are you from?", vi: "Bạn đến từ đâu?", type: "phrase" },
   { en: "How old are you?", vi: "Bạn bao nhiêu tuổi?", type: "phrase" },
   { en: "What do you do?", vi: "Bạn làm nghề gì?", type: "phrase" },
