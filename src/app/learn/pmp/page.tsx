@@ -30,10 +30,10 @@ export default function PMP() {
   };
 
   return (
-    <div className="container">
+    <div className="container mb-[80px]">
       <p className="text-2xl font-bold">PMP Question Time</p>
 
-      <div className="mb-4 flex flex-row gap-8">
+      <div className="mb-4 flex flex-row gap-2">
         <input
           type="text"
           value={searchId}
@@ -44,8 +44,8 @@ export default function PMP() {
         <button onClick={handleSearch} className="bg-primary text-white px-2 py-2 bg-green-500  rounded">
           Search
         </button>
-        <button onClick={handleNextQuestion} className="bg-primary text-white mt-4 px-2 py-2 bg-blue-500  rounded">
-          Next random question
+        <button onClick={handleNextQuestion} className="bg-primary text-white px-2 py-2 bg-blue-500  rounded">
+          Next
         </button>
       </div>
 
