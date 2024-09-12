@@ -59,4 +59,64 @@ export const QUESTIONS = [
     answer: ["B"],
     explanation: "This question is about delivering value – the primary motivator for a project. If the project is no longer aligned with the business need or it seems unlikely to provide value, the organisation may choose to terminate the effort. (PMBOK Guide) – Seventh Edition, 2021, p35, \"Focus on Value\""
   },
+  {
+    id: 6,
+    question: "You have collected the requirements for your project and are creating the scope statement and work breakdown structure. During this process you notice some functionality in your database system that will help a different project you are aware of within your Project Management Office (PMO). What will you do next?",
+    choices: [
+      { id: "A", text: "Place the feature in the other project's backlog, and ask them to prioritise it as soon as possible." },
+      { id: "B", text: "Raise the functionality in your risk register as a threat, with the response to \"mitigate\"." },
+      { id: "C", text: "Add the scope to your project and complete it as soon as possible." },
+      { id: "D", text: "Raise the functionality in your risk register as an opportunity with the response to \"exploit\", and meet with the other project team and sponsor to discuss." }
+    ],
+    answer: ["D"],
+    explanation: "Systems thinking involves taking a holistic view of how project parts interact with each other, and external systems. Projects operate within programs, and small systems affect larger ones. Finding a previously unknown opportunity, the next best step is to make it known and exploit the opportunity. (PMBOK Guide) – Seventh Edition, 2021, p39, \"Respond to System Interactions: Systems Thinking\" p125, \"Opportunities\""
+  },
+  {
+    id: 7,
+    question: "You are working on a high profile project. Several high-ranking senior executives want to take the credit for this initiative, while limiting the impact to their own resources. This has led to several conflicts and a scope statement that is unclear, leading to a risk of project failure. What will you do next?",
+    choices: [
+      { id: "A", text: "Create a scope statement yourself to avoid further conflict." },
+      { id: "B", text: "Facilitate a discussion with the executives as a neutral third party, focusing on agreed project goals." },
+      { id: "C", text: "Limit your project resources to the executives until they can agree on a way forward." },
+      { id: "D", text: "Escalate the issue to the project steering committee and ask them to resolve the problem." }
+    ],
+    answer: ["B"],
+    explanation: "Leadership is not the same as authority. When senior managers suffer conflict over priorities, neutral facilitation helps more than detailed recommendations. Leadership acumen involves focusing a team around agreed goals, generating consensus on the way forward, negotiating and resolving conflict, and more. (PMBOK Guide) – Seventh Edition, 2021, p42, \"Demonstrate leadership behaviours\""
+  },
+  {
+    id: 8,
+    question: "You are managing a project where the majority of the product has been planned up-front, but an external system is needed from a vendor in partial pieces where the requirements are unclear. Half of your stakeholders want to use a waterfall approach, and the other half are advocating for an Agile approach. What will you do next?",
+    choices: [
+      { id: "A", text: "Use an Agile methodology. The fixed scope is low risk, and you can capture changes using Agile." },
+      { id: "B", text: "Use a Waterfall methodology and ask the team to plan the uncertain scope better." },
+      { id: "C", text: "Proceed with a hybrid method to start, with pre-planned scope but Agile ceremonies that promote feedback." },
+      { id: "D", text: "Use a combination of Waterfall and Agile to capture all the requirements and keep stakeholders happy." }
+    ],
+    answer: ["C"],
+    explanation: "Each project is unique, and success is based on adapting to the unique context of the project to determine the most appropriate methods. The tailoring approach is iterative in nature and refined during the project cycle. This project requires a hybrid of waterfall and agile, with the option to improve it over time. (PMBOK Guide) – Seventh Edition, 2021, p44-46, \"Tailoring\""
+  },
+  {
+    id: 9,
+    question: "You are working on a project where senior users have been testing the product as parts are released. They have found some missing requirements and defects. Their manager is worried that the project won't deliver a product that is fit for purpose, without defects and within the timeframe needed. What will you do next?",
+    choices: [
+      { id: "A", text: "Perform some of the testing yourself to ensure a quality product." },
+      { id: "B", text: "Help every team member to focus on quality, from correct acceptance criteria to a developed and tested product." },
+      { id: "C", text: "Limit testing until the very end of the project so you can do it all in one go when the product is completely ready." },
+      { id: "D", text: "Increase the testing on your project and add more testing resources so no defect goes unnoticed." }
+    ],
+    answer: ["B"],
+    explanation: "Quality focuses on meeting acceptance criteria for deliverables, and satisfying stakeholders' expectations on product requirements. Quality is everyone's responsibility in an Adaptive (Agile) project. (PMBOK Guide) – Seventh Edition, 2021, p47-49, \"Build quality into processes and deliverables.\""
+  },
+  {
+    id: 10,
+    question: "You are working through the risk assessment with your team, who are having trouble coming up with ideas for risks. You decide to give them some guidance on types of complexity that might affect your new product. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask them to brainstorm Qualitative and Quantitative risks." },
+      { id: "B", text: "Ask them to perform the Five Whys and Ishikawa analysis." },
+      { id: "C", text: "Ask them to brainstorm around possible unwanted human behavior, system behavior, ambiguity and technical innovation impacts." },
+      { id: "D", text: "Ask them to perform a retrospective to discover what isn't working well, and what still puzzles us." }
+    ],
+    answer: ["C"],
+    explanation: "Complexity is often the result of human behavior, system interactions, technical innovation, uncertainty and ambiguity. Complexity can be introduced by events or conditions that affect value, scope, stakeholders, risk and more. (PMBOK Guide) – Sixth Edition, 2021, p50, 51, \"Navigate complexity\""
+  },
 ];
