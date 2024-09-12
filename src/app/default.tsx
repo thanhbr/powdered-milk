@@ -1,3 +1,3 @@
 export default function DefaultLayout() {
-  return <>DefaultLayout</>
+  return <>DefaultLayout</>;
 }
