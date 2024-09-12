@@ -1,5 +1,3 @@
-import { v4 as id } from "uuid";
-
 export const VOCABULARY = [
   { en: "abide by", vi: "tuân thủ / tuân theo", type: "v" },
   { en: "agreement", vi: "sự thỏa thuận hợp đồng", type: "n" },
