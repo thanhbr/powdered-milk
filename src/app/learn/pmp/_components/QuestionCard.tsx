@@ -58,7 +58,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
               onChange={() => handleChoiceSelect(choice.id)}
               disabled={showExplanation}
             />
-            <p>{choice.text}</p>
+            <p className='m-0'>{choice.text}</p>
           </label>
         ))}
       </div>
