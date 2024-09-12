@@ -313,7 +313,7 @@ export const QUESTIONS = [
   },
   {
     id: 27,
-    question: "You are working on a new product for your organisation where the requirements are complex and are likely to change a few times as the project progresses. The organisation also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
+    question: "You are working on a new product for your organization where the requirements are complex and are likely to change a few times as the project progresses. The organisation also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
     choices: [
       { id: "A", text: "Recommend an Iterative development approach." },
       { id: "B", text: "Recommend a Predictive development approach." },
@@ -358,5 +358,245 @@ export const QUESTIONS = [
     ],
     answer: ["B"],
     explanation: "All projects will go through the general phases of Feasibility, Design, Build, Test, Deploy and Close. Waterfall projects will do these in sequence once, while Agile projects will do these multiple times, for each feature or increment. The underlying principle remains the same, so it is a good place to start. (PMBOK Guide) – Seventh Edition, 2021, p42, \"Lifecycle and phase definitions\""
+  },
+  {
+    id: 31,
+    question: "You a project manager in an organization with a directive Project Management Office, and are currently in between projects. The PMO asks you to prepare for an upcoming project in the accounting area by meeting with the functional manager there. You have no team, no scope or requirements and no timeline as yet. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the functional manager for their wish-list of improvements, so you can take these to your PMO." },
+      { id: "B", text: "Create a project management plan so the project, scope, budget and schedule are more clear." },
+      { id: "C", text: "Create a small backlog of work and start your first sprint, then progressively update the backlog as the project progresses." },
+      { id: "D", text: "Progressively elaborate the vision statement and project charter to define a coordinated approach." }
+    ],
+    answer: ["D"],
+    explanation: "Before initiating a project of any sort, we start with a vision statement, project charter or business case in order to identify a co-ordinated path to achieve the desired outcomes. (PMBOK Guide) – Seventh Edition, 2021, p52, \"Planning Overview\""
+  },
+  {
+    id: 32,
+    question: "You are working on a project where part of the project delivers a high value, high risk component. Another part of the project delivers a routine change to the system. Your project sponsor wants to gain the business value as quickly as possible, but your project team want to start with the work they are familiar with first. What will you do next?",
+    choices: [
+      { id: "A", text: "Prioritize the high risk items at the end of the project." },
+      { id: "B", text: "Prioritize the high risk items at the start of the project." },
+      { id: "C", text: "Use an incremental approach and deliver part of the routine and high risk work in each sprint." },
+      { id: "D", text: "Plan out the work in detail and secure a scope baseline, with formal change controls to reduce uncertainty." }
+    ],
+    answer: ["B"],
+    explanation: "This question refers to the concept of the last responsible moment. Work that is novel or risky can be prioritised at the start of the project to reduce uncertainty with the project scope before a large investment has been made. Routine work can be delayed until the cost of further delay would exceed the benefit. (PMBOK Guide) – Seventh Edition, 2021, p54, \"Delivery\", paragraph 3"
+  },
+  {
+    id: 33,
+    question: "You are working on an agile project where the functional area you are delivering to only has a high level idea of the system requirements they will need. The functional manager suggests a Work Breakdown Structure, however your team feel that is more for a predictive (waterfall) delivery approach. What will you do next?",
+    choices: [
+      { id: "A", text: "Use and create a WBS anyway, as it is just a tool." },
+      { id: "B", text: "Use rolling wave planning, and keep the work at a high level until you are ready to work on it, when you can plan in detail." },
+      { id: "C", text: "Note the high level themes or epics, decompose them into features, and again into user stories." },
+      { id: "D", text: "Ask the functional area for more detailed requirements before the project begins." }
+    ],
+    answer: ["C"],
+    explanation: "This question refers to \"decomposition\" or breaking down the work. We could use a WBS, or rolling wave planning, but for an incremental approach breaking down the work from epics to features to user stories is a form of decomposition that fits the delivery approach. (PMBOK Guide) – Seventh Edition, 2021, p54, \"Delivery\", paragraph 3"
+  },
+  {
+    id: 34,
+    question: "You are at the beginning of planning a new project, and have researched and gathered the requirements from the area, broken them down into deliverables and activities, which you believe could take 26 weeks to deliver. The project sponsor is asking you for an estimate on how long the project will take. What will you do next?",
+    choices: [
+      { id: "A", text: "Tell the project sponsor 26 weeks." },
+      { id: "B", text: "Tell the project sponsor that you will use an iterative approach, where value is delivered until the project stops." },
+      { id: "C", text: "Tell the project sponsor approximately 24 to 28 weeks." },
+      { id: "D", text: "Tell the project sponsor approximately 20 to 45 weeks." }
+    ],
+    answer: ["D"],
+    explanation: "This question is related to estimation and range. Estimates should have a broad range at the start of the project, starting at -25% to +75% when there is not much information. Once the project team has a smooth delivery cadence and experience in the product, a smaller range such as -5% to +10% can be used. A 0% range is when everything is known – and the product has been delivered. (PMBOK Guide) – Seventh Edition, 2021, p55, \"Estimating, Range\"."
+  },
+  {
+    id: 35,
+    question: "After gathering your project requirements, project scope, and breaking it down into activities, you need to estimate the project schedule with your team. After some analysis and discussion, your team come up with a range of 53 to 75 days assigned across all tasks. What will you do next?",
+    choices: [
+      { id: "A", text: "The estimate is high accuracy but low precision – ask the team to come back with a more precise estimate." },
+      { id: "B", text: "The estimate is low accuracy but high precision – ensure the estimates become more accurate as the project unfolds." },
+      { id: "C", text: "The estimate is in high confidence but low precision – proceed as is and adjust using an incremental approach." },
+      { id: "D", text: "The estimate is in low confidence but high accuracy – allow the team to become more confident as the project unfolds." }
+    ],
+    answer: ["B"],
+    explanation: "This question is on estimates and their accuracy. The lower the accuracy, the larger the potential range in values. Precision is different from accuracy, as it refers to the exactness of the estimate, for example \"2 days\" is more precise than \"sometime this week\". (PMBOK Guide) – Seventh Edition, 2021, p54, \"Estimating: accuracy, precision, confidence\""
+  },
+  {
+    id: 36,
+    question: "You are working on a business case where you know that the industry is undergoing a significant change at the moment, and there could be many different impacts to your project benefits before it is delivered completely. The project sponsor asks you for the best estimate of benefits you can give under the circumstances. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your team for a probabilistic estimate." },
+      { id: "B", text: "Ask your team for a deterministic estimate." },
+      { id: "C", text: "Ask your team for an absolute estimate." },
+      { id: "D", text: "Ask your team for a relative estimate." }
+    ],
+    answer: ["A"],
+    explanation: "Probabilistic estimates include a range of estimates, along with the associated probabilities within the range such as a confidence level or a probability distribution. If the estimate is uncertain, this is the best approach. Deterministic is a number, absolute is specific, actual numbers and relative estimates are shown in comparison to other estimates. (PMBOK Guide) – Seventh Edition, 2021, p57, \"Presenting estimates.\""
+  },
+  {
+    id: 37,
+    question: "You have noted nine epics for delivery as part of your most recent project. Your team have broken down these epics into user stories, and would like to see the effort involved for these deliverables. You ask your team to find the smallest user story, size it with a \"1\", and then determine the size of the other cards based on how they compare to the original card. What approach are you taking?",
+    choices: [
+      { id: "A", text: "Relative estimating with your team." },
+      { id: "B", text: "Deterministic estimating to determine the effort." },
+      { id: "C", text: "Absolute estimating to get an estimate with absolute certainty." },
+      { id: "D", text: "Probabilistic estimating with the highest probability items." }
+    ],
+    answer: ["A"],
+    explanation: "This question is about estimating, and making an estimate in comparison to other estimates is relative estimating. (PMBOK Guide) – Seventh Edition, 2021, p57, \"Relative Estimating\""
+  },
+  {
+    id: 38,
+    question: "You are working on a project where a competitor is also working on a similar feature, and being first to the market will have a significant impact on this year's profit. Your product owner would like to measure how quickly story cards are being completed, once they start being developed. What will you do next?",
+    choices: [
+      { id: "A", text: "Check the Lead time of the story cards." },
+      { id: "B", text: "Check the Gantt chart with assigned schedule activities." },
+      { id: "C", text: "Check the Cycle time of the story cards." },
+      { id: "D", text: "Check the schedule network and precedence diagram." }
+    ],
+    answer: ["C"],
+    explanation: "Cycle time is the total elapsed time it takes one unit to get through a process. Lead time is the time from when the customer makes the order (or the requirement is noted) to the time the item is delivered or released. Schedule network diagram is useful for finding the Critical Path, and precedence diagramming is used to find what deliverable or activity relies on others. (PMBOK Guide) – Seventh Edition, 2021, p58, \"Flow-based estimating\""
+  },
+  {
+    id: 39,
+    question: "You are working on a project that has recently moved to a more agile way of work. The team have not completely taken on the Scrum approach however, and are comfortable working with a more flow-based approach moving user stories across a Kanban board. You are wanting to get an estimate on how much work can be completed in the next three months, based on the team's existing progress. What will you do next?",
+    choices: [
+      { id: "A", text: "Multiply the velocity by the number of remaining user stories." },
+      { id: "B", text: "Multiply the cycle time by the throughput." },
+      { id: "C", text: "Multiply the lead time by the schedule performance index." },
+      { id: "D", text: "Multiply the planned value by the actual value." }
+    ],
+    answer: ["B"],
+    explanation: "Scrum uses velocity – Kanban or Flow-based estimates are developed by determining the cycle time and throughput. Cycle time is the total elapsed time it takes one unit to get through a process. Throughput is the number of items that can complete a process in a given amount of time. (PMBOK Guide) – Seventh Edition, 2021, p58, \"Flow-based estimating.\""
+  },
+  {
+    id: 40,
+    question: "Your product owner wants to bring the next feature forward so that it is done in parallel to the current feature, but is still released in the existing feature order. You make the necessary adjustments to the product backlog, and decide to adjust the product roadmap, which you have visualised as a Gantt chart. What will you do next?",
+    choices: [
+      { id: "A", text: "Use a schedule lead on the feature, and change the feature to finish-to-start" },
+      { id: "B", text: "Use a schedule lag on the feature, and change the feature to start-to-start" },
+      { id: "C", text: "Use a schedule lead on the feature, and change the feature to finish-to-finish" },
+      { id: "D", text: "Use a schedule lag on the feature, and change the feature to start-to-finish" }
+    ],
+    answer: ["C"],
+    explanation: "A schedule lag is moving an item back, a schedule lead is bringing an item forward. Precedence diagramming method states for Finish-to-Finish items, the next item cannot finish until the previous item has finished. This allows the items to be worked on in parallel, while still keeping the same delivery order. (PMBOK Guide) – Seventh Edition, 2021, p59, \"Schedules; Lead, Lag.\" (PMBOK Guide) – Sixth Edition, 2017, p180, \"Precedence diagramming method\""
+  },
+  {
+    id: 41,
+    question: "You are working on a project where you have been completing the deliverables in sequence, and the project work is starting to fall behind. The project sponsor asks you to speed up the work and reduce the time for the project to be delivered, but also makes it very clear that there is no more money to use when speeding up the work. What will you do next?",
+    choices: [
+      { id: "A", text: "Apply leads and lags to your project schedule." },
+      { id: "B", text: "Apply fast tracking to your project schedule." },
+      { id: "C", text: "Apply schedule crashing to your project." },
+      { id: "D", text: "Apply resource levelling to your project." }
+    ],
+    answer: ["B"],
+    explanation: "Project fast tracking is a schedule compression method in which activities or tasks that are normally done in sequence are performed in parallel. Schedule crashing includes adding people to activities, working overtime, or paying to expedite deliveries. (PMBOK Guide) – Seventh Edition, 2021, p59, \"Schedules; Fast tracking, crashing.\""
+  },
+  {
+    id: 42,
+    question: "After reviewing your project schedule you notice you are behind by three weeks and the schedule will need to be compressed. Your project does not have enough budget to crash the schedule. You check with the lead for each area and review the schedule as to whether they can fast track their deliverables. What will you do next?",
+    choices: [
+      { id: "A", text: "Fast track team items with discretionary dependencies." },
+      { id: "B", text: "Fast track team items with mandatory dependencies." },
+      { id: "C", text: "Fast track team items with external dependencies." },
+      { id: "D", text: "Fast track team items based on industry regulation." }
+    ],
+    answer: ["A"],
+    explanation: "When compressing the schedule, some activities cannot be fast-tracked because of the nature of the work, others can. A discretionary dependency is based on project preferences, and may be modifiable. External and Mandatory dependencies usually cannot be modified. Internal dependencies may be modifiable, except when based on specific regulatory needs. (PMBOK Guide) – Seventh Edition, 2021, p60, \"Four types of dependencies.\""
+  },
+  {
+    id: 43,
+    question: "Your team are new to agile, and had previously been working with Waterfall. Your key customer asks you for a project schedule. The project team believes using a project schedule is from the old waterfall way of working and they shouldn't have to create one. What will you do next?",
+    choices: [
+      { id: "A", text: "Create a project Gantt chart to visualize the activities within the project." },
+      { id: "B", text: "Determine the project's planned versus actual value, instead of working with a schedule directly." },
+      { id: "C", text: "Advise the customer that we don't need to plan ahead in an adaptive way of work." },
+      { id: "D", text: "Ask your team to develop a high level release plan like a product roadmap, showing the features to be included in each release." }
+    ],
+    answer: ["D"],
+    explanation: "Adaptive schedule planning uses incremental planning. A high level release plan is developed that indicates basic features and functionality to be included in each release. (PMBOK Guide) – Seventh Edition, 2021, p61, \"Adaptive schedule planning.\""
+  },
+  {
+    id: 44,
+    question: "You are working in a project team that has recently moved to an Agile way of work. Your business analysts want to gather the requirements, solutions, match them to the scope and do a WBS for the whole deliverable. Your product owner says this will take too long, and is not agile enough for their needs. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your team to review the scope management plan for the proper process." },
+      { id: "B", text: "Break the deliverable down into smaller pieces so you can deliver those faster." },
+      { id: "C", text: "Ask your team to time-box work on the highest priority items in the backlog, update the estimates then reprioritise as necessary." },
+      { id: "D", text: "Review the project charter for the high level scope, and use this to begin delivery quickly." }
+    ],
+    answer: ["C"],
+    explanation: "Adaptive approaches often use time-boxes. The work is based on a prioritised backlog. The project team determines the amount of work they can do in each timebox, estimates the work and self-manages to accomplish the work. At this point, the backlog may be reprioritised for the next timebox. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Timeboxes\""
+  },
+  {
+    id: 45,
+    question: "When reviewing the current progress with your project sponsor, they notice that the system solution is missing a critical piece that will impact the benefit of the project. The project sponsor approves this scope. Your project has a Planned Value of $520,000 and an Actual Cost of $535,000. What will you do next?",
+    choices: [
+      { id: "A", text: "Work with the PMO to unlock the project management reserves for the extra work." },
+      { id: "B", text: "Ask the Product Owner to re-prioritize the backlog and see if the new work will fit." },
+      { id: "C", text: "Perform the work within your normal budget as your project is on track." },
+      { id: "D", text: "Raise a change request for the changes and gain approval from the Change Control Board." }
+    ],
+    answer: ["A"],
+    explanation: "Management reserves are set aside for unexpected activities related to in-scope work. Depending on the organisation's policies, management reserves may be managed by the PMO at the program or portfolio level. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Budget\""
+  },
+  {
+    id: 46,
+    question: "You are in the planning stages of an Agile project where the functional manager and senior users have provided the high level requirements and scope. You have been asked to put together a project team that will be able to deliver quickly. What will you do next?",
+    choices: [
+      { id: "A", text: "Select project members from each city to ensure diversity of knowledge within the team." },
+      { id: "B", text: "Put together a resource management plan outlining the resources required." },
+      { id: "C", text: "Ask your PMO for current available resources and assign them to the work." },
+      { id: "D", text: "Select a small team that can work in the same area so they can solve problems as they arise." }
+    ],
+    answer: ["D"],
+    explanation: "When planning for the team, the project manager considers the ability and necessity for them to work in the same location. Small project teams that can work in the same room are able to take advantage of osmotic communication and can solve problems as they arise. (PMBOK Guide) – Seventh Edition, 2021, p64, \"Project Team Composition and Structure\""
+  },
+  {
+    id: 47,
+    question: "You are putting together a project team to deliver an accounting system to offices around the country. The accounting system you are moving to has not been used by anyone in your organisation before. The project is quite high risk, and the delivery needs to be right the first time. What will you do next?",
+    choices: [
+      { id: "A", text: "Select a small team that can work in the same area so they can solve problems as they arise." },
+      { id: "B", text: "Use a predictive project approach and source part of your team externally if they have skillsets in the new system." },
+      { id: "C", text: "Train existing internal staff in the new system then have them work on the project." },
+      { id: "D", text: "Perform a make or buy analysis on the different software options." }
+    ],
+    answer: ["B"],
+    explanation: "The benefit that outside skills bring to the project are weighed against the costs that will be incurred. With higher risk and a single delivery, a waterfall or predictive project delivery approach is best. (PMBOK Guide) – Seventh Edition, 2021, p63, \"Project Team Composition and Structure\""
+  },
+  {
+    id: 48,
+    question: "You are putting together a project plan for a change that affects nearly ten thousand stakeholders in your organisation. You have identified the affected stakeholders, analysed and prioritised them, and are putting together a communication plan to ensure the right engagement is made. What will you NOT include in your plan?",
+    choices: [
+      { id: "A", text: "Why should information be shared with stakeholders?" },
+      { id: "B", text: "What is the best way to provide information?" },
+      { id: "C", text: "How can they make changes to the communication plan?" },
+      { id: "D", text: "When and how often is information needed?" }
+    ],
+    answer: ["C"],
+    explanation: "Planning communication for the project entails considering the following: Who needs information? Who has the information needed? Why should information be shared with stakeholders? When and how often is information needed? What is the best way to provide information? What information does each stakeholder need? (PMBOK Guide) – Seventh Edition, 2021, p64, \"Communication\""
+  },
+  {
+    id: 49,
+    question: "You put together a resource plan for a large amount of physical inventory to be purchased from overseas. You ordered the inventory during project execution, however global supply chains were impacted and the shipment was delayed by three months, significantly impacting your project. What should you have done differently?",
+    choices: [
+      { id: "A", text: "Hired a resource manager to take care of the resource tasks on your project." },
+      { id: "B", text: "Planned strategically about the timing from order to delivery to usage, managing resource risks and their responses." },
+      { id: "C", text: "Ensured a means to track the inventory from arrival on site to the delivery of an integrated product." },
+      { id: "D", text: "Sourced the inventory locally to reduce the impact of global supply chains." }
+    ],
+    answer: ["B"],
+    explanation: "Project teams whose projects require significant physical materials think and plan strategically about the timing from order, to delivery, to usage. This can include evaluation of bulk ordering versus the cost of storage, global logistics and more. (PMBOK Guide) – Seventh Edition, 2021, p65, \"Physical resources.\""
+  },
+  {
+    id: 50,
+    question: "You are half way through your agile project when there is a significant change to the project scope, after it was found that the project would not be able to deliver the benefits it had promised. You check your project budget and there are contingency and management reserves available. What will you do next?",
+    choices: [
+      { id: "A", text: "Take the project scope change to the change control board for approval." },
+      { id: "B", text: "Use the available contingency reserves to make the appropriate change to project scope." },
+      { id: "C", text: "Review the change management plan for the change control process." },
+      { id: "D", text: "Re-prioritize the product backlog, including the new scope and begin work on the highest priority straight away." }
+    ],
+    answer: ["D"],
+    explanation: "Changes may occur as a result of a risk event, environment change, a deeper understanding of requirements, customer requests and more. Project teams should prepare a process for adapting plans throughout the project. In an Agile team, this may take the form of reprioritising the backlog instead of a change control process with project baselines. (PMBOK Guide) – Seventh Edition, 2021, p66, \"Changes\""
   }
 ];
