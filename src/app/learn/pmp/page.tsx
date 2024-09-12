@@ -1,18 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import QuestionCard from "./_components/QuestionCard";
 import { QUESTIONS } from "./_data/data";
 
 export default function PMP() {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number | null>(null);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number | null>(0);
   const [searchId, setSearchId] = useState<string>("");
   const [searchedQuestion, setSearchedQuestion] = useState<typeof QUESTIONS[0] | null>(null);
-
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * QUESTIONS.length);
-    setCurrentQuestionIndex(randomIndex);
-  }, []);
 
   const handleNextQuestion = () => {
     setCurrentQuestionIndex((prevIndex) => {
@@ -24,7 +19,7 @@ export default function PMP() {
   };
 
   const handleSearch = () => {
-    const question = QUESTIONS.find(q => q.id === parseInt(searchId, 10));
+    const question = searchId ? QUESTIONS.find(q => q.id === parseInt(searchId, 10)) : QUESTIONS[0];
     setSearchedQuestion(question || null);
     setCurrentQuestionIndex(null);
   };
@@ -40,6 +35,11 @@ export default function PMP() {
           onChange={(e) => setSearchId(e.target.value)}
           placeholder="Enter question number"
           className="mr-2 p-2 border rounded w-1/2"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
         />
         <button onClick={handleSearch} className="bg-primary text-white px-2 py-2 bg-green-500  rounded">
           Search
@@ -49,9 +49,9 @@ export default function PMP() {
         </button>
       </div>
 
-      {searchedQuestion && (
+      {searchedQuestion ? (
         <QuestionCard question={searchedQuestion} />
-      )}
+      ) : <p className="text-2xl font-bold">No question found</p>}
 
       {currentQuestionIndex !== null && !searchedQuestion && (
         <QuestionCard question={QUESTIONS[currentQuestionIndex]} />
