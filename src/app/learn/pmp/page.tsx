@@ -19,7 +19,7 @@ export default function PMP() {
   };
 
   const handleSearch = () => {
-    const question = searchId ? QUESTIONS.find(q => q.id === parseInt(searchId, 10)) : QUESTIONS[0];
+    const question = QUESTIONS.find(q => q.id === parseInt(searchId, 10));
     setSearchedQuestion(question || null);
     setCurrentQuestionIndex(null);
   };
@@ -49,9 +49,9 @@ export default function PMP() {
         </button>
       </div>
 
-      {searchedQuestion ? (
+      {searchedQuestion && (
         <QuestionCard question={searchedQuestion} />
-      ) : <p className="text-2xl font-bold">No question found</p>}
+      )}
 
       {currentQuestionIndex !== null && !searchedQuestion && (
         <QuestionCard question={QUESTIONS[currentQuestionIndex]} />
