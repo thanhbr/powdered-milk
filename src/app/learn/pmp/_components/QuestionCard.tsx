@@ -47,35 +47,35 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
   const isCorrect = JSON.stringify(selectedChoices.sort()) === JSON.stringify(question.answer.sort());
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: "1rem" }}>
+    <div className='flex flex-col gap-2'>
       <p><strong>Question {question.id}:</strong> {question.question}</p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: "1rem" }}>
+      <div className='flex flex-col gap-2'>
         {question.choices.map((choice) => (
-          <label key={choice.id} style={{ display: 'flex', alignItems: 'center' }}>
+          <label key={choice.id} className='flex items-center gap-2 cursor-pointer'>
             <input
               type="checkbox"
               checked={selectedChoices.includes(choice.id)}
               onChange={() => handleChoiceSelect(choice.id)}
               disabled={showExplanation}
             />
-            {choice.text}
+            <p>{choice.text}</p>
           </label>
         ))}
       </div>
       <div>
         {!showExplanation ? (
-          <button onClick={handleSubmit}>Submit</button>
+          <button onClick={handleSubmit} className='bg-primary text-white p-2 rounded'>Submit</button>
         ) : (
-          <button onClick={handleReset}>Try Again</button>
+          <button onClick={handleReset} className='bg-primary text-white p-2 rounded'>Try Again</button>
         )}
         {showExplanation && (
           <div>
             <div>
-              <h3>Answer: {question.answer.join(', ')}</h3>
+              <p className={`text-2xl font-bold ${isCorrect ? 'text-green' : 'text-red'}`}>{isCorrect ? 'Correct!' : 'Incorrect'}</p>
+              <p className='font-bold text-2xl'>Answer: {question.answer.join(', ')}</p>
             </div>
             <div className="explanation">
-              <h3 style={{ color: isCorrect ? 'green' : 'red' }}>{isCorrect ? 'Correct!' : 'Incorrect'}</h3>
-              <p>{question.explanation}</p>
+              <div><span className='font-bold'>Explanation:</span> {question.explanation}</div>
             </div>
           </div>
         )}
