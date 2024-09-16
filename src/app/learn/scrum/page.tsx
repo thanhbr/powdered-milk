@@ -26,7 +26,7 @@ export default function PMP() {
 
   return (
     <div className="container mb-[80px]">
-      <p className="text-2xl font-bold">PMP Question Time</p>
+      <p className="text-2xl font-bold">Scrum Question Time</p>
 
       <div className="mb-4 flex flex-row gap-2">
         <input
