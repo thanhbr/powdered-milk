@@ -838,5 +838,366 @@ export const QUESTIONS = [
     ],
     answer: ["B"],
     explanation: "Measuring stakeholders can be done with a Net Promoter Score or satisfaction score, especially with a comment, or a mood chart. Improvement ideas are captured during retrospectives for most agile teams. Pairing is another agile practice, but is not as relevant here. (PMBOK Guide) – Seventh Edition, 2021, p103, \"Measuring: Stakeholders\""
-  }
+  },
+  {
+    id: 71,
+    question: "The project has faced serious impacts in getting materials, with supply chains being disrupted and a global pandemic, and is currently three weeks behind schedule. You take this information to the next project steering committee meeting, where they advise they need more information on how much the project will end up costing. What will you do next?",
+    choices: [
+      { id: "A", text: "Use the current project budget with no deviations until it runs out." },
+      { id: "B", text: "Use the project burn-down chart to see the burn-rate of accounting funds." },
+      { id: "C", text: "Use a regression analysis on the current rate of spending to see where the final cost will end up." },
+      { id: "D", text: "Use the project's estimate at completion to show the steering committee the most likely final cost." }
+    ],
+    answer: ["D"],
+    explanation: "This question is talking about budget forecasts. Regression analysis may work but the best answer is the Estimate at Completion, which is the (BAC / (EV / AC)). (PMBOK Guide) – Seventh Edition, 2021, p104, \"Forecasts\""
+  },
+  {
+    id: 72,
+    question: "You are working on an agile project where the project sponsor and executive managers require lengthy reports about the project work each week. This takes you and the project team a considerable amount of time to do, and reduces time spent creating the actual product. What will you do next?",
+    choices: [
+      { id: "A", text: "Reuse most of the information each week so your time spent on them is reduced." },
+      { id: "B", text: "Suggest the leaders come to the sprint review and gather what they need from the information radiator." },
+      { id: "C", text: "Ask your project sponsor to wait until a steering committee meeting for the information." },
+      { id: "D", text: "Share your working project schedule and budget with the executives instead of creating the reports." }
+    ],
+    answer: ["B"],
+    explanation: "Agile teams showcase actual work completed at the sprint review. Information radiators, also known as big visible charts, are visible displays that allow anyone to \"pull\" the information from. They are often \"low tech and high touch\" and contain information on work completed or remaining, risks, and things like a Kanban board and burn-down chart. (PMBOK Guide) – Seventh Edition, 2021, p108, \"Information Radiators\""
+  },
+  {
+    id: 73,
+    question: "You are working on a project that has planned as much as they can up-front. You would like them to move to a more agile way of work. Currently, the work is hidden, the team catches up only once a week in a working group, and it is hard to see what each person is working on and keep track of it. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your team to report on their work in a written status update each day so you can keep track." },
+      { id: "B", text: "Have more working group meetings so you are always up to date on what your team is working on." },
+      { id: "C", text: "Ask the team to move their work to a central, visible task board, then have a short meeting each day to discuss progress on the cards." },
+      { id: "D", text: "Remove the team meetings altogether and trust your team to get the work done." }
+    ],
+    answer: ["C"],
+    explanation: "This question is talking about stand-ups and a Kanban board. \"Task boards\" are part of the visual controls used, where an increment of work moves from To Do to In Progress to Done. The team meets for 15 minutes each day to discuss progress and raise any impediments. (PMBOK Guide) – Seventh Edition, 2021, p109, \"Visual Controls: Task boards\""
+  },
+  {
+    id: 74,
+    question: "You are working on a hybrid project, where the majority of the work has been planned up front. The team manages their work via a Kanban board, and report on progress and blockers each day. As the project evolves, stakeholders have added more and more scope to the product, with one executive raising an urgent feature that needs to be added. What will you do next?",
+    choices: [
+      { id: "A", text: "Limit the number of cards in the \"Ready\" or \"To Do\" column, and ask the Product Owner to work with stakeholder requests, noting the need to swap the new item for an existing item." },
+      { id: "B", text: "Match the number of user stories to the team's velocity, to ensure a sustainable pace." },
+      { id: "C", text: "Work with the stakeholder to raise a change request, and note the outcome in the change log." },
+      { id: "D", text: "Review the impact of the scope change with the stakeholder using the WBS dictionary." }
+    ],
+    answer: ["A"],
+    explanation: "As a hybrid project using Kanban and some Agile ceremonies, the most appropriate way to manage the work and scope is by using a WIP Limit on the board. The Product Owner has the final say on prioritizing features and scope, so works with stakeholders to ensure they understand something may be de-prioritized by adding a new feature. (PMBOK Guide) – Seventh Edition, 2021, p110, \"Kanban Board\""
+  },
+  {
+    id: 75,
+    question: "You are working as a product owner in an agile team, where the main measure of project success is the number of features delivered into production. Over the past six months, the team have delivered the highest number of features your organization has ever seen, however customers are starting to complain about issues and bugs in the product. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the team to work harder in delivering more features, to fix the product issues." },
+      { id: "B", text: "Adjust the product metrics to include customer satisfaction and quality measures." },
+      { id: "C", text: "Add a slack card of 5 points into the sprint backlog, to deal with the technical debt." },
+      { id: "D", text: "Remove customer comments and feedback until you have finished delivering all the features." }
+    ],
+    answer: ["B"],
+    explanation: "This question is about the Hawthorne Effect, where what we measure influences the behavior of our team. In this case, we measured the number of features only, and the team delivered, but at the cost of quality and customer satisfaction. Adding measures for those two things will balance the team's behavior. (PMBOK Guide) – Seventh Edition, 2021, p112, \"Measurement pitfalls: Hawthorn Effect\""
+  },
+  {
+    id: 76,
+    question: "You have been working on a project for the past eight months. Your project team have been approached by multiple stakeholders for reporting on various performance measures about the project and the product area. Now, a large amount of their time is spent on creating these reports for others. They have escalated this issue to you. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the project stakeholders to stop interacting with your project team." },
+      { id: "B", text: "Spend a portion of your project budget to automate the reports for your stakeholders." },
+      { id: "C", text: "Work with the team, including the stakeholders, to only measure things that will facilitate a decision, help avoid an issue or increase project performance." },
+      { id: "D", text: "Invite your stakeholders to your sprint reviews, so they can see a working feature in practice." }
+    ],
+    answer: ["C"],
+    explanation: "The intent in measuring and displaying data is to learn and improve. To optimize project performance and efficiency, only measure and report information that will allow the project team to learn, facilitate a decision, improve some aspect of performance, help avoid an issue, or help prevent performance deterioration. (PMBOK Guide) – Seventh Edition, 2021, p114, \"Growing and Improving\""
+  },
+  {
+    id: 77,
+    question: "You are working on a project where there is a significant amount of uncertainty about the requirements. There is also a legislative change coming, and no one knows what it will mean for your industry. As a project manager, how will you deal with this uncertainty?",
+    choices: [
+      { id: "A", text: "Perform additional planning for your project to improve your view on scope management." },
+      { id: "B", text: "Hold additional retrospectives, to capture challenges and improvements from your team." },
+      { id: "C", text: "Create a risk assessment of all possible project risks, with their risk ratings and owners." },
+      { id: "D", text: "Gather information and prepare for multiple outcomes, and build team resilience through processes and training." }
+    ],
+    answer: ["D"],
+    explanation: "This question is about general uncertainty and risk. Uncertainty cannot be predicted precisely, and methods for responding to uncertainty include gathering information, preparing for multiple outcomes, using set-based design, and building in resilience. (PMBOK Guide) – Seventh Edition, 2021, p118, \"General Uncertainty\""
+  },
+  {
+    id: 78,
+    question: "You are working on a project with a vendor where there is significant ambiguity involved and multiple options the team could go with. Many outcomes are possible that have varying degrees of impact to improve the situation. What will you do next?",
+    choices: [
+      { id: "A", text: "Use experiments and prototypes, and progressive elaboration to work your way through it." },
+      { id: "B", text: "Ask your team for additional reporting around the different options so you can make an informed decision." },
+      { id: "C", text: "Add all the different options into your project scope, so all your bases are covered." },
+      { id: "D", text: "Work more closely with your senior users so they can inform you of the product requirements." }
+    ],
+    answer: ["A"],
+    explanation: "This question is on Ambiguity. There are two types of ambiguity: Conceptual (where it is hard to understand) and situational (where there are multiple options and outcomes). Use progressive elaboration, experiments and prototypes to work through this ambiguity. (PMBOK Guide) – Seventh Edition, 2021, p120, \"Ambiguity\""
+  },
+  {
+    id: 79,
+    question: "You are working on a project to improve some software that has been in production for over 17 years, and has been modified extensively over that time. It also integrates with many other systems within your organization. You cannot decide which features to deliver first. How will you deal with the complexity?",
+    choices: [
+      { id: "A", text: "List out the possible features you can deliver and prioritize them by cost over benefit." },
+      { id: "B", text: "Simulate decoupling connecting parts to simplify the number of variables, then reframe your view by brainstorming with a diverse set of stakeholders." },
+      { id: "C", text: "Provide an incentive for your project team for whoever can solve this complex problem." },
+      { id: "D", text: "Form a business-case for a third party system to replace the existing, complex system, to transfer the risk of delivery." }
+    ],
+    answer: ["B"],
+    explanation: "This question is about Complexity. Methods for dealing with complexity include Systems based – decoupling and simulation; Reframing – Diversity and balanced views; Process based – Iterating, engaging stakeholders and using a fail safe or error proofing. (PMBOK Guide) – Seventh Edition, 2021, p121, \"Complexity\""
+  },
+  {
+    id: 80,
+    question: "You are working on a project that requires a very particular programming skill-set that is not very common. It is also the hottest job-market the industry has seen in two decades, people are hard to come by and leave often. The programming language is also evolving at a quick pace. What will you do next?",
+    choices: [
+      { id: "A", text: "Develop the product from scratch in a more common programming language." },
+      { id: "B", text: "Ask your whole team to learn the programming skill-set, to cover the risk." },
+      { id: "C", text: "Use alternatives analysis to gather different options, and ensure a sufficient cost reserve to help complete your project." },
+      { id: "D", text: "Raise a risk to your project completion, with the threat of project team member skill-sets." }
+    ],
+    answer: ["C"],
+    explanation: "This question is referring to Volatility, which is an environment that is subject to rapid and unpredictable change, including ongoing fluctuations in available skill-sets or materials. Alternatives analysis and cost reserves are ways to deal with volatility. (PMBOK Guide) – Seventh Edition, 2021, p122, \"Volatility\""
+  },
+  {
+    id: 81,
+    question: "Your project team have found a significant data vulnerability in one of the features planned in your product backlog, where customer data is exposed without password access. This feature is partially made by a third party vendor, and the relationship is owned by a functional manager in your organization. What will you do next?",
+    choices: [
+      { id: "A", text: "Avoid the risk and wait for the third party vendor to fix the vulnerability." },
+      { id: "B", text: "Transfer the risk by asking a different vendor to create a feature with no vulnerability in their design." },
+      { id: "C", text: "Escalate the threat to the manager with appropriate authority to act on the response." },
+      { id: "D", text: "Accept the risk and move on the other features so the work continues to get done." }
+    ],
+    answer: ["C"],
+    explanation: "With project risks and responses to threats, there are five main types: Avoid, Escalate, Transfer, Mitigate and Accept. Escalation is appropriate when the project team agrees that a threat is outside the scope of the project, or exceeds the project manager's authority. (PMBOK Guide) – Seventh Edition, 2021, p123, \"Overall Project Risk: Threats\""
+  },
+  {
+    id: 82,
+    question: "You brainstorm risk responses with your project team and project sponsor, and decide you cannot transfer a certain high impact risk. You also cannot avoid the risk, and there is no one in the organization to escalate it to. Your project sponsor agrees that you should actively accept the risk. What will you do next?",
+    choices: [
+      { id: "A", text: "Develop a contingency plan that would be triggered if the event occurred." },
+      { id: "B", text: "Shift the ownership to a third party to manage the risk and bear the impact if it does occur." },
+      { id: "C", text: "Act to eliminate the threat or protect the project from its impact only." },
+      { id: "D", text: "Take action to reduce the probability of its occurrence, and the impact of the threat." }
+    ],
+    answer: ["A"],
+    explanation: "This question is describing the various risk responses to threats. Actively accepting a risk can include developing a contingency plan that would be triggered if the event occurred. Passive acceptance means doing nothing. Acting to eliminate the threat is avoiding it, escalating requires an outside manager's authority, shifting the ownership is transferring the risk, and mitigating the risk is taking action to reduce the probability of occurrence or impact. (PMBOK Guide) – Seventh Edition, 2021, p123, \"Risk: Threats\""
+  },
+  {
+    id: 83,
+    question: "You are working on a project to build a new customer database system for an engineering team. In working with the requirements, you realize that this system can also work with other teams within your organization, and the effort to add those teams is quite small. What will you do next?",
+    choices: [
+      { id: "A", text: "Work with the other teams and their managers to escalate the opportunity." },
+      { id: "B", text: "Work with those other teams and their managers to exploit the opportunity." },
+      { id: "C", text: "Work with those other teams and their managers to enhance the opportunity." },
+      { id: "D", text: "Work with the other teams and their managers to accept the opportunity." }
+    ],
+    answer: ["B"],
+    explanation: "When dealing with opportunities in your project there are five main responses: Exploit is acting to ensure an opportunity occurs, Escalating is when it is outside the authority of the project manager, sharing allocates ownership to a third party who is best able to capture its benefit, enhancing is increasing the probability of occurrence, and accepting merely acknowledges its existence without doing anything further. (PMBOK Guide) – Seventh Edition, 2021, p125, \"Risks: Opportunities\""
+  },
+  {
+    id: 84,
+    question: "You are working as a product owner in an agile team, and during a recent risk review the team have uncovered various risks that will impact your project. You brainstorm risk responses with your team. The project customer would like them to be mitigated as soon as possible. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your team to work on the risk responses and get them done as soon as possible." },
+      { id: "B", text: "Ignore the risks initially, some may dissipate over time and only the important ones will be left." },
+      { id: "C", text: "Assign the risk responses to all stakeholders around your project team to share the load." },
+      { id: "D", text: "Prioritize the risks by comparing the expected monetary value of the risk to the anticipated return on investment of upcoming deliverables." }
+    ],
+    answer: ["D"],
+    explanation: "Prioritizing risk responses in a risk adjusted backlog is just as important as prioritizing features, to avoid negative risk impacts and technical debt. Comparing the EMV of a risk to the anticipated ROI of a deliverable allows product owners to incorporate risk responses into the planned work. (PMBOK Guide) – Seventh Edition, 2021, p15, \"Checking outcomes – Stakeholder Performance\""
+  },
+  {
+    id: 85,
+    question: "You are planning a project where supply chains have been impacted, and the requirements are complex and intertwined with other areas of the business. Your project sponsor asks you to manage these risks before the project moves to execution. What will you do next?",
+    choices: [
+      { id: "A", text: "Move to project execution, so you can work through risks as they happen." },
+      { id: "B", text: "Move to an agile way of work so you can deliver faster and also deal with the complexity." },
+      { id: "C", text: "Note the risks with appropriate controls, and add a contingency reserve in the project budget." },
+      { id: "D", text: "Assign a management reserve to your project budget and deal with the risks before moving to project execution." }
+    ],
+    answer: ["C"],
+    explanation: "Reserves are an amount of time or budget set aside to account for handling risks. Contingency reserve is for identified risks, should they occur. Management reserve is for unknown events such as un-planned, in-scope work. (PMBOK Guide) – Seventh Edition, 2021, p127, \"Management and contingency reserve\""
+  },
+  {
+    id: 86,
+    question: "You are working on an agile project and delivering a usable feature every few weeks. The project sponsor is from a waterfall background and is concerned that there is not enough focus on risk. They would like to hold a regular risk review with a wide group of stakeholders. What will you suggest instead?",
+    choices: [
+      { id: "A", text: "There is no need for a separate meeting as risk is everyone's responsibility in an agile team." },
+      { id: "B", text: "Use daily stand-ups to report blockers early, and fortnightly demonstrations of the product to catch any stakeholder dissatisfaction." },
+      { id: "C", text: "Use the Kanban board to see the work and how it flows from the backlog to \"done\"." },
+      { id: "D", text: "Hold the risk meeting, but only with the immediate project team to avoid unnecessary participants." }
+    ],
+    answer: ["B"],
+    explanation: "In agile teams the risk review can take the form of the daily stand-up, reporting blockers that could become threats if they continue to delay progress. Frequent demonstrations of the product can also surface threats and opportunities, as can retrospectives. While quality is everyone's responsibility, and the Kanban board does visualize the work, B is the best answer. (PMBOK Guide) – Seventh Edition, 2021, p127, \"Risk Review\""
+  },
+  {
+    id: 87,
+    question: "Your Project Management Office has no prescribed way of work, so are working with a vendor who supplies an eXtreme Programming framework at a significant cost. Your organization is using it, but projects are still running behind schedule, over budget, and with low customer satisfaction. What will you do next?",
+    choices: [
+      { id: "A", text: "Tailor the approach to suit the organization, operating environment and project needs." },
+      { id: "B", text: "Use a waterfall approach instead, to ensure the proper planning is completed for every project." },
+      { id: "C", text: "Switch to Scrum instead, as it is a more popular framework and has been tested in the market." },
+      { id: "D", text: "Tighten the controls around the project environment with a more directive PMO approach." }
+    ],
+    answer: ["A"],
+    explanation: "Projects operate in complex environments that need to balance competing demands. Tailoring is performed to better suit the organization, operating environment and project needs. (PMBOK Guide) – Seventh Edition, 2021, p132, \"Tailoring Overview\""
+  },
+  {
+    id: 88,
+    question: "Your Project Management Office is in the middle of a company-wide \"ways of working\" transformation. They have taken a popular project framework and are tailoring it to the organization with branded templates and processes that meet their existing governance requirements. You have been asked to help finalize the process. What will you do next?",
+    choices: [
+      { id: "A", text: "Gather feedback from the functional business areas to ensure the process meets their needs." },
+      { id: "B", text: "Roll out the new way of working to the PMO as a pilot first, then to the rest of the organization." },
+      { id: "C", text: "Enable a process for tailoring based on size and complexity, and implement ongoing improvement." },
+      { id: "D", text: "Form a working group comprised of executives and project professionals." }
+    ],
+    answer: ["C"],
+    explanation: "This question is referring to the tailoring process, which is: Select the initial development approach, tailor for the organization, tailor for the project, and implement ongoing improvement. (PMBOK Guide) – Seventh Edition, 2021, p137, \"The Tailoring Process\""
+  },
+  {
+    id: 89,
+    question: "You are a manager of a PMO in a large organization, which has recently undertaken a company-wide way of working transformation. You need to select an initial development approach for your projects, which you will then tailor to suit them further. What will you do next?",
+    choices: [
+      { id: "A", text: "Use the framework that best engages your executive team through easy-to-use graphics and presentations." },
+      { id: "B", text: "Select the most popular current framework to keep up with what other organizations are doing." },
+      { id: "C", text: "Select multiple development approaches as a baseline for your organization." },
+      { id: "D", text: "Use a suitability filter to assess the most appropriate development approach." }
+    ],
+    answer: ["D"],
+    explanation: "A suitability filter tool helps project teams consider whether a project has characteristics that lend themselves toward a predictive, hybrid, or adaptive approach. Select one as a base, then enable the ability to tailor to your project or organization's circumstances. (PMBOK Guide) – Seventh Edition, 2021, p138, \"Select Initial Development Approach.\""
+  },
+  {
+    id: 90,
+    question: "Your organization is starting to move to an agile way of work and they are setting up a Value Delivery Office (VDO) to complement the existing PMO. The executives in the area have begun working through what the function looks like and the roles and responsibilities that might exist. They approach you for help. What will you tell them?",
+    choices: [
+      { id: "A", text: "The VDO is responsible for the value delivered, and owns the programs within the organization." },
+      { id: "B", text: "The VDO focuses on coaching project teams, building adaptive skills and capabilities and mentoring sponsors and product owners to be more effective." },
+      { id: "C", text: "The VDO is responsible for agile resources such as scrum masters and product owners to be allocated effectively to project teams." },
+      { id: "D", text: "The VDO creates the organizational framework to be used on each project throughout the company." }
+    ],
+    answer: ["B"],
+    explanation: "A VDO serves an enabling role, rather than a management or oversight function. It focuses on coaching project teams, building adaptive skills and capabilities throughout the organization, and mentoring sponsors and product owners. (PMBOK Guide) – Seventh Edition, 2021, p141, \"Tailor for the organization: VDO\""
+  },
+  {
+    id: 91,
+    question: "You have been planning a project for the last two months, gathering requirements and scope and assigning tasks to a schedule. As you get closer to the execution phase of your project you need to decide what delivery approach you will use. The requirements are likely to change, require a medium amount of compliance, but can be released in one go. What will you do next?",
+    choices: [
+      { id: "A", text: "Set up a Predictive delivery approach with your team." },
+      { id: "B", text: "Set up an Incremental delivery approach with your team." },
+      { id: "C", text: "Set up an Agile or adaptive delivery approach with your team." },
+      { id: "D", text: "Set up an Iterative delivery approach with your team." }
+    ],
+    answer: ["D"],
+    explanation: "Gathering feedback and improving over time, while delivering in one release is an iterative delivery approach. Incremental releases increments of value (like features), Predictive plans everything up front once then delivers in one go, and Agile gathers feedback and releases incrementally. (PMBOK Guide) – Seventh Edition, 2021, p141, \"Tailor for the project: Product / Deliverable\""
+  },
+  {
+    id: 92,
+    question: "You have been asked to make a process improvement in the accounting area of your organization. You have been assigned a small team of nine people, each with all the skills you need to complete the project. The team is co-located, and have unlimited access to the project customer. How will you tailor your delivery approach?",
+    choices: [
+      { id: "A", text: "Use a predictive / waterfall delivery approach." },
+      { id: "B", text: "Use an agile / adaptive delivery approach." },
+      { id: "C", text: "Use an incremental delivery approach." },
+      { id: "D", text: "Use a hybrid delivery approach." }
+    ],
+    answer: ["B"],
+    explanation: "An agile / adaptive delivery approach works best when the team is small (fewer than 9 – 12 people), has close access to the customer, is cross-functional and is co-located. Predictive is best when lots of planning is needed, Hybrid is best when there are two different approaches needed. Incremental delivers features over time. (PMBOK Guide) – Seventh Edition, 2021, p142, \"Tailor for the project: Project team.\""
+  },
+  {
+    id: 93,
+    question: "You have been working as a project manager in an organization for some time, where an agile-centric delivery approach and way of work has been selected and tailored for the organization. Over the past few months, you notice several things that are not working and could be improved as you begin new projects. What will you do next?",
+    choices: [
+      { id: "A", text: "Review the product backlog to see the flow of features going through project teams." },
+      { id: "B", text: "Look into issues, threats and quality assurance statistics." },
+      { id: "C", text: "Suggest a retrospective with PMO leaders to determine ongoing improvement opportunities." },
+      { id: "D", text: "Review a control chart and value stream map to see non-value-added activities and remove waste in the process." }
+    ],
+    answer: ["C"],
+    explanation: "In an agile environment, holding a retrospective to gather what is working well and what is challenging us or could be improved is the best way to find ongoing improvements. (PMBOK Guide) – Seventh Edition, 2021, p151, \"Tailoring: Diagnostics\""
+  },
+  {
+    id: 94,
+    question: "You have been working on a project to deliver a new customer data system, and have noticed that the work is starting to slow down. Fewer user stories are appearing in your sprint backlog, as they are not ready. You hold a retrospective with your team and discover that there are long delays waiting for requirements and acceptance criteria approvals. What will you do next?",
+    choices: [
+      { id: "A", text: "Streamline approval decisions through fewer people (such as a Product Owner) authorized to make decisions up to certain value thresholds." },
+      { id: "B", text: "Ask your team to place the user stories in the sprint backlog, reducing the need for customer approval." },
+      { id: "C", text: "Note the long delays as a risk to your project, with a high likelihood as it is currently happening." },
+      { id: "D", text: "Escalate the issue to the functional manager to ensure approvals are happening quickly." }
+    ],
+    answer: ["A"],
+    explanation: "Where there are long delays or waiting for approvals, the tailoring suggestion is to streamline decisions through fewer people authorized to make decisions up to certain value thresholds. (PMBOK Guide) – Seventh Edition, 2021, p151, \"Common situations and tailoring suggestions\""
+  },
+  {
+    id: 95,
+    question: "You have been assigned to take over an existing project as the previous project manager leaves for another opportunity. In working with your team you notice there is a large amount of work currently in progress all at once, with team members working on multiple items at a time and constantly context-switching between tasks. What will you do next?",
+    choices: [
+      { id: "A", text: "Add more people to your project to get the work done at a faster rate." },
+      { id: "B", text: "Use value stream mapping and Kanban boards to visualize the work and brainstorm solutions with your team." },
+      { id: "C", text: "Ask your team to work overtime to cover the extra work and bring it back into line." },
+      { id: "D", text: "Review the scope of the project and reduce items with a low impact to customer satisfaction." }
+    ],
+    answer: ["B"],
+    explanation: "Where there is too much Work In Progress (WIP) or high rates of scrap, it is recommended to use techniques like value Stream Mapping and Kanban Boards to visualize the work, identify the issues, and propose solutions. Adding more people can also complicate communication and processes. (PMBOK Guide) – Seventh Edition, 2021, p151, \"Common situations and tailoring suggestions\""
+  },
+  {
+    id: 96,
+    question: "The product owner has prioritized the product backlog of features, and the team creates user stories with estimates and places enough to fill a two week sprint. You notice that the pieces being completed are being rejected by the customer for defects and missed requirements. What will you do next?",
+    choices: [
+      { id: "A", text: "Create the project scope from scratch with the project team and customers so it is correct." },
+      { id: "B", text: "Have an \"Iteration zero\" planning sprint with your project team to set it up for success." },
+      { id: "C", text: "Add more feedback loops such as shoulder checks, peer review, unit and system testing." },
+      { id: "D", text: "Have less frequent customer demonstrations, so they only see the product when it is correct." }
+    ],
+    answer: ["C"],
+    explanation: "When a product is facing poor quality deliverables, the tailoring suggestion is to add more feedback verification loops and quality assurance steps, including things such as demonstrations and reviews, peer review, shoulder checks, pair programming, quality audits or testing (unit, system, user, regression, and automated). (PMBOK Guide) – Seventh Edition, 2021, p151, \"Common situations and tailoring suggestions\""
+  },
+  {
+    id: 97,
+    question: "Your project team has started to find their rhythm, yet you notice that they seem disengaged in their work and are dragging their feet on normal tasks. You check your project budget and note that the team are all paid fairly for the market and within the same range for the role. What will you do next?",
+    choices: [
+      { id: "A", text: "Look for ways to reward team members with bonuses above their normal pay rate." },
+      { id: "B", text: "Move team members around to different roles frequently, so they experience job variety." },
+      { id: "C", text: "Give the team a paid day off to show how much you appreciate their work." },
+      { id: "D", text: "Establish ways for the team to grow and advance, such as career paths or learning pathways." }
+    ],
+    answer: ["D"],
+    explanation: "Frederick Herzberg conducted a study of motivational factors in working life, and found hygiene factors (company policies, salary and the physical environment) and motivational factors (achievement, growth and advancement). If hygiene factors are insufficient, they cause dissatisfaction. If they are sufficient, then use motivational factors to provide satisfaction. Paying bonuses or a paid day off may seem like a good idea, but will fade and not address the root cause of engagement. (PMBOK Guide) – Seventh Edition, 2021, p158, \"Hygiene and motivational Factors\""
+  },
+  {
+    id: 98,
+    question: "You are working as a project manager on a regulatory change for your organization. You notice that the team are not communicating as well as they could be. You put together a plan to improve team communication by increasing its effectiveness and richness. What will you do?",
+    choices: [
+      { id: "A", text: "Include methods that will handle multiple information cues, facilitate rapid feedback, and utilize natural language." },
+      { id: "B", text: "Include methods to escalate issues easily, with executives being open for anything the team needs." },
+      { id: "C", text: "Include ways to get sign off in writing, so it can be recorded and reviewed later when needed." },
+      { id: "D", text: "Include communication that ensures everyone gets a voice and input into decisions." }
+    ],
+    answer: ["A"],
+    explanation: "Alistair Cockburn developed a model that describes communication channels along the axes of effectiveness and richness. Media richness includes the ability to handle multiple information cues, facilitate rapid feedback, establish a personal focus and utilize natural language – for example face to face communication, or co-located teams. (PMBOK Guide) – Seventh Edition, 2021, p157, \"Effectiveness of communication channels\""
+  },
+  {
+    id: 99,
+    question: "Your deliverables have been signed off by the Product Owner and are ready to be released to the customer, which is the financial analytics team of your organization. The new system will be quite a change from their normal day-to-day work. The team already have the desire to use the new system. What will you do next?",
+    choices: [
+      { id: "A", text: "Tell them the vision and why the change is necessary." },
+      { id: "B", text: "Use training and education to show them the new processes and systems." },
+      { id: "C", text: "Give them unlimited hands-on practice so they can get used to the new system." },
+      { id: "D", text: "Include rewards, recognition, feedback and measurement." }
+    ],
+    answer: ["B"],
+    explanation: "The ADKAR model for change management has five steps: Awareness, Desire, Knowledge, Ability and Reinforcement. Once people have the desire for the change, the next step is knowledge which includes training and education for the new processes and systems. (PMBOK Guide) – Seventh Edition, 2021, p161, \"ADKAR Model.\""
+  },
+  {
+    id: 100,
+    question: "You are leading a large organizational change that affects more than a thousand people across multiple teams. You have engaged with the senior managers of that area, created a brief vision statement that summarizes the change, and created a strategy to realize the vision. You communicate the vision throughout the change process. What will you do next?",
+    choices: [
+      { id: "A", text: "Release multiple usable features to the affected teams so they can get used to it gradually." },
+      { id: "B", text: "Anchor the changes into corporate culture by telling success stories and recognizing people who embody the change." },
+      { id: "C", text: "Address the obstacles to change, including outdated processes and people resistance." },
+      { id: "D", text: "Set goals for continued improvement on the change throughout the organization." }
+    ],
+    answer: ["C"],
+    explanation: "John Kotter's 8-step process for leading change is a top down approach: 1: Create urgency, 2: Form a powerful coalition, 3: Create a vision for change, 4: Communicate the vision, 5: Remove obstacles, 6: Create short term wins, 7: Build on the change, 8: Anchor the changes in corporate culture. After communicating the vision comes removing obstacles. (PMBOK Guide) – Seventh Edition, 2021, p162, \"The 8-Step Process for Leading Change\""
+  },
+
 ];
