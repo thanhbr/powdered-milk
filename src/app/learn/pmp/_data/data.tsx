@@ -57,13 +57,13 @@ export const QUESTIONS = [
       { id: "D", text: "Ask for additional funding to see if you can improve the product instead of discontinuing it." }
     ],
     answer: ["B"],
-    explanation: "This question is about delivering value – the primary motivator for a project. If the project is no longer aligned with the business need or it seems unlikely to provide value, the organisation may choose to terminate the effort. (PMBOK Guide) – Seventh Edition, 2021, p35, \"Focus on Value\""
+    explanation: "This question is about delivering value – the primary motivator for a project. If the project is no longer aligned with the business need or it seems unlikely to provide value, the organization may choose to terminate the effort. (PMBOK Guide) – Seventh Edition, 2021, p35, \"Focus on Value\""
   },
   {
     id: 6,
     question: "You have collected the requirements for your project and are creating the scope statement and work breakdown structure. During this process you notice some functionality in your database system that will help a different project you are aware of within your Project Management Office (PMO). What will you do next?",
     choices: [
-      { id: "A", text: "Place the feature in the other project's backlog, and ask them to prioritise it as soon as possible." },
+      { id: "A", text: "Place the feature in the other project's backlog, and ask them to prioritize it as soon as possible." },
       { id: "B", text: "Raise the functionality in your risk register as a threat, with the response to \"mitigate\"." },
       { id: "C", text: "Add the scope to your project and complete it as soon as possible." },
       { id: "D", text: "Raise the functionality in your risk register as an opportunity with the response to \"exploit\", and meet with the other project team and sponsor to discuss." }
@@ -81,7 +81,7 @@ export const QUESTIONS = [
       { id: "D", text: "Escalate the issue to the project steering committee and ask them to resolve the problem." }
     ],
     answer: ["B"],
-    explanation: "Leadership is not the same as authority. When senior managers suffer conflict over priorities, neutral facilitation helps more than detailed recommendations. Leadership acumen involves focusing a team around agreed goals, generating consensus on the way forward, negotiating and resolving conflict, and more. (PMBOK Guide) – Seventh Edition, 2021, p42, \"Demonstrate leadership behaviours\""
+    explanation: "Leadership is not the same as authority. When senior managers suffer conflict over priorities, neutral facilitation helps more than detailed recommendations. Leadership acumen involves focusing a team around agreed goals, generating consensus on the way forward, negotiating and resolving conflict, and more. (PMBOK Guide) – Seventh Edition, 2021, p42, \"Demonstrate leadership behaviors\""
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ export const QUESTIONS = [
   },
   {
     id: 9,
-    question: "You are working on a project where senior users have been testing the product as parts are released. They have found some missing requirements and defects. Their manager is worried that the project won't deliver a product that is fit for purpose, without defects and within the timeframe needed. What will you do next?",
+    question: "You are working on a project where senior users have been testing the product as parts are released. They have found some missing requirements and defects. Their manager is worried that the project won't deliver a product that is fit for purpose, without defects and within the time-frame needed. What will you do next?",
     choices: [
       { id: "A", text: "Perform some of the testing yourself to ensure a quality product." },
       { id: "B", text: "Help every team member to focus on quality, from correct acceptance criteria to a developed and tested product." },
@@ -177,7 +177,7 @@ export const QUESTIONS = [
       { id: "D", text: "Create a SharePoint page for changes that any stakeholder can gather information from anytime." }
     ],
     answer: ["B"],
-    explanation: "This question is about engaging stakeholders. The process includes: Identify, Understand and Analyze, Prioritize, Engage and Monitor your stakeholders. Where you have too many to engage effectively, prioritisation is the key. Impact and influence are two ways, as well as Power, Beliefs, Expectations, proximity to the project, interest and more. (PMBOK Guide) – Seventh Edition, 2021, p11, 12, \"Stakeholder Engagement: Prioritise and Engage\""
+    explanation: "This question is about engaging stakeholders. The process includes: Identify, Understand and Analyze, Prioritize, Engage and Monitor your stakeholders. Where you have too many to engage effectively, prioritization is the key. Impact and influence are two ways, as well as Power, Beliefs, Expectations, proximity to the project, interest and more. (PMBOK Guide) – Seventh Edition, 2021, p11, 12, \"Stakeholder Engagement: Prioritize and Engage\""
   },
   {
     id: 16,
@@ -246,7 +246,7 @@ export const QUESTIONS = [
       { id: "A", text: "Start an open dialogue with the functional manager, raise the incorrect scope items and their impacts." },
       { id: "B", text: "Override the marketing manager's decision on scope as you are the senior project manager." },
       { id: "C", text: "Raise a change request for the additional scope and let the Change Control Board decide." },
-      { id: "D", text: "Place the additional scope into the product backlog for the product owner to prioritise it." }
+      { id: "D", text: "Place the additional scope into the product backlog for the product owner to prioritize it." }
     ],
     answer: ["A"],
     explanation: "Without an open dialogue, you may not know if the scope was a mistake, previously approved, or any other reason for it being there. Positive discourse and courage are key aspects of a winning project team culture. Others include support, respect, celebrating success, and transparency. (PMBOK Guide) – Seventh Edition, 2021, p21, \"Project Team Culture\""
@@ -261,7 +261,7 @@ export const QUESTIONS = [
       { id: "D", text: "Create a project Gantt Chart schedule and burn-down chart so the project work is transparent to all." }
     ],
     answer: ["B"],
-    explanation: "This question calls for leadership skills, where setting a vision and purpose and showing your team how they are making a difference can increase their intrinsic motivation. Transferring to another team in the same company may risk the same result, and threatening your team may embed their behaviour further. (PMBOK Guide) – Seventh Edition, 2021, p24,25, \"Leadership Skills: Establishing a Vision; Motivation\""
+    explanation: "This question calls for leadership skills, where setting a vision and purpose and showing your team how they are making a difference can increase their intrinsic motivation. Transferring to another team in the same company may risk the same result, and threatening your team may embed their behavior further. (PMBOK Guide) – Seventh Edition, 2021, p24,25, \"Leadership Skills: Establishing a Vision; Motivation\""
   },
   {
     id: 23,
@@ -281,7 +281,7 @@ export const QUESTIONS = [
     choices: [
       { id: "A", text: "Raise a request to the program to co-locate all your project team members as soon as possible." },
       { id: "B", text: "Proceed with daily stand-ups and working group meetings with any team members in your area." },
-      { id: "C", text: "Set team leaders for each area around the country, to report back to you as the centralised project leader." },
+      { id: "C", text: "Set team leaders for each area around the country, to report back to you as the centralized project leader." },
       { id: "D", text: "Use technology to maintain ongoing contact with audio and video for meetings, with a team web site to keep all project information available." }
     ],
     answer: ["D"],
@@ -301,7 +301,7 @@ export const QUESTIONS = [
   },
   {
     id: 26,
-    question: "You are working on a project where the requirements are clear but the solution ideas are uncertain. The product owner and the technical experts can't be sure which ideas will work in practice, and which ones won't. The organisation cannot afford to get this project wrong, as they have previously made mistakes and customers are starting to leave. What will you do next?",
+    question: "You are working on a project where the requirements are clear but the solution ideas are uncertain. The product owner and the technical experts can't be sure which ideas will work in practice, and which ones won't. The organization cannot afford to get this project wrong, as they have previously made mistakes and customers are starting to leave. What will you do next?",
     choices: [
       { id: "A", text: "Use an Incremental development approach for the project." },
       { id: "B", text: "Use an Iterative development approach for the project." },
@@ -309,11 +309,11 @@ export const QUESTIONS = [
       { id: "D", text: "Use a hybrid development approach for the project." }
     ],
     answer: ["B"],
-    explanation: "For development approaches, an iterative approach is used when you need to capture ideas that might change, while still delivered in one release. Incremental progressively delivers features (or increments), Predictive plans everything up-front, and hybrid is a combination of predictive and adaptive. (PMBOK Guide) – Seventh Edition, 2021, p37, \"Development approaches.\" Agile Practice Guide, 2017, p18, \"Characteristics of project lifecycles.\""
+    explanation: "For development approaches, an iterative approach is used when you need to capture ideas that might change, while still delivered in one release. Incremental progressively delivers features (or increments), Predictive plans everything up-front, and hybrid is a combination of predictive and adaptive. (PMBOK Guide) – Seventh Edition, 2021, p37, \"Development approaches.\" Agile Practice Guide, 2017, p18, \"Characteristics of project life-cycles.\""
   },
   {
     id: 27,
-    question: "You are working on a new product for your organization where the requirements are complex and are likely to change a few times as the project progresses. The organisation also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
+    question: "You are working on a new product for your organization where the requirements are complex and are likely to change a few times as the project progresses. The organization also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
     choices: [
       { id: "A", text: "Recommend an Iterative development approach." },
       { id: "B", text: "Recommend a Predictive development approach." },
@@ -369,7 +369,7 @@ export const QUESTIONS = [
       { id: "D", text: "Progressively elaborate the vision statement and project charter to define a coordinated approach." }
     ],
     answer: ["D"],
-    explanation: "Before initiating a project of any sort, we start with a vision statement, project charter or business case in order to identify a co-ordinated path to achieve the desired outcomes. (PMBOK Guide) – Seventh Edition, 2021, p52, \"Planning Overview\""
+    explanation: "Before initiating a project of any sort, we start with a vision statement, project charter or business case in order to identify a co-ordinand path to achieve the desired outcomes. (PMBOK Guide) – Seventh Edition, 2021, p52, \"Planning Overview\""
   },
   {
     id: 32,
@@ -381,7 +381,7 @@ export const QUESTIONS = [
       { id: "D", text: "Plan out the work in detail and secure a scope baseline, with formal change controls to reduce uncertainty." }
     ],
     answer: ["B"],
-    explanation: "This question refers to the concept of the last responsible moment. Work that is novel or risky can be prioritised at the start of the project to reduce uncertainty with the project scope before a large investment has been made. Routine work can be delayed until the cost of further delay would exceed the benefit. (PMBOK Guide) – Seventh Edition, 2021, p54, \"Delivery\", paragraph 3"
+    explanation: "This question refers to the concept of the last responsible moment. Work that is novel or risky can be prioritized at the start of the project to reduce uncertainty with the project scope before a large investment has been made. Routine work can be delayed until the cost of further delay would exceed the benefit. (PMBOK Guide) – Seventh Edition, 2021, p54, \"Delivery\", paragraph 3"
   },
   {
     id: 33,
@@ -469,7 +469,7 @@ export const QUESTIONS = [
   },
   {
     id: 40,
-    question: "Your product owner wants to bring the next feature forward so that it is done in parallel to the current feature, but is still released in the existing feature order. You make the necessary adjustments to the product backlog, and decide to adjust the product roadmap, which you have visualised as a Gantt chart. What will you do next?",
+    question: "Your product owner wants to bring the next feature forward so that it is done in parallel to the current feature, but is still released in the existing feature order. You make the necessary adjustments to the product backlog, and decide to adjust the product roadmap, which you have visualized as a Gantt chart. What will you do next?",
     choices: [
       { id: "A", text: "Use a schedule lead on the feature, and change the feature to finish-to-start" },
       { id: "B", text: "Use a schedule lag on the feature, and change the feature to start-to-start" },
@@ -521,11 +521,11 @@ export const QUESTIONS = [
     choices: [
       { id: "A", text: "Ask your team to review the scope management plan for the proper process." },
       { id: "B", text: "Break the deliverable down into smaller pieces so you can deliver those faster." },
-      { id: "C", text: "Ask your team to time-box work on the highest priority items in the backlog, update the estimates then reprioritise as necessary." },
+      { id: "C", text: "Ask your team to time-box work on the highest priority items in the backlog, update the estimates then re-prioritize as necessary." },
       { id: "D", text: "Review the project charter for the high level scope, and use this to begin delivery quickly." }
     ],
     answer: ["C"],
-    explanation: "Adaptive approaches often use time-boxes. The work is based on a prioritised backlog. The project team determines the amount of work they can do in each timebox, estimates the work and self-manages to accomplish the work. At this point, the backlog may be reprioritised for the next timebox. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Timeboxes\""
+    explanation: "Adaptive approaches often use time-boxes. The work is based on a prioritized backlog. The project team determines the amount of work they can do in each time-box, estimates the work and self-manages to accomplish the work. At this point, the backlog may be re-prioritized for the next time-box. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Timeboxes\""
   },
   {
     id: 45,
@@ -537,7 +537,7 @@ export const QUESTIONS = [
       { id: "D", text: "Raise a change request for the changes and gain approval from the Change Control Board." }
     ],
     answer: ["A"],
-    explanation: "Management reserves are set aside for unexpected activities related to in-scope work. Depending on the organisation's policies, management reserves may be managed by the PMO at the program or portfolio level. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Budget\""
+    explanation: "Management reserves are set aside for unexpected activities related to in-scope work. Depending on the organization's policies, management reserves may be managed by the PMO at the program or portfolio level. (PMBOK Guide) – Seventh Edition, 2021, p62, \"Budget\""
   },
   {
     id: 46,
@@ -553,10 +553,10 @@ export const QUESTIONS = [
   },
   {
     id: 47,
-    question: "You are putting together a project team to deliver an accounting system to offices around the country. The accounting system you are moving to has not been used by anyone in your organisation before. The project is quite high risk, and the delivery needs to be right the first time. What will you do next?",
+    question: "You are putting together a project team to deliver an accounting system to offices around the country. The accounting system you are moving to has not been used by anyone in your organization before. The project is quite high risk, and the delivery needs to be right the first time. What will you do next?",
     choices: [
       { id: "A", text: "Select a small team that can work in the same area so they can solve problems as they arise." },
-      { id: "B", text: "Use a predictive project approach and source part of your team externally if they have skillsets in the new system." },
+      { id: "B", text: "Use a predictive project approach and source part of your team externally if they have skill-sets in the new system." },
       { id: "C", text: "Train existing internal staff in the new system then have them work on the project." },
       { id: "D", text: "Perform a make or buy analysis on the different software options." }
     ],
@@ -565,7 +565,7 @@ export const QUESTIONS = [
   },
   {
     id: 48,
-    question: "You are putting together a project plan for a change that affects nearly ten thousand stakeholders in your organisation. You have identified the affected stakeholders, analysed and prioritised them, and are putting together a communication plan to ensure the right engagement is made. What will you NOT include in your plan?",
+    question: "You are putting together a project plan for a change that affects nearly ten thousand stakeholders in your organization. You have identified the affected stakeholders, analyzed and prioritized them, and are putting together a communication plan to ensure the right engagement is made. What will you NOT include in your plan?",
     choices: [
       { id: "A", text: "Why should information be shared with stakeholders?" },
       { id: "B", text: "What is the best way to provide information?" },
@@ -597,11 +597,11 @@ export const QUESTIONS = [
       { id: "D", text: "Re-prioritize the product backlog, including the new scope and begin work on the highest priority straight away." }
     ],
     answer: ["D"],
-    explanation: "Changes may occur as a result of a risk event, environment change, a deeper understanding of requirements, customer requests and more. Project teams should prepare a process for adapting plans throughout the project. In an Agile team, this may take the form of reprioritising the backlog instead of a change control process with project baselines. (PMBOK Guide) – Seventh Edition, 2021, p66, \"Changes\""
+    explanation: "Changes may occur as a result of a risk event, environment change, a deeper understanding of requirements, customer requests and more. Project teams should prepare a process for adapting plans throughout the project. In an Agile team, this may take the form of re-prioritizing the backlog instead of a change control process with project baselines. (PMBOK Guide) – Seventh Edition, 2021, p66, \"Changes\""
   },
   {
     id: 51,
-    question: "You have recently taken over on a project that is behind schedule, and slightly over budget. You raise an issue at the steering committee meeting, where they advise that there is no additional funding available and the project must finish on time. You believe you can optimise the project process to try and bring the project back on track. What will you do next?",
+    question: "You have recently taken over on a project that is behind schedule, and slightly over budget. You raise an issue at the steering committee meeting, where they advise that there is no additional funding available and the project must finish on time. You believe you can optimize the project process to try and bring the project back on track. What will you do next?",
     choices: [
       { id: "A", text: "Add additional people and resources to the project to speed it up." },
       { id: "B", text: "Utilize the project's contingency reserve to source the resources you need." },
@@ -613,10 +613,10 @@ export const QUESTIONS = [
   },
   {
     id: 52,
-    question: "Your Project Management Office (PMO) is optimizing all the projects within their portfolio. They ask for your advice in tracking the type of work each team member is doing and how long it takes, suggesting that they categorise and record their work in addition to the work itself. What will you do next?",
+    question: "Your Project Management Office (PMO) is optimizing all the projects within their portfolio. They ask for your advice in tracking the type of work each team member is doing and how long it takes, suggesting that they categorize and record their work in addition to the work itself. What will you do next?",
     choices: [
       { id: "A", text: "Ask your team to record and categorize their work, as gathering project data is important." },
-      { id: "B", text: "Recommend an automated reporting tool where possible, as categorising their work is NVA." },
+      { id: "B", text: "Recommend an automated reporting tool where possible, as categorizing their work is NVA." },
       { id: "C", text: "Recommend an automated reporting tool where possible, as recording their work is VA." },
       { id: "D", text: "Ask your team to ignore the request and focus on delivering customer value only." }
     ],
@@ -757,7 +757,7 @@ export const QUESTIONS = [
   },
   {
     id: 64,
-    question: "Your agile project has recently had multiple quality issues. Project features have been prioritised by the Product Owner, and broken down into user stories. What will you do to help reduce the cost of quality issues the most?",
+    question: "Your agile project has recently had multiple quality issues. Project features have been prioritized by the Product Owner, and broken down into user stories. What will you do to help reduce the cost of quality issues the most?",
     choices: [
       { id: "A", text: "Quality test each user story according to its acceptance criteria before release." },
       { id: "B", text: "Advise the team that any quality defects will come out of their bonus." },
@@ -773,7 +773,7 @@ export const QUESTIONS = [
     choices: [
       { id: "A", text: "Collect the planned value versus earned value to show the executives any variance in the plan." },
       { id: "B", text: "Co-locate the team with the executives so they can answer any questions as they arise." },
-      { id: "C", text: "Suggest a demonstration of the feature developed during each sprint instead, and a burndown chart of future product features." },
+      { id: "C", text: "Suggest a demonstration of the feature developed during each sprint instead, and a burn-down chart of future product features." },
       { id: "D", text: "Create the desired reports for the executives to keep them happy." }
     ],
     answer: ["C"],
@@ -813,11 +813,11 @@ export const QUESTIONS = [
       { id: "D", text: "Schedule and Cost variance." }
     ],
     answer: ["C"],
-    explanation: "An agile project tracks and demonstrates actual features delivered. With a stable team, cost is most often fixed. The schedule is also fixed, and the scope is variable depending on what the customer wants to prioritise in the given time. (PMBOK Guide) – Seventh Edition, 2021, p100, \"Baseline performance\""
+    explanation: "An agile project tracks and demonstrates actual features delivered. With a stable team, cost is most often fixed. The schedule is also fixed, and the scope is variable depending on what the customer wants to prioritize in the given time. (PMBOK Guide) – Seventh Edition, 2021, p100, \"Baseline performance\""
   },
   {
     id: 69,
-    question: "The product owner has worked with a team of senior users to gather feature ideas. They now have a list of more than fifty ideas for your team to develop, which is far too many to complete in the timeframe you have. What will you do next?",
+    question: "The product owner has worked with a team of senior users to gather feature ideas. They now have a list of more than fifty ideas for your team to develop, which is far too many to complete in the time-frame you have. What will you do next?",
     choices: [
       { id: "A", text: "Ask the new product owner to return to the senior users and ask for a shortened list." },
       { id: "B", text: "Start work on the smallest features first, to ensure you are delivering value quickly." },
