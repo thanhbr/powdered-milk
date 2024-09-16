@@ -105,7 +105,7 @@ export const QUESTIONS = [
         { id: "D", text: "A full day regardless of Sprint length" },
     ],
     answer: ["B"],
-    explanation: "Sprint Planning is timeboxed to a maximum of 8 hours for a one-month Sprint. For shorter Sprints, the event is usually shorter. The general guideline is 2 hours for each week of the Sprint."
+    explanation: "Sprint Planning is time-boxed to a maximum of 8 hours for a one-month Sprint. For shorter Sprints, the event is usually shorter. The general guideline is 2 hours for each week of the Sprint."
   },
   {
     id: 10,
@@ -153,7 +153,7 @@ export const QUESTIONS = [
         { id: "D", text: "The Development Team and the Product Owner" },
     ],
     answer: ["B"],
-    explanation: "The Daily Scrum is a meeting for the Development Team by the Development Team. While the Scrum Master often attends to ensure that the meeting is productive and stays within the timebox, their attendance is not mandatory. The Product Owner and other stakeholders typically do not participate unless invited by the Development Team."
+    explanation: "The Daily Scrum is a meeting for the Development Team by the Development Team. While the Scrum Master often attends to ensure that the meeting is productive and stays within the time-box, their attendance is not mandatory. The Product Owner and other stakeholders typically do not participate unless invited by the Development Team."
   },
   {
     id: 14,
@@ -239,5 +239,364 @@ export const QUESTIONS = [
     answer: ["B"],
     explanation: 'The Definition of "Done" is a shared understanding within the Scrum Team of the criteria that an Increment must meet to be considered complete. It ensures transparency and quality in what the team delivers.'
   },
-
-]
+  {
+    id: 21,
+    question: "What should the Scrum Team do if the Product Owner is unavailable during a Sprint?",
+    choices: [
+        { id: "A", text: "Stop the Sprint and wait for the Product Owner to return" },
+        { id: "B", text: "Ask management to assign a temporary Product Owner" },
+        { id: "C", text: "Continue the Sprint using the previously agreed-upon priorities" },
+        { id: "D", text: "Make their own decisions about product priorities" },
+    ],
+    answer: ["C"],
+    explanation: "If the Product Owner is not available, the Scrum Team should continue their work based on the existing priorities and goals. The Scrum Team's ability to self-organize allows them to proceed with the agreed-upon work even in the Product Owner's absence."
+  },
+  {
+    id: 22,
+    question: "What is a key characteristic of Scrum events?",
+    choices: [
+        { id: "A", text: "They can be extended indefinitely if needed" },
+        { id: "B", text: "Each event has a maximum duration" },
+        { id: "C", text: "They are optional and can be skipped" },
+        { id: "D", text: "They have no time limit" },
+    ],
+    answer: ["B"],
+    explanation: "Time-boxing is a critical concept in Scrum where each event has a predefined maximum duration. This ensures that the events are efficient and focused, helping the team to manage their time effectively and maintain a sustainable pace."
+  },
+  {
+    id: 23,
+    question: "What should the Development Team do if they realize they may not meet their Sprint commitment?",
+    choices: [
+        { id: "A", text: "Work overtime to complete all items" },
+        { id: "B", text: "Silently remove items from the Sprint Backlog" },
+        { id: "C", text: "Discuss the situation with the Product Owner to re-negotiate the scope" },
+        { id: "D", text: "Continue working and hope for the best" },
+    ],
+    answer: ["C"],
+    explanation: "If the Development Team realizes they are likely to not meet their commitment, they should collaborate with the Product Owner to review and possibly adjust the scope. This maintains the integrity of the Sprint goal and ensures the delivery of the most valuable work."
+  },
+  {
+    id: 24,
+    question: "Who should attend Sprint Planning?",
+    choices: [
+        { id: "A", text: "Only the Development Team" },
+        { id: "B", text: "The Product Owner and the Development Team" },
+        { id: "C", text: "The entire Scrum Team" },
+        { id: "D", text: "The Scrum Master and the Product Owner" },
+    ],
+    answer: ["C"],
+    explanation: "Sprint Planning is a collaborative effort that requires the presence of the Product Owner (to clarify the items and their value), the Development Team (to define the work and effort), and the Scrum Master (to facilitate the meeting)."
+  },
+  {
+    id: 25,
+    question: "What is the role of the Scrum Master in the Daily Scrum?",
+    choices: [
+        { id: "A", text: "To lead the meeting and assign tasks" },
+        { id: "B", text: "To report progress to stakeholders" },
+        { id: "C", text: "To facilitate the meeting if necessary and ensure it stays within the time-box" },
+        { id: "D", text: "To update the Sprint Backlog" },
+    ],
+    answer: ["C"],
+    explanation: "The Daily Scrum is primarily for the Development Team. However, the Scrum Master may attend to facilitate the meeting, ensuring it is productive and stays within the 15-minute time-box, and to help remove any impediments that are raised."
+  },
+  {
+    id: 26,
+    question: "What is the Increment in Scrum?",
+    choices: [
+        { id: "A", text: "The list of tasks to be completed in the next Sprint" },
+        { id: "B", text: "The sum of all Product Backlog items completed during the Sprint and all previous Sprints" },
+        { id: "C", text: "The increase in team productivity from Sprint to Sprint" },
+        { id: "D", text: "The additional features added to the Product Backlog" },
+    ],
+    answer: ["B"],
+    explanation: "The Increment is a concrete step towards the product goal, encompassing all completed and previously \"Done\" Product Backlog items. It must be in a usable state and meet the team's definition of \"Done.\""
+  },
+  {
+    id: 27,
+    question: "When does Backlog Refinement occur in Scrum?",
+    choices: [
+        { id: "A", text: "Only during Sprint Planning" },
+        { id: "B", text: "At the end of each Sprint" },
+        { id: "C", text: "During a specific Scrum event" },
+        { id: "D", text: "Throughout the Sprint as needed" },
+    ],
+    answer: ["D"],
+    explanation: "Backlog Refinement is an ongoing activity that helps keep the Product Backlog updated and ensures that upcoming items are well understood and ready for selection in future Sprints. It's not confined to a specific Scrum event."
+  },
+  {
+    id: 28,
+    question: "What is the primary purpose of the Sprint Review?",
+    choices: [
+        { id: "A", text: "To plan the next Sprint" },
+        { id: "B", text: "To inspect the Increment and adapt the Product Backlog" },
+        { id: "C", text: "To evaluate team performance" },
+        { id: "D", text: "To update the Definition of Done" },
+    ],
+    answer: ["B"],
+    explanation: "The Sprint Review is about inspecting the outcome of the Sprint and determining future adaptations. The Scrum Team and stakeholders collaborate to review what was accomplished, discuss what to do next, and adapt the Product Backlog as necessary."
+  },
+  {
+    id: 29,
+    question: "Which of the following is NOT one of the five Scrum Values?",
+    choices: [
+        { id: "A", text: "Commitment" },
+        { id: "B", text: "Focus" },
+        { id: "C", text: "Respect" },
+        { id: "D", text: "Efficiency" },
+    ],
+    answer: ["D"],
+    explanation: "The five Scrum Values are Commitment, Focus, Openness, Respect, and Courage. While efficiency might be a result of effective Scrum implementation, it is not listed as a core value of Scrum."
+  },
+  {
+    id: 30,
+    question: "What is the primary purpose of a Sprint Burn-down Chart?",
+    choices: [
+        { id: "A", text: "To track individual team member performance" },
+        { id: "B", text: "To show the amount of work remaining in the Sprint" },
+        { id: "C", text: "To plan the next Sprint" },
+        { id: "D", text: "To evaluate the Product Owner's effectiveness" },
+    ],
+    answer: ["B"],
+    explanation: "The Sprint Burn-down Chart is a visual tool that shows how much work remains to be done in the Sprint, helping the team gauge whether they are on track to complete the work they forecasted."
+  },
+  {
+    id: 31,
+    question: "Which Scrum event focuses on transparency and inspection of what was accomplished during the Sprint?",
+    choices: [
+        { id: "A", text: "Sprint Planning" },
+        { id: "B", text: "Daily Scrum" },
+        { id: "C", text: "Sprint Review" },
+        { id: "D", text: "Sprint Retrospective" },
+    ],
+    answer: ["C"],
+    explanation: "The Sprint Review focuses on transparency and inspection by reviewing what was accomplished during the Sprint and determining future adaptations. This event provides a forum for stakeholders to provide feedback and for the team to inspect their work and the progress toward the product goal."
+  },
+  {
+    id: 32,
+    question: "What is the key to a Scrum Master's effectiveness?",
+    choices: [
+        { id: "A", text: "Technical expertise in the product domain" },
+        { id: "B", text: "Authority to make decisions for the team" },
+        { id: "C", text: "Expertise in facilitating Scrum events and coaching the team" },
+        { id: "D", text: "Ability to manage the team's daily tasks" },
+    ],
+    answer: ["C"],
+    explanation: "The Scrum Master's effectiveness lies in their ability to facilitate Scrum events, remove impediments, and coach the team, Product Owner, and organization in Scrum practices. They are a servant leader, not a manager or decision-maker for the team."
+  },
+  {
+    id: 33,
+    question: "When is a Product Backlog item considered 'Done' in Scrum?",
+    choices: [
+        { id: "A", text: "When the Product Owner approves it" },
+        { id: "B", text: "When it passes all tests" },
+        { id: "C", text: "When it meets the Definition of Done as agreed by the Development Team" },
+        { id: "D", text: "When it is deployed to production" },
+    ],
+    answer: ["C"],
+    explanation: "A Product Backlog item is considered \"Done\" when it meets the criteria established in the team's Definition of Done, ensuring a shared understanding of what completion means."
+  },
+  {
+    id: 34,
+    question: "What should a Development Team member do if they encounter an impediment they cannot resolve?",
+    choices: [
+        { id: "A", text: "Ignore the impediment and continue working" },
+        { id: "B", text: "Escalate the impediment to the Scrum Master for resolution" },
+        { id: "C", text: "Wait for the next Sprint Retrospective to discuss it" },
+        { id: "D", text: "Ask the Product Owner to remove the related item from the Sprint Backlog" },
+    ],
+    answer: ["B"],
+    explanation: "The Scrum Master is responsible for removing impediments that the Development Team cannot resolve, enabling the team to maintain focus and momentum in their work."
+  },
+  {
+    id: 35,
+    question: "What is the primary purpose of a user story in the Product Backlog?",
+    choices: [
+        { id: "A", text: "To provide a detailed technical specification" },
+        { id: "B", text: "To provide a high-level description of a feature from the user's perspective" },
+        { id: "C", text: "To estimate the development time required" },
+        { id: "D", text: "To assign tasks to specific team members" },
+    ],
+    answer: ["B"],
+    explanation: "User stories in the Product Backlog help the team understand features from the end-user's perspective, focusing on the value the feature brings rather than technical details."
+  },
+  {
+    id: 36,
+    question: "What should the Development Team do if a stakeholder requests a significant change during a Sprint?",
+    choices: [
+        { id: "A", text: "Immediately implement the change" },
+        { id: "B", text: "Discuss the potential impact with the Product Owner and negotiate as needed" },
+        { id: "C", text: "Ignore the request until the next Sprint" },
+        { id: "D", text: "Cancel the Sprint and start a new one" },
+    ],
+    answer: ["B"],
+    explanation: "The Development Team should collaborate with the Product Owner to understand the impact of the requested change and negotiate to find a solution that respects the Sprint Goal and maintains the integrity of the Sprint's commitments."
+  },
+  {
+    id: 37,
+    question: "In Scrum, what is meant by a 'cross-functional team'?",
+    choices: [
+        { id: "A", text: "A team with members from different departments" },
+        { id: "B", text: "A team that works on multiple projects simultaneously" },
+        { id: "C", text: "A team where members possess all the skills necessary to create the product Increment" },
+        { id: "D", text: "A team that rotates roles frequently" },
+    ],
+    answer: ["C"],
+    explanation: "A cross-functional team has members with varied expertise and skills necessary to complete the project from start to finish without needing to depend on outsiders, enhancing efficiency and collaboration."
+  },
+  {
+    id: 38,
+    question: "What is the primary purpose of using Scrum?",
+    choices: [
+        { id: "A", text: "To complete projects faster" },
+        { id: "B", text: "To reduce development costs" },
+        { id: "C", text: "To enable teams to adapt to changes and deliver value incrementally" },
+        { id: "D", text: "To eliminate the need for project management" },
+    ],
+    answer: ["C"],
+    explanation: "Scrum is designed to embrace change, allowing teams to adapt and pivot based on feedback and changes in requirements, thereby delivering value incrementally and continuously improving."
+  },
+  {
+    id: 39,
+    question: "How often should the Scrum Board be updated?",
+    choices: [
+        { id: "A", text: "Only during Sprint Planning" },
+        { id: "B", text: "Weekly" },
+        { id: "C", text: "Daily, as tasks progress or are completed" },
+        { id: "D", text: "Only at the end of the Sprint" },
+    ],
+    answer: ["C"],
+    explanation: "The Scrum Board should reflect the current state of the Sprint, so it's essential to update it as work progresses, typically during the Daily Scrum, to ensure transparency and visibility for the entire team."
+  },
+  {
+    id: 40,
+    question: "In Scrum, what does 'value' primarily refer to?",
+    choices: [
+        { id: "A", text: "The cost of development" },
+        { id: "B", text: "The time spent on a feature" },
+        { id: "C", text: "The benefit that the product or feature delivers to the customer or user" },
+        { id: "D", text: "The number of features implemented" },
+    ],
+    answer: ["C"],
+    explanation: "In Scrum, value is primarily focused on the benefits and outcomes that the product or features deliver to the customer or user, aligning the team's efforts with customer needs and business objectives."
+  },
+  {
+    id: 41,
+    question: "What characterizes a self-managing team in Scrum?",
+    choices: [
+        { id: "A", text: "The team works without any supervision" },
+        { id: "B", text: "The team members assign tasks to each other" },
+        { id: "C", text: "The team has the autonomy to decide how to best accomplish their work" },
+        { id: "D", text: "The team sets their own deadlines independently of the Product Owner" },
+    ],
+    answer: ["C"],
+    explanation: "In Scrum, a self-managing team is one that has the autonomy to make decisions on how to organize and execute their work, promoting ownership, accountability, and motivation."
+  },
+  {
+    id: 42,
+    question: "What should a Scrum Master do when the team is facing communication issues?",
+    choices: [
+        { id: "A", text: "Assign tasks to team members to resolve the issue" },
+        { id: "B", text: "Facilitate communication and collaboration practices to help the team improve" },
+        { id: "C", text: "Escalate the issue to management immediately" },
+        { id: "D", text: "Take over the team's responsibilities until the issue is resolved" },
+    ],
+    answer: ["B"],
+    explanation: "The Scrum Master should use their skills to facilitate better communication and collaboration within the team, helping them to identify and resolve issues, rather than assigning tasks or escalating the issue prematurely."
+  },
+  {
+    id: 43,
+    question: "What is one of the key responsibilities of a Scrum Master in relation to the Product Owner?",
+    choices: [
+        { id: "A", text: "To prioritize the Product Backlog" },
+        { id: "B", text: "To create user stories for the Product Backlog" },
+        { id: "C", text: "To support the Product Owner with practices for managing the Product Backlog effectively" },
+        { id: "D", text: "To approve the final Product Backlog before each Sprint" },
+    ],
+    answer: ["C"],
+    explanation: "The Scrum Master supports the Product Owner by offering guidance on Scrum practices, helping them manage the Product Backlog effectively, and facilitating collaboration with the Development Team."
+  },
+  {
+    id: 44,
+    question: "When does a new Sprint start in Scrum?",
+    choices: [
+        { id: "A", text: "Immediately after the previous Sprint ends" },
+        { id: "B", text: "A week after the previous Sprint ends" },
+        { id: "C", text: "When the team feels ready to start" },
+        { id: "D", text: "After the Product Owner approves the start" },
+    ],
+    answer: ["A"],
+    explanation: "In Scrum, a new Sprint starts immediately after the conclusion of the previous Sprint, maintaining a continuous flow of work and allowing the team to deliver value consistently."
+  },
+  {
+    id: 45,
+    question: "What is the Scrum framework's stance on Sprint Zero?",
+    choices: [
+        { id: "A", text: "Sprint Zero is mandatory for project setup" },
+        { id: "B", text: "Sprint Zero is optional but recommended" },
+        { id: "C", text: "Sprint Zero is used for planning only" },
+        { id: "D", text: "Scrum does not officially recognize a Sprint Zero" },
+    ],
+    answer: ["D"],
+    explanation: "Scrum does not have a concept of Sprint Zero. All Sprints are meant to deliver a potentially releasable Increment, and the framework encourages starting with actual product development work from the first Sprint."
+  },
+  {
+    id: 46,
+    question: "How does Scrum primarily enhance communication and collaboration within a team?",
+    choices: [
+        { id: "A", text: "Through extensive documentation" },
+        { id: "B", text: "By assigning specific roles to each team member" },
+        { id: "C", text: "Through frequent and focused interactions among team members" },
+        { id: "D", text: "By implementing a strict hierarchy" },
+    ],
+    answer: ["C"],
+    explanation: "Scrum enhances communication and collaboration through its structured events and emphasis on team interaction, allowing team members to synchronize, plan, and address challenges effectively."
+  },
+  {
+    id: 47,
+    question: "What is the ultimate goal of a Scrum Master when helping the team remove impediments?",
+    choices: [
+        { id: "A", text: "To solve all the team's problems directly" },
+        { id: "B", text: "Teach the team to become more self-sufficient in solving problems" },
+        { id: "C", text: "To document all impediments for future reference" },
+        { id: "D", text: "To escalate all issues to management" },
+    ],
+    answer: ["B"],
+    explanation: "While the Scrum Master helps remove impediments, their ultimate goal is to coach and enable the team to develop problem-solving skills, fostering autonomy and self-management."
+  },
+  {
+    id: 48,
+    question: "What happens to incomplete items from a Sprint in Scrum?",
+    choices: [
+        { id: "A", text: "They are automatically carried over to the next Sprint" },
+        { id: "B", text: "They are reassessed and can be re-prioritized or modified by the Product Owner" },
+        { id: "C", text: "They are discarded and never worked on again" },
+        { id: "D", text: "They are assigned to specific team members to complete outside of Sprint time" },
+    ],
+    answer: ["B"],
+    explanation: "Incomplete items are returned to the Product Backlog, where they can be re-prioritized or adjusted by the Product Owner based on the latest information and project needs."
+  },
+  {
+    id: 49,
+    question: "What is the main objective of a Sprint in Scrum?",
+    choices: [
+        { id: "A", text: "To complete all items in the Product Backlog" },
+        { id: "B", text: "To work as many hours as possible" },
+        { id: "C", text: "To meet the Sprint Goal defined during Sprint Planning" },
+        { id: "D", text: "To satisfy all stakeholders' requests" },
+    ],
+    answer: ["C"],
+    explanation: "The main focus of the Sprint is to achieve the Sprint Goal, which provides direction and purpose for the team's work during the Sprint, guiding what features are developed and decisions made."
+  },
+  {
+    id: 50,
+    question: "How should a Scrum Team handle a stakeholder who frequently interrupts the team with new ideas during a Sprint?",
+    choices: [
+        { id: "A", text: "Ignore the stakeholder's ideas completely" },
+        { id: "B", text: "Implement all of the stakeholder's ideas immediately" },
+        { id: "C", text: "Encourage the stakeholder to attend the Sprint Review for feedback" },
+        { id: "D", text: "Ask the stakeholder to join the Development Team" },
+    ],
+    answer: ["C"],
+    explanation: "Engaging stakeholders during the Sprint Review allows them to provide input and see the team's progress, while the team maintains focus on the Sprint Goal. It channels the stakeholder's energy and ideas constructively without disrupting the team's workflow."
+},
+];
