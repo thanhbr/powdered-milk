@@ -25,9 +25,14 @@ export default function PMP() {
   };
 
   const handleSearch = () => {
-    const question = QUESTIONS.find(q => q.id === parseInt(searchId, 10));
-    setSearchedQuestion(question || null);
-    setCurrentQuestionIndex(null);
+    if (searchId.trim() === "") {
+      setSearchedQuestion(QUESTIONS[0]);
+      setCurrentQuestionIndex(0);
+    } else {
+      const question = QUESTIONS.find(q => q.id === parseInt(searchId, 10));
+      setSearchedQuestion(question || null);
+      setCurrentQuestionIndex(null);
+    }
   };
 
   return (
