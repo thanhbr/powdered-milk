@@ -11,7 +11,13 @@ export default function PMP() {
 
   const handleNextQuestion = () => {
     setCurrentQuestionIndex((prevIndex) => {
-      if (prevIndex === null) return 0;
+      if (prevIndex === null) {
+        if (searchedQuestion) {
+          const currentIndex = QUESTIONS.findIndex(q => q.id === searchedQuestion.id);
+          return (currentIndex + 1) % QUESTIONS.length;
+        }
+        return 0;
+      }
       return (prevIndex + 1) % QUESTIONS.length;
     });
     setSearchedQuestion(null);
