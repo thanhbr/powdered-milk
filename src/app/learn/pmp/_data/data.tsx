@@ -1199,5 +1199,604 @@ export const QUESTIONS = [
     answer: ["C"],
     explanation: "John Kotter's 8-step process for leading change is a top down approach: 1: Create urgency, 2: Form a powerful coalition, 3: Create a vision for change, 4: Communicate the vision, 5: Remove obstacles, 6: Create short term wins, 7: Build on the change, 8: Anchor the changes in corporate culture. After communicating the vision comes removing obstacles. (PMBOK Guide) – Seventh Edition, 2021, p162, \"The 8-Step Process for Leading Change\""
   },
-
+  {
+    id: 101,
+    question: "You are a project manager assessing the risk of future releases with your team. You have a clear set of requirements from your customer, however there are a range of possible correct solutions, that may or may not get the outcome the customer needs. There are a range of known unknowns. How will you approach this situation?",
+    choices: [
+      { id: "A", text: "Use current best practices to make decisions." },
+      { id: "B", text: "Use emergent practices that allow you to probe the environment, sense the situation, and respond with action." },
+      { id: "C", text: "Assess the facts, analyze the situation and apply known good practices." },
+      { id: "D", text: "Sense where there is some stability then take steps to try and stabilize the situation." }
+    ],
+    answer: ["C"],
+    explanation: "In the Cynefin Framework, complicated relationships exist when there is a set of known unknowns, or a range of correct answers. In these situations it is best to assess the facts, analyze the situation, and apply good practices. Answer B is for complex (unknown unknowns), D is chaotic (no clear cause or effect), A is for obvious cause and effect. (PMBOK Guide) – Seventh Edition, 2021, p 164, \"Cynefin Framework\""
+  },
+  {
+    id: 102,
+    question: "You have been asked to initiate a project to deliver a new system. The requirements are not clear, and it will take some work to uncover them. The system has been used by some team members but not all and has a medium level of uncertainty around it. How will you approach this project?",
+    choices: [
+      { id: "A", text: "Release small usable features and improve your approach based on feedback." },
+      { id: "B", text: "Do additional planning up-front to ensure every component is thought of." },
+      { id: "C", text: "Split the team into two and work on different parts of the system to simplify it." },
+      { id: "D", text: "Form a business case for starting from scratch with new, easier to use technology." }
+    ],
+    answer: ["A"],
+    explanation: "The Stacey Matrix looks at two dimensions to determine complexity: uncertainty of the requirements, and uncertainty of or within the technology. This labels a project simple, complicated, complex or chaotic. Agile methodologies work best in complicated and complex environments. (PMBOK Guide) – Seventh Edition, 2021, p165, \"Stacey Matrix\""
+  },
+  {
+    id: 103,
+    question: "Your project team came together from different parts of the organization, and were introduced formally to each other. Now you notice there is some conflict within the team. Some people don't respect others' decisions, are not working together well, and there are some personality clashes within the team. What will you do next?",
+    choices: [
+      { id: "A", text: "Help team members get to know each other, their names, position on the team, and other background information." },
+      { id: "B", text: "Help the team understand their roles and responsibilities and form a regular rhythm of meetings, collaboration and work." },
+      { id: "C", text: "Help the team jockey for position within the team, and foster healthy conflict." },
+      { id: "D", text: "Help the team complete the project work and disperse to work on other things" }
+    ],
+    answer: ["B"],
+    explanation: "This scenario describes the five stages of team development – the Tuckman Ladder. When there is conflict and difficulty working together, the team is in the Storming stage – we should help them understand their roles, responsibilities and find a regular rhythm so they can move to the Norming stage. (PMBOK Guide) – Seventh Edition, 2021, p166, \"Tuckman Ladder\""
+  },
+  {
+    id: 104,
+    question: "You have formed a new project team and have worked through the purpose and mission of the project with them. You expanded on who is on the project team and the skills and abilities each person brings. You would like to foster a high performing culture and ensure the team is able to deliver as soon as possible. What will you do next?",
+    choices: [
+      { id: "A", text: "Work through changes on the project team and the project such as deliverables and stakeholders." },
+      { id: "B", text: "Decompose the high level plan into greater detail, including a detailed schedule or backlog." },
+      { id: "C", text: "Define a plan to achieve the project goals, including milestone schedules, release plans and high-level budgets." },
+      { id: "D", text: "Clarify the goals of the team and what you are here to deliver." }
+    ],
+    answer: ["D"],
+    explanation: "This question refers to the Drexler/Sibbet Team Performance model. The steps include: Orientation, Trust Building, Goal Clarification, Commitment, Implementation, High performance and Renewal. After Trust building, comes goal clarification. (PMBOK Guide) – Seventh Edition, 2021, p167, \"Drexler/Sibbet Team Performance Model\""
+  },
+  {
+    id: 105,
+    question: "Your team members have raised an issue as they believe the current project scope will not reach the intended project goal of increasing customer retention. You take their concerns to the Project Sponsor who controls the funding and resources. The sponsor dismisses them and directs you to proceed with the scope currently set. What will you do next?",
+    choices: [
+      { id: "A", text: "Problem solve with the sponsor and find a resolution." },
+      { id: "B", text: "Compromise with the sponsor so each party gets what a part of what they want." },
+      { id: "C", text: "Accommodate the sponsor to maintain harmony and good will." },
+      { id: "D", text: "Force the issue so the sponsor accepts the change in requirements from the team." }
+    ],
+    answer: ["C"],
+    explanation: "Ken Thomas and Ralph Kilmann describe six ways to address conflict, depending on the relative power between the individuals. There is confronting/problem solving, collaborating, compromising, accommodating, forcing and withdrawing. Since there is a desire to maintain a good relationship with the sponsor, adopting an accommodating posture may be appropriate. (PMBOK Guide) – Seventh Edition, 2021, p168, 169, \"Conflict Model\""
+  },
+  {
+    id: 106,
+    question: "The functional manager raises a concern that they have not been engaged correctly and the program is missing some key requirements as a result. You believe you have captured all the items required. Your program manager asks you to handle the situation and approach it from a win-win perspective. What will you do next?",
+    choices: [
+      { id: "A", text: "Escalate the decision to the steering committee to ensure your point of view is heard." },
+      { id: "B", text: "Demonstrate integrity, find mutual trust, and look at the situation from their point of view." },
+      { id: "C", text: "Choose to give some lee-way in your approach so the functional manager can add their requirements." },
+      { id: "D", text: "Get your requirements base-lined first then compete with the manager to ensure a win." }
+    ],
+    answer: ["B"],
+    explanation: "Steven Covey's principle of \"Think Win-Win\" shows different possible outcomes: Win-Win, Win-Lose, Lose-Lose. A win-win approach is found when there is mature character, trust, and the ability to approach from the other's point of view. (PMBOK Guide) – Seventh Edition, 2021, p169, \"Negotiation\""
+  },
+  {
+    id: 107,
+    question: "You have been planning a project to deliver a process change for the past four weeks. The requirements and scope have been signed off by the business owner, and the team are moving into delivery and execution. The work begins in line with the project plan and scope. What will you do next?",
+    choices: [
+      { id: "A", text: "Monitor and control the work being done to ensure it meets its goals." },
+      { id: "B", text: "Execute the project work to complete the work defined in the project plan." },
+      { id: "C", text: "Plan the project work to ensure sufficient understanding." },
+      { id: "D", text: "Formally sign off and complete the project phase." }
+    ],
+    answer: ["A"],
+    explanation: "The project management process groups are Initiating, Planning, Executing, Monitoring and Controlling, and Closing. They may be performed in sequence, or iteratively and ongoing. As project work is executed, it then needs to be monitored and controlled. (PMBOK Guide) – Seventh Edition, 2021, p170, \"Process groups\""
+  },
+  {
+    id: 108,
+    question: "You are working as a Product Owner. While your sales and revenue have been increasing over the past eight months, the overall profit for your product has decreased by 17%. Your executive manager asks you to address the situation. What will you do next?",
+    choices: [
+      { id: "A", text: "Stop the current work and set a planning session with your team to address the situation." },
+      { id: "B", text: "Ask your team to work overtime on the current features in your backlog and get the work done." },
+      { id: "C", text: "Perform benchmarking with a similar yet non-competitive company, and add any process improvements to your product backlog." },
+      { id: "D", text: "Look for opportunities to partner with other products in your organization and increase your sales further." }
+    ],
+    answer: ["C"],
+    explanation: "As a product owner, your responsibility is to increase users, sales revenue and profit for your product. If profit is decreasing while sales revenue is increasing, the product is costing more to produce or sell. Performing benchmarking to find gaps in your process then executing them with your team will help. (PMBOK Guide) – Seventh Edition, 2021, p175, \"Data gathering and analysis: Benchmarking\""
+  },
+  {
+    id: 109,
+    question: "You have been given authority to manage the upcoming features your team will release. You do not have a high enough level of expertise in the product, so you gather senior users from the product's area to create a features list. Each stakeholder wants their feature to be delivered first. How will you prioritize them and move forward?",
+    choices: [
+      { id: "A", text: "Go with the features wanted by the top level executives first, to avoid issues later on." },
+      { id: "B", text: "Perform a MoSCoW analysis with the stakeholders." },
+      { id: "C", text: "Perform a root cause analysis and go with features that address the root cause." },
+      { id: "D", text: "Use a cost benefit analysis and compare the time needed to recover the project cost." }
+    ],
+    answer: ["D"],
+    explanation: "Cost to benefit, and the payback period (time to recover an investment) are the best accepted ways to prioritize business value. Root cause analysis is better for specific problems. Performing MoSCoW with the stakeholders may result in each of them wanting their feature to be \"Must Have\". (PMBOK Guide) – Seventh Edition, 2021, p175,\"Business justification analysis methods\""
+  },
+  {
+    id: 110,
+    question: "You are creating a business case and project charter with a small initial project team. You have a high level feature, decomposed into smaller release milestones, and you would like to note a high-level schedule using wideband delphi or a high-level version of planning poker. What will you do next?",
+    choices: [
+      { id: "A", text: "Hold a round of cards with points on them, where each team member places their cards in the centre for the total estimate." },
+      { id: "B", text: "Ask subject matter experts to complete multiple rounds of estimates individually, compare, and explain the highest and lowest estimates for each round." },
+      { id: "C", text: "Show the wideband high level range from lowest to highest for each feature." },
+      { id: "D", text: "Find the business functionality for each feature and estimate the effort based on that." }
+    ],
+    answer: ["B"],
+    explanation: "The Wideband Delphi technique asks subject matter experts to complete multiple rounds of estimates individually, compare, and explain the highest and lowest estimates for each round. Planning poker is a variation of wideband Delphi. (PMBOK Guide) – Seventh Edition, 2021, p178, \"Estimating: Wideband Delphi\""
+  },
+  {
+    id: 111,
+    question: "You have been asked to help facilitate a senior planning meeting in your organization. High level executives have made a presentation on the strengths and opportunities of the organization, painting a rosy picture. Revenue has fallen recently, and the chief executive asks you to level out their analysis a more complete view. What will you do next?",
+    choices: [
+      { id: "A", text: "Add your organization's competitors and compare their products." },
+      { id: "B", text: "Showcase the pipeline of upcoming work to be delivered in the next quarter." },
+      { id: "C", text: "Add in the background and abilities of the executive team, that will allow the organization to deliver." },
+      { id: "D", text: "Brainstorm and capture the weaknesses of the organization and threats to the organization." }
+    ],
+    answer: ["D"],
+    explanation: "This question is referring to SWOT analysis: Strengths, Weaknesses, Opportunities and Threats. Once strengths and opportunities have been captured, a complete picture also involves the weaknesses and threats. (PMBOK Guide) – Seventh Edition, 2021, p175, \"SWOT analysis\""
+  },
+  {
+    id: 112,
+    question: "You are adding an essential feature to your product roadmap. Your team believe they can complete the feature in six weeks, however the feature is quite large and a bit more complicated than normal. One of your lead developers says they worked on a similar feature in another company, and it took around four months to complete. What will you do next?",
+    choices: [
+      { id: "A", text: "Use relative estimating, assigning the amount of points your team agree on to the product roadmap." },
+      { id: "B", text: "Use analogous estimating, and place the feature with around four months to complete." },
+      { id: "C", text: "Use parametric estimating, and place the feature with around four months to complete." },
+      { id: "D", text: "Use function point estimating to show the amount of business functionality in the feature." }
+    ],
+    answer: ["B"],
+    explanation: "When the effort on a feature or deliverable needs to be estimated, and there are people who have experience delivering a similar item, you can use analogous estimating to estimate the initial effort quickly and with a medium-level of accuracy. (PMBOK Guide) – Seventh Edition, 2021, p178, \"Estimating: Analogous estimating\""
+  },
+  {
+    id: 113,
+    question: "You have a prioritized product backlog of features, and have decomposed the next feature to be delivered into user stories, small enough to complete in one sprint of two weeks. The team would like to estimate the effort involved on those user stories, but are unsure on how to proceed. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask each team member to add their own estimates as they complete the acceptance criteria." },
+      { id: "B", text: "Estimate the effort for the overall feature to reduce the need for individual story estimates." },
+      { id: "C", text: "Help the team perform relative estimating together, where the stories are sized in points relative to the smallest piece." },
+      { id: "D", text: "Base the estimates on cost per hour, and add them after the work is done to ensure it is correct." }
+    ],
+    answer: ["C"],
+    explanation: "Relative estimating is the most common method for user stories, where they are sized in comparison to the smallest piece - often in story points and often on a Fibonacci scale of 1, 2, 3, 5, 8, 13. (PMBOK Guide) – Seventh Edition, 2021, p178, \"Relative estimating\""
+  },
+  {
+    id: 114,
+    question: "You are half way through your current sprint of two weeks. The work is progressing well, however you notice that there is not enough work ready and elaborated for when the next sprint begins. What will you do next?",
+    choices: [
+      { id: "A", text: "Hold a backlog refinement meeting and work with the team to identify the work that could be accomplished." },
+      { id: "B", text: "Raise the issue as a blocker in the daily stand-up and ask your team to swarm around the problem." },
+      { id: "C", text: "Raise the issue in the next retrospective and take an action for the team." },
+      { id: "D", text: "Place the cards on the Kanban board so the team can see the work and get started." }
+    ],
+    answer: ["A"],
+    explanation: "At a backlog refinement meeting, the backlog is progressively elaborated and (re)prioritized to identify the work that can be accomplished in an upcoming iteration. (PMBOK Guide) – Seventh Edition, 2021, p179, \"Meetings and Events: Backlog refinement\""
+  },
+  {
+    id: 115,
+    question: "You have completed a make-or-buy analysis in your project and found that part of your deliverable is best created by an external vendor. You work with your project team to create the procurement strategy, source selection criteria and statement of work. What will you do next?",
+    choices: [
+      { id: "A", text: "Gather seller proposals, including technical details and price (separately)." },
+      { id: "B", text: "Meet with prospective sellers to ensure all vendors have a common understanding of the procurement." },
+      { id: "C", text: "Perform source selection analysis on what you want from prospective vendors." },
+      { id: "D", text: "Create the procurement agreement for the third party vendor to provide their specified services." }
+    ],
+    answer: ["B"],
+    explanation: "These are outputs of Plan Procurement Management. A bidder conference is meeting with prospective sellers prior to the preparation of a bid or proposal, to ensure all prospective bidders have a clear and common understanding of the procurement. This meeting may also be known as contractor conferences, vendor conferences, or pre-bid conferences. (PMBOK Guide) – Seventh Edition, 2021, p179, \"Bidder conference\""
+  },
+  {
+    id: 116,
+    question: "One of the stakeholders in your project has raised a change request, after some of the deliverables contained defects and a missed requirement. Your project has a formal change control process, as opposed to a more agile prioritized product backlog. What will you do next?",
+    choices: [
+      { id: "A", text: "Gather feedback from other stakeholders to see if they also need the change." },
+      { id: "B", text: "Note the change in the change log, then place the requested item in the next sprint." },
+      { id: "C", text: "Take the change to the CCB, then communicate the decision to approve or reject the change." },
+      { id: "D", text: "Raise the request as an issue that will affect your project schedule and budget." }
+    ],
+    answer: ["C"],
+    explanation: "Where a formal change control process is in place, a Change Control Board includes the people who are accountable for reviewing, approving or rejecting changes to the project. The decisions made at this meeting are recorded and communicated to the appropriate stakeholders. (PMBOK Guide) – Seventh Edition, 2021, p179, \"Change Control Board\""
+  },
+  {
+    id: 117,
+    question: "Your agile project has recently gained some new stakeholders after a department restructure. They complain to you that they are not seeing enough traction of work delivered through the project, and are worried it will not meet their requirements. What will you do next?",
+    choices: [
+      { id: "A", text: "Invite them to the daily stand up, so they can see the work that happens on a daily basis." },
+      { id: "B", text: "Invite them to iteration planning, so they can choose what the team works on." },
+      { id: "C", text: "Invite them to the retrospective, so they can raise their issue there and come up with a solution." },
+      { id: "D", text: "Invite them to the Iteration Review, so they can see the usable increment the team delivers." }
+    ],
+    answer: ["D"],
+    explanation: "The iteration or sprint review is held at the end of an iteration (usually of two weeks) to demonstrate the work that was accomplished during the iteration to the project customers and stakeholders. (PMBOK Guide) – Seventh Edition, 2021, p179, \"Iteration Review\""
+  },
+  {
+    id: 118,
+    question: "You have recently taken over a project. Your project team approach you to say there is a regulatory approval that has not been granted yet, and it may block development of your project in the next five months. You check your project documentation but cannot see any mention of this. What will you do next?",
+    choices: [
+      { id: "A", text: "Hold a risk review meeting, capture it as a risk, and ensure an adequate risk response." },
+      { id: "B", text: "Hold a retrospective with your team to capture what challenges the team are facing." },
+      { id: "C", text: "Adjust your product roadmap to reflect the changes to the time-frame of that deliverable." },
+      { id: "D", text: "Escalate the regulatory approval to the project steering committee." }
+    ],
+    answer: ["A"],
+    explanation: "The risk review is a meeting to analyze the status of existing risks and to identify new risks. This includes changes to probability, impact or urgency, and determining if responses are adequate. (PMBOK Guide) – Seventh Edition, 2021, p180, \"Risk Review\""
+  },
+  {
+    id: 119,
+    question: "You are an agile project manager, and holding daily stand-ups with your team. You notice people accusing other team members of not doing their job and there are some tasks that are not mentioned anywhere and no one is responsible for. The team velocity has slowed in the last three sprints. What will you do next?",
+    choices: [
+      { id: "A", text: "Refer to the team charter, and the team roles and agreed ways of managing conflict." },
+      { id: "B", text: "Raise it as an issue in the next retrospective and come to a solution with the team." },
+      { id: "C", text: "Assign team roles to those you think are best suited." },
+      { id: "D", text: "Work with your team to size user stories correctly, so velocity improves." }
+    ],
+    answer: ["B"],
+    explanation: "The agile approach is to problem solve with the team. A retrospective is a regularly occurring workshop, similar to a lessons learned meeting, where the team explore their work in order to improve their process and the product. (PMBOK Guide) – Seventh Edition, 2021, p180, \"Retrospective\""
+  },
+  {
+    id: 120,
+    question: "You are managing a large construction project. Due to some delays, the project schedule has been pushed back by one week. As a result, one of the project risks has increased slightly, but is still within the acceptable limits. What will you do next?",
+    choices: [
+      { id: "A", text: "Hold a risk review to update the risk response and owners." },
+      { id: "B", text: "Raise a change request for the change to the project schedule." },
+      { id: "C", text: "Capture the change in your project reporting and take it to the next status meeting." },
+      { id: "D", text: "Update the sprint backlog to reflect the delayed work." }
+    ],
+    answer: ["C"],
+    explanation: "A status meeting is a regularly scheduled event to exchange and analyze information about the current progress of the project and its performance. (PMBOK Guide) – Seventh Edition, 2021, p180, \"Status meeting\""
+  },
+  {
+    id: 121,
+    question: "You are an agile project manager and your team have delivered three features to improve a customer app over the last three months. Your product owner needs to know if the features are having the desired effect. It is a large organization and there are multiple measures available. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask them to gather the team velocity and throughput over the past three months." },
+      { id: "B", text: "Ask them to gather the Cost Benefit ratio over the past six months." },
+      { id: "C", text: "Ask them to gather the NPS over the past six months." },
+      { id: "D", text: "Ask them to gather the average app availability and uptime." }
+    ],
+    answer: ["C"],
+    explanation: "A product owner prioritizes features to improve usability and profitability of a product. The Net Promoter Score (NPS) measures the willingness of customers to recommend a product or service to others, and is used to gauge overall customer satisfaction and loyalty to the brand or product. (PMBOK Guide) – Seventh Edition, 2021, p181, \"Net promoter score\""
+  },
+  {
+    id: 122,
+    question: "You are a project manager in an agile team developing new features for an app. An executive stakeholder with a high influence in the organization approaches you and asks you to add a feature that they like. They asked their friends, who think it is a good idea too. What will you do next?",
+    choices: [
+      { id: "A", text: "Place the feature in the product backlog and prioritize it, using cost-versus-benefit." },
+      { id: "B", text: "Raise a change request to add the new feature into the scope baseline." },
+      { id: "C", text: "Gather the requirements for the new feature and ask your team to elaborate on it." },
+      { id: "D", text: "Analyze the impact to your project schedule and cost, the add the feature to your project scope." }
+    ],
+    answer: ["A"],
+    explanation: "In agile, we have a product backlog that we prioritize. Prioritization schema are methods used to prioritize portfolio, program or project components such as features, requirements or risks. Examples include multi-criteria decision matrices, MoSCoW, cost to benefit and more. (PMBOK Guide) – Seventh Edition, 2021, p181, \"Prioritization schema\""
+  },
+  {
+    id: 123,
+    question: "Your project team are gathering solution ideas for a particular customer requirement, which is prioritized to be worked on next. The item is complicated and they have been trying to find a way forward for the past three weeks. There is not enough work for the upcoming sprint. What will you do next?",
+    choices: [
+      { id: "A", text: "Start work on the item in the next sprint anyway and elaborate as the sprint begins." },
+      { id: "B", text: "Arrange the right people to elaborate the issue with a spike, and time-box it to two days." },
+      { id: "C", text: "De-prioritize the item until the team can figure out the issue." },
+      { id: "D", text: "Adjust the project schedule to reflect the extra time taken on elaboration." }
+    ],
+    answer: ["B"],
+    explanation: "A spike is a short, dedicated user story to research or analyze something. A time-box is a short, fixed period of time in which work is to be completed, often a few days to a few weeks. (PMBOK Guide) – Seventh Edition, 2021, p181, \"Timebox\""
+  },
+  {
+    id: 124,
+    question: "Your project team have planned the requirements, scope, schedule and cost for constructing a new building in your organization. An executive from another area approaches you, as your project is funded and about to begin execution, and asks if you can help them deliver a website as part of your work. What will you do next?",
+    choices: [
+      { id: "A", text: "Raise the request as an issue in your project's issue log." },
+      { id: "B", text: "Add the website to your project scope and adjust your project scope, schedule and cost." },
+      { id: "C", text: "Raise a change request for the added scope and review the impact to your project schedule and cost." },
+      { id: "D", text: "Offer to help them create a business case for the new idea and get funding for a new project." }
+    ],
+    answer: ["D"],
+    explanation: "The scope and team required to build a website is very different from a physical building – a new project with its own funding is the best option. A business case is a value proposition for a proposed project that may include financial and non-financial benefits. It typically precedes a project charter and a formal project approval and kick-off. (PMBOK Guide) – Seventh Edition, 2021, p184, \"Business case\""
+  },
+  {
+    id: 125,
+    question: "You are working on an agile project and are planning your product backlog for the next three to six months. You have some high level feature ideas from various parts of your organization, from front-line staff to executives, to direct customer research as well. What will you do next?",
+    choices: [
+      { id: "A", text: "Break down each feature into Epics and user stories, then size the work with your team." },
+      { id: "B", text: "Add all of the items into your product backlog and work on the ones from managers first." },
+      { id: "C", text: "Work with the requestors and your technical experts to create a business model canvas for each feature." },
+      { id: "D", text: "Perform precedence diagramming on each feature to determine their dependencies." }
+    ],
+    answer: ["C"],
+    explanation: "The business model canvas is a one-page visual summary that describes the value proposition, infrastructure, customers and finances. They are often used in lean start-up situations. (PMBOK Guide) – Seventh Edition, 2021, p184, \"Business model canvas\""
+  },
+  {
+    id: 126,
+    question: "You are working in a new agile team, where the work has started to slow and there is uncertainty and low team engagement. You set time to create a team charter with your team, agree on roles and responsibilities and team cadence. What will you do next?",
+    choices: [
+      { id: "A", text: "Set a team goal for them to be more engaged in the work over the next three months." },
+      { id: "B", text: "Create a product vision statement, showing the value you are bringing and the \"why\" behind the work." },
+      { id: "C", text: "Ask the team to contribute more to all pieces of work during each team meeting." },
+      { id: "D", text: "Raise it as a people issue for your project and manage it with the project steering committee." }
+    ],
+    answer: ["B"],
+    explanation: "The project vision statement is a concise, high-level description of the project that states the purpose, and inspires the team to contribute to the project. (PMBOK Guide) – Seventh Edition, 2021, p184, \"Project Vision Statement\""
+  },
+  {
+    id: 127,
+    question: "You are integrating a third party system as part of your project. The developers in your project team have not worked with this system before, but they believe the language and layout is the same and they should be able to implement it, adding a bit of time for the uncertainty. They give a high-level estimate of five weeks. What will you do next?",
+    choices: [
+      { id: "A", text: "Note the estimate of five weeks and update the assumption log with the technical assumption." },
+      { id: "B", text: "Don't add the estimate, break down the integration into user stories and use a bottom-up approach." },
+      { id: "C", text: "Check the estimate using parametric estimating, to increase its accuracy." },
+      { id: "D", text: "Gather your whole team and customers together, and estimate using wideband delphi (planning poker)." }
+    ],
+    answer: ["A"],
+    explanation: "An assumption is a factor that is considered to be true, real or certain, without proof or demonstration. A constraint is a factor that limits the options for managing a project, program, portfolio or process. An assumption log records all assumptions and constraints throughout the project. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Assumption log\""
+  },
+  {
+    id: 128,
+    question: "Your agile project has delivered three features so far and is halfway through delivering the latest improvement. During a brainstorming session, one of your customers comes up with a new feature idea. You check the benefit it could have, and it is high. The complexity is low. What will you do next?",
+    choices: [
+      { id: "A", text: "Add money to your budget to accommodate the additional feature as soon as possible." },
+      { id: "B", text: "Elaborate on the feature, break it down into user stories, and estimate them." },
+      { id: "C", text: "Place the item in the backlog and re-prioritize it to be next." },
+      { id: "D", text: "Create a business case for the new feature outlining the benefit and costs involved." }
+    ],
+    answer: ["C"],
+    explanation: "A backlog is an ordered list of work to be done. Projects may have a product backlog, a requirements backlog, impediments backlog, etc. Items in a backlog are prioritized. The prioritized work is then scheduled for upcoming iterations. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Logs and Registers: Backlog\""
+  },
+  {
+    id: 129,
+    question: "One of the senior users testing your product found is was missing a key requirement that he had assumed would be there. It was not noted in the project scope, which has been base-lined. You check the impact to cost and schedule, raise a change request on his behalf, and take it to the change control board where it is approved. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your team to elaborate and turn the requirement into user stories." },
+      { id: "B", text: "Place the new requirement into the sprint backlog for the next sprint." },
+      { id: "C", text: "Add the missed requirement to the issue log and problem solve with your team to ensure it does not happen again in the future." },
+      { id: "D", text: "Note the outcome in the change log and communicate it to your stakeholders." }
+    ],
+    answer: ["D"],
+    explanation: "A change log is a comprehensive list of changes submitted during the project and their current status. A change can be a modification to any formally controlled deliverable, project management plan component, or project document. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Logs and Registers: Change log\""
+  },
+  {
+    id: 130,
+    question: "You are working on a hybrid project to replace an aging customer system that has just had a feature upgrade release. The senior developer raises a concern during the daily stand-up that the system doesn't seem to be able to connect to some parts of the organization after the upgrade. What will you do next?",
+    choices: [
+      { id: "A", text: "Re-plan the project to ensure the correct scope is worked on that will connect to the organization." },
+      { id: "B", text: "Raise it in the issue log, assign it to a responsible party and work with them to find a resolution." },
+      { id: "C", text: "Raise the concern as a risk and brainstorm risk responses with your team." },
+      { id: "D", text: "Escalate the issue to the technical manager so they can resolve it." }
+    ],
+    answer: ["B"],
+    explanation: "An issue log is a current condition or situation that may have an impact on the project objectives. An issue log is used to record and monitor information on active issues. Issues are assigned to a responsible party for follow up and resolution. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Logs and Registers: Issue log\""
+  },
+  {
+    id: 131,
+    question: "You are working on an agile project, where your project team have raised multiple risks to project delivery. Some of the risks may impact your cost and schedule significantly. Your program manager asks you to manage them using a risk adjusted backlog. What will you do next?",
+    choices: [
+      { id: "A", text: "Adjust your risk register to include the work not completed if the risks are triggered." },
+      { id: "B", text: "Adjust your backlog velocity so your end date is not impacted by the raised risks." },
+      { id: "C", text: "Gather risk mitigation responses from your retrospectives and assign them to an owner." },
+      { id: "D", text: "Place at least one risk response in each sprint to manage and close." }
+    ],
+    answer: ["D"],
+    explanation: "A risk adjusted backlog is a backlog that includes work and actions to address threats and opportunities. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Risk adjusted backlog\""
+  },
+  {
+    id: 132,
+    question: "You are delivering a project to a functional area in your organization. The project is highly complex and there are many risks to project delivery. The functional manager would like to see the biggest risks that are assigned to her. What will you do next?",
+    choices: [
+      { id: "A", text: "Show her the risk adjusted backlog." },
+      { id: "B", text: "Show her the risk register." },
+      { id: "C", text: "Show her the risk management plan." },
+      { id: "D", text: "Show her the qualitative risk assessment." }
+    ],
+    answer: ["B"],
+    explanation: "A risk register is a repository in which outputs of risk management processes are recorded. Information can include the person responsible for managing the risk, the probability and impact, planned risk responses, and more. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Risk register\""
+  },
+  {
+    id: 133,
+    question: "Your project has been in progress for the past six months. Someone you have not met before approaches you and says they have not been engaged sufficiently, even though he believes his team is highly impacted by the change. He advises he may block the project as a result. What will you do next?",
+    choices: [
+      { id: "A", text: "Perform stakeholder engagement assessment with the stakeholder." },
+      { id: "B", text: "Add him to the stakeholder register, including his salary and interests information." },
+      { id: "C", text: "Add him to the stakeholder register, including his impact and influence information." },
+      { id: "D", text: "Raise a risk to project delivery due to the nature of his actions." }
+    ],
+    answer: ["C"],
+    explanation: "A stakeholder register records information about project stakeholders, which includes an assessment and classification of project stakeholders. We need to know our stakeholder, ensure his details are recorded, and where he fits before we take further action. (PMBOK Guide) – Seventh Edition, 2021, p185, \"Stakeholder register\""
+  },
+  {
+    id: 134,
+    question: "You are a product owner on an agile project and have created a product backlog of features in a prioritized order for delivery. You ask the team to break down the first feature into user stories, and estimate their effort. What will you do next?",
+    choices: [
+      { id: "A", text: "Create an iteration plan with your team." },
+      { id: "B", text: "Create the product roadmap with your team." },
+      { id: "C", text: "Perform a sprint review with your team." },
+      { id: "D", text: "Begin daily stand-ups with your team." }
+    ],
+    answer: ["A"],
+    explanation: "An iteration plan is a detailed plan for the current iteration. It usually matches the estimated work for the sprint to the average sprint velocity (or how many points are usually completed). Items from the product backlog are broken down into user stories and placed into upcoming sprints. (PMBOK Guide) – Seventh Edition, 2021, p186, \"Plans: Iteration plan\""
+  },
+  {
+    id: 135,
+    question: "You have worked with your project customer to create a list of features that will bring the most value to them. They would like to see when some of this value will be delivered and the expected outcomes of each. What will you do next?",
+    choices: [
+      { id: "A", text: "Show the features at the next sprint review so the customer can see what they look like." },
+      { id: "B", text: "Place the features on a release plan and show this to the customer." },
+      { id: "C", text: "Check the features against the velocity chart to see when they might be delivered." },
+      { id: "D", text: "Place the features into the next sprint plan and show this to your customer." }
+    ],
+    answer: ["B"],
+    explanation: "The release plan sets expectations for the dates, features and outcomes expected to be delivered over the course of multiple iterations. (PMBOK Guide) – Seventh Edition, 2021, p186, \"Plans: Release plan\""
+  },
+  {
+    id: 136,
+    question: "You are in the planning stages of your project, where you need to find out exactly what the project customer needs so you can find a solution and make it happen. Your business analysts are new to their roles and are not sure on what their process will be. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the business analysts to begin writing user stories to place in a sprint." },
+      { id: "B", text: "Create the project management plan to outline how the project will be delivered." },
+      { id: "C", text: "Work with the business analysts to create a requirements management plan." },
+      { id: "D", text: "Create a work breakdown structure on the project scope." }
+    ],
+    answer: ["C"],
+    explanation: "The requirements management plan is a component of the project management plan that describes how requirements will be analyzed, documented and managed. (PMBOK Guide) – Seventh Edition, 2021, p186, \"Requirements management plan\""
+  },
+  {
+    id: 137,
+    question: "You are working on a new software application with a lot of complex interdependencies. The senior user providing and testing most of the requirements is concerned that some of those dependencies will cause errors upon release, if they are not checked thoroughly. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the senior user for a written list of all his requirements, then check they are included in the project scope." },
+      { id: "B", text: "Raise a risk on the software complexity with the project team." },
+      { id: "C", text: "Create an affinity diagram with the senior user." },
+      { id: "D", text: "Review the test plan with the senior user." }
+    ],
+    answer: ["D"],
+    explanation: "A test plan is a document that describes the deliverables that will be tested, tests that will be conducted, and the processes that will be used in testing. It forms the basis for formally testing the components and deliverables. (PMBOK Guide) – Seventh Edition, 2021, p186, \"Plans: Test plan\""
+  },
+  {
+    id: 138,
+    question: "You are planning your project and have captured the requirements from the project customer. You ask your team to plan the project scope, but they need to see exactly what needs to be delivered and how each part relates to each other. What will you do next?",
+    choices: [
+      { id: "A", text: "Create a product breakdown structure with your project team." },
+      { id: "B", text: "Create the requirements traceability matrix with your project team." },
+      { id: "C", text: "Create the risk breakdown structure with your project team." },
+      { id: "D", text: "Create the scope management plan with your project team." }
+    ],
+    answer: ["A"],
+    explanation: "A product breakdown structure is a hierarchical structure reflecting a product's components and deliverables. It provides an exhaustive, hierarchical tree structure of deliverables that make up the project, arranged in whole-part relationship. (PMBOK Guide) – Seventh Edition, 2021, p187, \"Product Breakdown structure\""
+  },
+  {
+    id: 139,
+    question: "You have just finished breaking down the scope with your project team, that will meet your customer's requirements. Your program manager wishes to control the project scope so any changes go through the proper process. What will you do next?",
+    choices: [
+      { id: "A", text: "Create the change management plan, to note how changes will be managed." },
+      { id: "B", text: "Baseline the project scope and note it in the configuration management plan." },
+      { id: "C", text: "Create the scope management plan, with a management rule minimizing changes." },
+      { id: "D", text: "Create the resource assignment matrix, limiting roles who can approve scope changes." }
+    ],
+    answer: ["B"],
+    explanation: "A baseline is the approved version of a work product or plan, where actual performance is compared to the baseline to identify variances. Base-lined items are noted in the configuration management plan. (PMBOK Guide) – Seventh Edition, 2021, p188, \"Baselines\""
+  },
+  {
+    id: 140,
+    question: "You have planned and begun the current sprint, where the project team have committed to delivering and releasing a particular feature. You need to see how the team are tracking towards their sprint goal. What will you do next?",
+    choices: [
+      { id: "A", text: "Review the team Kanban board." },
+      { id: "B", text: "Review the team velocity chart." },
+      { id: "C", text: "Review the sprint burn-down chart." },
+      { id: "D", text: "Perform a sprint review with the team." }
+    ],
+    answer: ["C"],
+    explanation: "A burn-down chart is a graphical representation of the work remaining in a time-box (i.e. an iteration or sprint). It compares the ideal trend with the items actually completed. A sprint review demonstrates what was created during the sprint once the sprint is complete. (PMBOK Guide) – Seventh Edition, 2021, p188, \"Burndown chart\""
+  },
+  {
+    id: 141,
+    question: "Your agile project has recently been merged into a larger program, and the program manager is reviewing how the project is tracking. She asks you how much has been completed in design, but also how much has been completed in development, testing and sign-off. What will you do next?",
+    choices: [
+      { id: "A", text: "Show her the sprint Kanban board." },
+      { id: "B", text: "Take her through the team product backlog." },
+      { id: "C", text: "Show her the team cumulative flow diagram." },
+      { id: "D", text: "Show her the team velocity chart." }
+    ],
+    answer: ["C"],
+    explanation: "A Cumulative Flow Diagram indicates features completed over time, separated at each stage such as features in the backlog, then design, development, testing, and more. (PMBOK Guide) – Seventh Edition, 2021, p188, \"Cumulative Flow diagram\""
+  },
+  {
+    id: 142,
+    question: "The features developed by your agile team have added some complexity to your website, delivered quickly with no time to refactor the code. You believe the user stories are moving slower as a result, but you can't be sure. What will you do next?",
+    choices: [
+      { id: "A", text: "Check the cycle time chart of the team." },
+      { id: "B", text: "Shadow the developers to overview the work they are doing." },
+      { id: "C", text: "View the product roadmap for proposed release dates." },
+      { id: "D", text: "Review the points in sprint backlog versus the last three sprints' velocity." }
+    ],
+    answer: ["A"],
+    explanation: "A cycle time chart shows the average cycle time of the work items completed over time. It can be a scatter diagram or a bar chart. (PMBOK Guide) – Seventh Edition, 2021, p189, \"Cycle time chart\""
+  },
+  {
+    id: 143,
+    question: "You are working on an agile project with a full product roadmap for the next six months. Your project team are not sure what the next feature does or how they should turn it into user stories. What will you do next?",
+    choices: [
+      { id: "A", text: "Review the scope baseline with your team." },
+      { id: "B", text: "Perform story mapping with your team." },
+      { id: "C", text: "Perform sprint planning with your team." },
+      { id: "D", text: "Perform a retrospective with your team." }
+    ],
+    answer: ["B"],
+    explanation: "A story map is a visual model of all the features and functionality desired for a given product, created to give the project team a holistic view of what they are building and why. It can also break the feature down into user stories based on functionality. (PMBOK Guide) – Seventh Edition, 2021, p190, \"Story map\""
+  },
+  {
+    id: 144,
+    question: "You are a program manager on a large scale agile program, where each project team has its own scrum master. You need to know the rate at which work is flowing through each team, so you can see if there are any blockers or issues and whether they will remain on track. What will you do next?",
+    choices: [
+      { id: "A", text: "Raise your query at scrum of scrums, so each team knows what they need to do." },
+      { id: "B", text: "Attend the sprint review of each team at the end of the sprint." },
+      { id: "C", text: "Review the schedule management plan for managing the schedule." },
+      { id: "D", text: "Review the team velocity charts, and what was committed versus completed." }
+    ],
+    answer: ["D"],
+    explanation: "The velocity chart tracks the rate at which the deliverables are produced, validated, and accepted within a predefined interval. (PMBOK Guide) – Seventh Edition, 2021, p190, \"Velocity Chart\""
+  },
+  {
+    id: 145,
+    question: "Your project has been executing for the past five months, and due to an organizational change a new project sponsor has come on board. He asks where the project is up to and whether it is on track. You tell him, but he wants more information. What will you do next?",
+    choices: [
+      { id: "A", text: "Show him the signed project charter, to ensure he honours the original project agreement." },
+      { id: "B", text: "Show him the project management plan, including the schedule management plan." },
+      { id: "C", text: "Review the status report and previous status report with the sponsor." },
+      { id: "D", text: "Invite him to the next sprint review so he can see the progress made." }
+    ],
+    answer: ["C"],
+    explanation: "The status report provides a report on the current status of the project. It may include information on progress since the last report and forecasts for cost and schedule performance. (PMBOK Guide) – Seventh Edition, 2021, p190, \"Reports: Status report\""
+  },
+  {
+    id: 146,
+    question: "Your agile project needs a third party vendor to help complete the work. The product owner has multiple features on their product roadmap which may change over time, making the scope of your project uncertain. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask your product owner to fix the features and scope so the project is more certain." },
+      { id: "B", text: "Create a cost plus incentive fee contract with your procurement team." },
+      { id: "C", text: "Create a firm fixed price contract with your procurement team." },
+      { id: "D", text: "Use the external vendor funding to create a project team in-house and complete the project." }
+    ],
+    answer: ["B"],
+    explanation: "Cost reimbursable contracts involve payments to the seller for actual costs incurred for completing the work, plus a fee representing seller profit. They are used when the scope is not well defined or subject to frequent change. Includes Cost plus Award fee, Fixed Fee or Incentive fee. (PMBOK Guide) – Seventh Edition, 2021, p191, \"Cost-reimbursable contracts\""
+  },
+  {
+    id: 147,
+    question: "Your project is releasing a number of upgrades to a commercial building over the next 12 months. Material costs have changed a lot recently. You need to budget for the materials required, however the volume of materials may change significantly as the project evolves. What will you do next?",
+    choices: [
+      { id: "A", text: "Create an IDIQ contract with your supplier." },
+      { id: "B", text: "Ensure multiple suppliers are on call to provide materials, when needed." },
+      { id: "C", text: "Ensure a sole supplier for your materials, to guarantee the best price." },
+      { id: "D", text: "Create a firm fixed price contract for the materials." }
+    ],
+    answer: ["A"],
+    explanation: "Indefinite delivery, indefinite quantity (IDIQ) provides for an indefinite quantity of goods or services, with a stated lower and upper limit, and within a fixed time period. Fixed price will work better if the quantities are known. (PMBOK Guide) – Seventh Edition, 2021, p191, \"Agreements and Contracts\""
+  },
+  {
+    id: 148,
+    question: "You have completed a make-or-buy analysis and you agree to hire a third-party vendor to complete part of your product. You create the statement of work and have a list of acceptable sellers that meet the source selection criteria. The work is not complex and they understand the scope. What will you do next?",
+    choices: [
+      { id: "A", text: "Send a request for proposal to the sellers." },
+      { id: "B", text: "Send a request for information to the sellers." },
+      { id: "C", text: "Send a request for quotation to the sellers." },
+      { id: "D", text: "Hold a bidders conference to ensure all sellers are on the same page." }
+    ],
+    answer: ["C"],
+    explanation: "Bid documents are used to request proposals from prospective sellers. The best answer here is Request for Quote, as we have the requirements ready. RFP is used when the item is complex, RFI is when more information is needed. Bidder conference is used to ensure all sellers have enough information. (PMBOK Guide) – Seventh Edition, 2021, p192, \"Bid Documents\""
+  },
+  {
+    id: 149,
+    question: "Your project is new and the team have just come on board. There have been multiple disagreements and the work is slow as they try to understand where they fit in the project and the team. What will you do next?",
+    choices: [
+      { id: "A", text: "Create a definition of ready and definition of done with your team." },
+      { id: "B", text: "Create a project charter with your team." },
+      { id: "C", text: "Create a project management plan with your team." },
+      { id: "D", text: "Create a team charter with your team." }
+    ],
+    answer: ["D"],
+    explanation: "The project team charter records the team values, agreements and operating guidelines. It establishes clear expectations regarding acceptable behavior by project team members. (PMBOK Guide) – Seventh Edition, 2021, p192, \"Project team charter\""
+  },
+  {
+    id: 150,
+    question: "You have created a high level view of the features your project will deliver, and prioritized them. The development team is ready to start work, but they don't know where to start as the information is too high level. What will you do next?",
+    choices: [
+      { id: "A", text: "Ask the team to begin with the highest priority item first." },
+      { id: "B", text: "Help the team break the features down into User Stories to place in a sprint." },
+      { id: "C", text: "Hold a retrospective with the team to understand what is blocking them." },
+      { id: "D", text: "Re-prioritize the features into an order that makes sense for the developers." }
+    ],
+    answer: ["B"],
+    explanation: "A user story is a brief description of an outcome for a specific user. It has enough information at a level which team members can work on an item. (PMBOK Guide) – Seventh Edition, 2021, p192, \"Other artifacts: User story\""
+  }
 ];
