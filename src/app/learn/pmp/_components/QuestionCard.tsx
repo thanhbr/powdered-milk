@@ -64,7 +64,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
       </div>
       <div>
         {!showExplanation ? (
-          <button onClick={handleSubmit} className='bg-primary text-white p-2 rounded'>Submit</button>
+          <button onClick={handleSubmit} disabled={selectedChoices.length === 0} className='bg-primary text-white p-2 rounded disabled:bg-grey disabled:cursor-not-allowed'>Submit</button>
         ) : (
           <button onClick={handleReset} className='bg-primary text-white p-2 rounded'>Try Again</button>
         )}
