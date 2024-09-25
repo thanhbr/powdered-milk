@@ -36,8 +36,8 @@ export default function PMP() {
   };
 
   return (
-    <div className="container mb-[80px]">
-      <p className="text-2xl font-bold">PMP Question Time</p>
+    <div className="container mb-[80px] bg-body py-8">
+      <p className="text-2xl font-bold text-white">PMP Question Time</p>
 
       <div className="mb-4 flex flex-row gap-2">
         <input
@@ -45,7 +45,7 @@ export default function PMP() {
           value={searchId}
           onChange={(e) => setSearchId(e.target.value)}
           placeholder="Enter question number"
-          className="mr-2 p-2 border rounded w-1/2"
+          className="mr-2 p-2 border rounded w-1/2 bg-body placeholder-white"
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleSearch();
