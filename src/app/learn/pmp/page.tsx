@@ -52,7 +52,7 @@ export default function PMP() {
           value={searchId}
           onChange={(e) => setSearchId(e.target.value)}
           placeholder="Enter question number"
-          className="mr-2 p-2 border rounded w-1/2 bg-body placeholder-white"
+          className="mr-2 p-2 border rounded w-1/2 bg-body placeholder-white text-white"
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleSearch();
