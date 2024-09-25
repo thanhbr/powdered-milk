@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QuestionCard from "./_components/QuestionCard";
 import { QUESTIONS } from "./_data/data";
 
@@ -35,8 +35,15 @@ export default function PMP() {
     }
   };
 
+  useEffect(() => {
+    const navBar = document.getElementById("nav-bar");
+    if (navBar) {
+      navBar.remove();
+    }
+  }, []);
+
   return (
-    <div className="container mb-[80px] bg-body py-8">
+    <div className="container bg-body pt-8 pb-20">
       <p className="text-2xl font-bold text-white">PMP Question Time</p>
 
       <div className="mb-4 flex flex-row gap-2">

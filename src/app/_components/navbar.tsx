@@ -6,5 +6,5 @@ import DesktopSidebar from "./desktop/desktopSidebar";
 
 export default function Navbar() {
   const isMobile = useIsMobile();
-  return <>{isMobile ? <MobileSidebar /> : <DesktopSidebar />}</>;
+  return <div id="nav-bar">{isMobile ? <MobileSidebar /> : <DesktopSidebar />}</div>;
 }
