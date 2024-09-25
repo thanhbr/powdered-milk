@@ -48,7 +48,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
 
   return (
     <div className='flex flex-col gap-2'>
-      <p><strong>Question {question.id}:</strong> {question.question}</p>
+      <p className='text-white'><strong>Question {question.id}:</strong> {question.question}</p>
       <div className='flex flex-col gap-2'>
         {question.choices.map((choice) => (
           <label key={choice.id} className='flex items-center gap-2 cursor-pointer'>
@@ -58,7 +58,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
               onChange={() => handleChoiceSelect(choice.id)}
               disabled={showExplanation}
             />
-            <p className='m-0'>{choice.text}</p>
+            <p className='m-0 text-white'>{choice.text}</p>
           </label>
         ))}
       </div>
@@ -72,10 +72,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
           <div>
             <div>
               <p className={`text-2xl font-bold ${isCorrect ? 'text-green' : 'text-red'}`}>{isCorrect ? 'Correct!' : 'Incorrect'}</p>
-              <p className='font-bold text-2xl'>Answer: {question.answer.join(', ')}</p>
+              <p className='font-bold text-2xl text-white'>Answer: {question.answer.join(', ')}</p>
             </div>
             <div className="explanation">
-              <div><span className='font-bold'>Explanation:</span> {question.explanation}</div>
+              <div className='text-white'><span className='font-bold'>Explanation:</span> {question.explanation}</div>
             </div>
           </div>
         )}
