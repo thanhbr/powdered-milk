@@ -41,6 +41,7 @@ export default function Page() {
 
   const handleRefresh = () => {
     setVocabulary(randomVocabulary);
+    setHide(true);
     setShowList(false);
     setError(false);
     inputRef.current.value = "";
