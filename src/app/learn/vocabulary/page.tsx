@@ -76,8 +76,8 @@ export default function Page() {
   };
 
   return (
-    <>
-      <h2>Vocabulary</h2>
+    <div className="h-[100vh] bg-body">
+      <h2 className="text-white text-center text-2xl font-bold">Vocabulary</h2>
       <div style={{ padding: 32 }}>
         <form onSubmit={onFormSubmit}>
           <div>
@@ -95,7 +95,7 @@ export default function Page() {
             >
               Voice
             </button>
-            <span className="m-4">{vocabulary.vi}</span>
+            <span className="m-4 text-white">{vocabulary.vi}</span>
           </div>
           <div style={styleDiv}>
             <input ref={inputRef} placeholder="enter english" style={styleInput} />
@@ -121,7 +121,7 @@ export default function Page() {
           <ol>
             {showList &&
               VOCABULARY.map((vocal) => (
-                <li key={id()}>
+                <li key={id()} className="text-white">
                   <strong>
                     {vocal.en}
                     {vocal.type ? `(${vocal.type})` : ""}
@@ -132,6 +132,6 @@ export default function Page() {
           </ol>
         </div>
       </div>
-    </>
+    </div>
   );
 }
