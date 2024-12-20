@@ -1,26 +1,36 @@
 {
-    "cSpell.words": [
-        "arialabel",
-        "bebé",
-        "bibomart",
-        "clsx",
-        "Embla",
-        "linksp",
-        "lucide",
-        "mediacdn",
-        "Nunito",
-        "Roboto",
-        "shadcn",
-        "tailwindcss",
-        "tanstack",
-        "ADKAR",
-        "Cockburn",
-        "Gantt",
-        "Herzberg",
-        "Ishikawa",
-        "Kanban",
-        "Kotter's",
-        "PMBOK",
-        "Timeboxes"
-    ]
+  "cSpell.words": [
+    "arialabel",
+    "bebé",
+    "bibomart",
+    "clsx",
+    "Embla",
+    "linksp",
+    "lucide",
+    "mediacdn",
+    "Nunito",
+    "Roboto",
+    "shadcn",
+    "tailwindcss",
+    "tanstack",
+    "ADKAR",
+    "Cockburn",
+    "Gantt",
+    "Herzberg",
+    "Ishikawa",
+    "Kanban",
+    "Kotter's",
+    "PMBOK",
+    "Timeboxes"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
