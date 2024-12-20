@@ -1,6 +1,6 @@
 "use client";
-import { v4 as id } from "uuid";
 import { useEffect, useRef, useState } from "react";
+import { v4 as id } from "uuid";
 import { VOCABULARY } from "./_data/data";
 
 function getRandomVocabulary() {
@@ -49,6 +49,19 @@ export default function Page() {
 
   const handleHide = () => setHide((pre) => !pre);
 
+  const handleSpeak = () => {
+    const speech = new SpeechSynthesisUtterance(vocabulary.en);
+    speech.lang = "en-US";
+    window.speechSynthesis.speak(speech);
+  };
+
+  useEffect(() => {
+    const navBar = document.getElementById("nav-bar");
+    if (navBar) {
+      navBar.remove();
+    }
+  }, []);
+
   const styleDiv = {
     border: `2px solid ${error ? "red" : correct ? "green" : "black"}`,
     width: "fit-content",
@@ -61,7 +74,6 @@ export default function Page() {
     padding: 8,
     width: "70vw",
   };
-
 
   return (
     <>
@@ -76,7 +88,14 @@ export default function Page() {
             >
               Refresh
             </button>
-            <span style={{ margin: 8 }}>{vocabulary.vi}</span>
+            <button
+              className="p-2 border rounded-md border-sky-400 text-sky-400 ml-4"
+              type="button"
+              onClick={handleSpeak}
+            >
+              Voice
+            </button>
+            <span className="m-4">{vocabulary.vi}</span>
           </div>
           <div style={styleDiv}>
             <input ref={inputRef} placeholder="enter english" style={styleInput} />
