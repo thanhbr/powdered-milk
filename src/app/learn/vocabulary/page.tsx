@@ -108,7 +108,7 @@ export default function Page() {
             >
               {hide ? "Show" : "Hide"}
             </button>
-            {!hide && <p>{vocabulary.en}</p>}
+            {!hide && <p className="text-white">{vocabulary.en}</p>}
           </div>
         </form>
         <div style={{ marginTop: 32 }}>
